@@ -36,6 +36,8 @@ def create_app():
     app.register_blueprint(analytics_bp)
 
     @app.route("/", methods=["GET"])
+    @app.route("/api", methods=["GET"])
+    @app.route("/api/", methods=["GET"])
     def index():
         return jsonify({
             "project": "E-Commerce Customer Intelligence & Product Recommendation System",

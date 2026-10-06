@@ -11,12 +11,28 @@ MYSQL_USER = os.getenv("MYSQL_USER", "root")
 MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD", "")
 MYSQL_DB = os.getenv("MYSQL_DB", "ecommerce_data_mining")
 
-SQLITE_PATH = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), "..", "..", "database", "ecommerce_data_mining.db")
-)
-DATASET_PATH = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), "..", "..", "dataset", "sample_sales.csv")
-)
+# Resolve Dataset Path (support local repository structure and Vercel serverless bundle)
+def resolve_dataset_path():
+    candidates = [
+        os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "dataset", "sample_sales.csv")),
+        os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "dataset", "sample_sales.csv")),
+        os.path.abspath(os.path.join(os.getcwd(), "dataset", "sample_sales.csv")),
+        os.path.abspath(os.path.join(os.path.dirname(__file__), "sample_sales.csv"))
+    ]
+    for c in candidates:
+        if os.path.exists(c):
+            return c
+    return candidates[0]
+
+DATASET_PATH = resolve_dataset_path()
+
+# In Vercel serverless functions, the root filesystem is read-only except /tmp
+if os.getenv("VERCEL"):
+    SQLITE_PATH = "/tmp/ecommerce_data_mining.db"
+else:
+    SQLITE_PATH = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), "..", "..", "database", "ecommerce_data_mining.db")
+    )
 
 _active_engine = None
 _db_type = "sqlite"
