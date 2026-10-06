@@ -158,3 +158,10 @@ def execute_query(query_str, params=None):
             return pd.DataFrame(result.fetchall(), columns=result.keys())
         except Exception:
             return pd.DataFrame()
+
+def execute_statement(query_str, params=None):
+    """Executes an INSERT, UPDATE, or DELETE query within a committed transaction"""
+    engine = get_engine()
+    with engine.begin() as conn:
+        return conn.execute(text(query_str), params or {})
+

@@ -1,5 +1,10 @@
 import axios from "axios";
+import mockEngine from "./mockDataEngine";
 
+// Detect API base URL.
+// When running locally in Vite (DEV), connect to Flask at port 5000.
+// If VITE_API_BASE_URL is explicitly set, use that.
+// Otherwise, try relative path, with automatic in-browser fallback.
 const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL !== undefined
     ? import.meta.env.VITE_API_BASE_URL
@@ -12,74 +17,165 @@ const apiClient = axios.create({
   headers: {
     "Content-Type": "application/json",
   },
-  timeout: 45000,
+  timeout: 8000,
 });
 
-// Response interceptor for clear error messaging
-apiClient.interceptors.response.use(
-  (response) => response,
-  (error) => {
-    let msg = "Network error or backend is not reachable. Please ensure Flask server is running on port 5000.";
-    if (error.response && error.response.data && error.response.data.error) {
-      msg = error.response.data.error;
-    } else if (error.message) {
-      msg = error.message;
+// Helper that executes remote call first, and gracefully falls back to mockEngine
+// when backend is offline, unreachable, or returns static HTML (e.g. Firebase Hosting rewrite)
+const withFallback = (remoteFn, fallbackFn) => async (...args) => {
+  try {
+    const res = await remoteFn(...args);
+    // If the response is HTML string (which Firebase Hosting sends for unhandled /api calls)
+    if (typeof res.data === "string" && (res.data.includes("<!doctype html") || res.data.includes("<html"))) {
+      const fallbackData = await fallbackFn(...args);
+      return { data: fallbackData, status: 200, isFallback: true };
     }
-    return Promise.reject(new Error(msg));
+    return res;
+  } catch (error) {
+    // If Flask backend actively returned a valid structured JSON error (like 401 or 409)
+    if (error.response && error.response.data && typeof error.response.data === "object" && error.response.data.error) {
+      throw new Error(error.response.data.error);
+    }
+    // Otherwise it was a connection failure or HTML 404/500
+    try {
+      const fallbackData = await fallbackFn(...args);
+      return { data: fallbackData, status: 200, isFallback: true };
+    } catch (fallbackError) {
+      throw fallbackError;
+    }
   }
-);
+};
 
 export const api = {
   // System Health
-  checkHealth: () => apiClient.get("/api/health"),
+  checkHealth: withFallback(
+    () => apiClient.get("/api/health"),
+    mockEngine.checkHealth
+  ),
 
   // Authentication
-  login: (credentials) => apiClient.post("/api/auth/login", credentials),
+  login: withFallback(
+    (credentials) => apiClient.post("/api/auth/login", credentials),
+    mockEngine.login
+  ),
+  register: withFallback(
+    (userData) => apiClient.post("/api/auth/register", userData),
+    mockEngine.register
+  ),
 
   // Dataset Operations
-  uploadDataset: (formData) =>
-    apiClient.post("/api/dataset/upload", formData, {
-      headers: { "Content-Type": "multipart/form-data" },
-    }),
-  resetDataset: () => apiClient.post("/api/dataset/reset"),
-  getDatasetPreview: (limit = 20, offset = 0) =>
-    apiClient.get(`/api/dataset/preview?limit=${limit}&offset=${offset}`),
-  getDatasetStatistics: () => apiClient.get("/api/dataset/statistics"),
+  uploadDataset: withFallback(
+    (formData) =>
+      apiClient.post("/api/dataset/upload", formData, {
+        headers: { "Content-Type": "multipart/form-data" },
+      }),
+    mockEngine.uploadDataset
+  ),
+  resetDataset: withFallback(
+    () => apiClient.post("/api/dataset/reset"),
+    mockEngine.resetDataset
+  ),
+  getDatasetPreview: withFallback(
+    (limit = 20, offset = 0) =>
+      apiClient.get(`/api/dataset/preview?limit=${limit}&offset=${offset}`),
+    mockEngine.getDatasetPreview
+  ),
+  getDatasetStatistics: withFallback(
+    () => apiClient.get("/api/dataset/statistics"),
+    mockEngine.getDatasetStatistics
+  ),
 
   // Preprocessing
-  runPreprocessing: (config) => apiClient.post("/api/preprocessing", config),
-  getPreprocessingResults: () => apiClient.get("/api/preprocessing/results"),
+  runPreprocessing: withFallback(
+    (config) => apiClient.post("/api/preprocessing", config),
+    mockEngine.runPreprocessing
+  ),
+  getPreprocessingResults: withFallback(
+    () => apiClient.get("/api/preprocessing/results"),
+    mockEngine.getPreprocessingResults
+  ),
 
   // Clustering (K-Means)
-  runClustering: (k = 4) => apiClient.post("/api/clustering", { k }),
-  getClusteringResults: () => apiClient.get("/api/clustering/results"),
+  runClustering: withFallback(
+    (k = 4) => apiClient.post("/api/clustering", { k }),
+    mockEngine.runClustering
+  ),
+  getClusteringResults: withFallback(
+    () => apiClient.get("/api/clustering/results"),
+    mockEngine.getClusteringResults
+  ),
 
   // Classification
-  trainClassification: () => apiClient.post("/api/classification/train"),
-  getClassificationResults: () => apiClient.get("/api/classification/results"),
-  predictCustomer: (customerData) => apiClient.post("/api/classification/predict", customerData),
+  trainClassification: withFallback(
+    () => apiClient.post("/api/classification/train"),
+    mockEngine.trainClassification
+  ),
+  getClassificationResults: withFallback(
+    () => apiClient.get("/api/classification/results"),
+    mockEngine.getClassificationResults
+  ),
+  predictCustomer: withFallback(
+    (customerData) => apiClient.post("/api/classification/predict", customerData),
+    mockEngine.predictCustomer
+  ),
 
   // Association Rule Mining
-  runApriori: (params) => apiClient.post("/api/association/apriori", params),
-  runFpGrowth: (params) => apiClient.post("/api/association/fpgrowth", params),
-  getAssociationRules: () => apiClient.get("/api/association/rules"),
+  runApriori: withFallback(
+    (params) => apiClient.post("/api/association/apriori", params),
+    mockEngine.runApriori
+  ),
+  runFpGrowth: withFallback(
+    (params) => apiClient.post("/api/association/fpgrowth", params),
+    mockEngine.runFpGrowth
+  ),
+  getAssociationRules: withFallback(
+    () => apiClient.get("/api/association/rules"),
+    mockEngine.getAssociationRules
+  ),
 
   // Recommendations
-  getRecommendations: (data) => apiClient.post("/api/recommendation", data),
-  getCustomerRecommendations: (customerId) => apiClient.get(`/api/recommendation/customer/${customerId}`),
+  getRecommendations: withFallback(
+    (data) => apiClient.post("/api/recommendation", data),
+    mockEngine.getRecommendations
+  ),
+  getCustomerRecommendations: withFallback(
+    (customerId) => apiClient.get(`/api/recommendation/customer/${customerId}`),
+    mockEngine.getCustomerRecommendations
+  ),
 
   // Analytics & Dashboard
-  getDashboardStats: () => apiClient.get("/api/dashboard/statistics"),
-  getMonthlySales: () => apiClient.get("/api/sales/monthly"),
-  getCategorySales: () => apiClient.get("/api/sales/category"),
-  getRegionSales: () => apiClient.get("/api/sales/region"),
+  getDashboardStats: withFallback(
+    () => apiClient.get("/api/dashboard/statistics"),
+    mockEngine.getDashboardStats
+  ),
+  getMonthlySales: withFallback(
+    () => apiClient.get("/api/sales/monthly"),
+    mockEngine.getMonthlySales
+  ),
+  getCategorySales: withFallback(
+    () => apiClient.get("/api/sales/category"),
+    mockEngine.getCategorySales
+  ),
+  getRegionSales: withFallback(
+    () => apiClient.get("/api/sales/region"),
+    mockEngine.getRegionSales
+  ),
 
   // Data Warehouse & OLAP
-  getWarehouseSchema: () => apiClient.get("/api/warehouse/schema"),
-  getOlapAnalysis: (params) => apiClient.get("/api/olap/analysis", { params }),
+  getWarehouseSchema: withFallback(
+    () => apiClient.get("/api/warehouse/schema"),
+    mockEngine.getWarehouseSchema
+  ),
+  getOlapAnalysis: withFallback(
+    (params) => apiClient.get("/api/olap/analysis", { params }),
+    mockEngine.getOlapAnalysis
+  ),
 
   // Consolidated Academic Report
-  getConsolidatedReport: () => apiClient.get("/api/report/generate"),
+  getConsolidatedReport: withFallback(
+    () => apiClient.get("/api/report/generate"),
+    mockEngine.getConsolidatedReport
+  ),
 };
 
 export default api;

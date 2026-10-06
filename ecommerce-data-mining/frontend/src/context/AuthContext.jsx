@@ -32,6 +32,23 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const register = async (name, email, password, role = "analyst") => {
+    setLoading(true);
+    try {
+      const res = await api.register({ name, email, password, role });
+      const { user: userData, token: userToken } = res.data;
+      setUser(userData);
+      setToken(userToken);
+      localStorage.setItem("ecommerce_user", JSON.stringify(userData));
+      localStorage.setItem("ecommerce_token", userToken);
+      return { success: true, user: userData };
+    } catch (err) {
+      return { success: false, error: err.message };
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const logout = () => {
     setUser(null);
     setToken(null);
@@ -47,6 +64,7 @@ export const AuthProvider = ({ children }) => {
         isAuthenticated: !!user,
         loading,
         login,
+        register,
         logout,
       }}
     >
