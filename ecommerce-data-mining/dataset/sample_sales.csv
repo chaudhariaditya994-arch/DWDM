@@ -1,0 +1,976 @@
+sales_id,transaction_id,customer_id,customer_name,age,gender,location,product_id,product_name,category,price,quantity,total_amount,store_id,store_name,region,order_date,day,month,quarter,year,previous_purchases,total_spending,purchase_frequency,days_since_last_purchase,likely_to_purchase_again
+S00001,TX0001,C0008,Neha Kulkarni,24,Female,Pune,P001,Bread,Bakery & Dairy,40,2,80,S101,Metro Express Mumbai,West,2026-01-15,15,1,1,2026,15,39495,1.25,26,1
+S00002,TX0001,C0003,Rohan Gupta,22,Male,Delhi,P004,Tea,Beverages,120,2,240,S101,Metro Express Mumbai,West,2025-02-17,17,2,1,2025,12,31584,1.0,68,1
+S00003,TX0001,C0018,Nikhil Saxena,36,Male,Bhopal,P005,Biscuits,Snacks,30,1,30,S107,Chennai Marina Outlet,South,2025-01-04,4,1,1,2025,13,23114,1.08,28,0
+S00004,TX0002,C0007,Rahul Verma,52,Male,Lucknow,P010,Wireless Mouse,Electronics,850,2,1700,S103,Tech Hub Bengaluru,South,2025-06-26,26,6,2,2025,35,96740,2.92,8,1
+S00005,TX0002,C0003,Rohan Gupta,22,Male,Delhi,P008,Snacks,Snacks,50,3,150,S106,Jaipur Plaza Store,North,2025-04-27,27,4,2,2025,7,10766,0.58,73,1
+S00006,TX0002,C0024,Amit Choudhury,50,Male,Guwahati,P006,Coffee,Beverages,180,1,180,S102,Delhi Central Mart,North,2025-07-09,9,7,3,2025,8,15632,0.67,49,1
+S00007,TX0003,C0015,Tanvi Bhat,26,Female,Bengaluru,P002,Butter,Bakery & Dairy,60,1,60,S106,Jaipur Plaza Store,North,2025-06-16,16,6,2,2025,6,12258,0.5,49,0
+S00008,TX0003,C0021,Priya Das,32,Female,Bhubaneswar,P003,Milk,Bakery & Dairy,32,1,32,S102,Delhi Central Mart,North,2025-12-02,2,12,4,2025,28,96852,2.33,20,1
+S00009,TX0003,C0026,Varun Khanna,37,Male,Amritsar,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-04-23,23,4,2,2025,1,849,0.08,34,0
+S00010,TX0004,C0028,Harshvardhan Goel,43,Male,Kanpur,P003,Milk,Bakery & Dairy,32,2,64,S105,West Gate Ahmedabad,West,2025-02-02,2,2,1,2025,15,38985,1.25,111,1
+S00011,TX0004,C0022,Gaurav Bansal,27,Male,Delhi,P006,Coffee,Beverages,180,1,180,S101,Metro Express Mumbai,West,2025-05-31,31,5,2,2025,11,17842,0.92,96,1
+S00012,TX0004,C0013,Aditya Malhotra,35,Male,Delhi,P017,Camera,Electronics,32000,3,96000,S102,Delhi Central Mart,North,2025-07-11,11,7,3,2025,43,20597,3.58,5,1
+S00013,TX0005,C0020,Manish Tiwari,44,Male,Patna,P005,Biscuits,Snacks,30,2,60,S102,Delhi Central Mart,North,2025-01-30,30,1,1,2025,20,18500,1.67,23,1
+S00014,TX0005,C0011,Siddharth Roy,30,Male,Kolkata,P014,Headphones,Electronics,1500,4,6000,S103,Tech Hub Bengaluru,South,2025-09-28,28,9,3,2025,24,79680,2.0,11,1
+S00015,TX0005,C0024,Amit Choudhury,50,Male,Guwahati,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2025-09-22,22,9,3,2025,26,73060,2.17,9,0
+S00016,TX0006,C0004,Ananya Iyer,45,Female,Bengaluru,P011,Smartphone,Electronics,18000,1,18000,S102,Delhi Central Mart,North,2025-02-04,4,2,1,2025,11,26268,0.92,42,1
+S00017,TX0006,C0031,Sonal Agarwal,35,Female,Agra,P005,Biscuits,Snacks,30,1,30,S102,Delhi Central Mart,North,2026-02-06,6,2,1,2026,15,47370,1.25,22,1
+S00018,TX0006,C0007,Rahul Verma,52,Male,Lucknow,P004,Tea,Beverages,120,1,120,S101,Metro Express Mumbai,West,2025-07-26,26,7,3,2025,39,44889,3.25,10,1
+S00019,TX0007,C0005,Vikram Singh,31,Male,Jaipur,P018,Memory Card,Electronics,650,1,650,S104,City Mega Store Kolkata,East,2026-02-18,18,2,1,2026,12,9384,1.0,9,1
+S00020,TX0007,C0032,Sameer Nanda,40,Male,Vadodara,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-04-20,20,4,2,2025,7,10402,0.58,115,1
+S00021,TX0007,C0019,Isha Mukherjee,29,Female,Kolkata,P018,Memory Card,Electronics,650,2,1300,S104,City Mega Store Kolkata,East,2025-12-23,23,12,4,2025,24,38760,2.0,8,1
+S00022,TX0008,C0035,Swati Hegde,30,Female,Mangaluru,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2026-01-18,18,1,1,2026,22,13904,1.83,18,0
+S00023,TX0008,C0012,Meera Joshi,27,Female,Mumbai,P011,Smartphone,Electronics,18000,1,18000,S101,Metro Express Mumbai,West,2025-11-01,1,11,4,2025,45,76275,3.75,10,1
+S00024,TX0008,C0021,Priya Das,32,Female,Bhubaneswar,P005,Biscuits,Snacks,30,3,90,S102,Delhi Central Mart,North,2025-05-16,16,5,2,2025,12,27324,1.0,21,1
+S00025,TX0009,C0007,Rahul Verma,52,Male,Lucknow,P002,Butter,Bakery & Dairy,60,3,180,S101,Metro Express Mumbai,West,2025-10-03,3,10,4,2025,35,54845,2.92,7,1
+S00026,TX0009,C0035,Swati Hegde,30,Female,Mangaluru,P001,Bread,Bakery & Dairy,40,4,160,S106,Jaipur Plaza Store,North,2025-06-04,4,6,2,2025,15,14250,1.25,48,1
+S00027,TX0009,C0007,Rahul Verma,52,Male,Lucknow,P001,Bread,Bakery & Dairy,40,2,80,S106,Jaipur Plaza Store,North,2025-10-11,11,10,4,2025,11,16291,0.92,79,1
+S00028,TX0010,C0004,Ananya Iyer,45,Female,Bengaluru,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-11-21,21,11,4,2025,5,5305,0.42,109,0
+S00029,TX0010,C0028,Harshvardhan Goel,43,Male,Kanpur,P003,Milk,Bakery & Dairy,32,2,64,S105,West Gate Ahmedabad,West,2025-01-05,5,1,1,2025,21,45360,1.75,6,0
+S00030,TX0010,C0024,Amit Choudhury,50,Male,Guwahati,P007,Sugar,Grocery,45,2,90,S107,Chennai Marina Outlet,South,2025-01-21,21,1,1,2025,34,91562,2.83,15,1
+S00031,TX0011,C0010,Arjun Reddy,41,Male,Chennai,P006,Coffee,Beverages,180,3,540,S102,Delhi Central Mart,North,2025-03-25,25,3,1,2025,12,21120,1.0,115,1
+S00032,TX0011,C0016,Kunal Mehta,48,Male,Surat,P004,Tea,Beverages,120,3,360,S103,Tech Hub Bengaluru,South,2025-03-23,23,3,1,2025,14,31990,1.17,59,1
+S00033,TX0011,C0015,Tanvi Bhat,26,Female,Bengaluru,P002,Butter,Bakery & Dairy,60,3,180,S102,Delhi Central Mart,North,2025-01-13,13,1,1,2025,29,53302,2.42,22,1
+S00034,TX0012,C0035,Swati Hegde,30,Female,Mangaluru,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-01-15,15,1,1,2025,34,115056,2.83,12,1
+S00035,TX0012,C0033,Pallavi Ghosh,29,Female,Ranchi,P007,Sugar,Grocery,45,1,45,S101,Metro Express Mumbai,West,2025-07-17,17,7,3,2025,12,30348,1.0,19,1
+S00036,TX0012,C0013,Aditya Malhotra,35,Male,Delhi,P005,Biscuits,Snacks,30,2,60,S103,Tech Hub Bengaluru,South,2025-08-09,9,8,3,2025,15,24450,1.25,79,1
+S00037,TX0013,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P005,Biscuits,Snacks,30,2,60,S103,Tech Hub Bengaluru,South,2025-07-26,26,7,3,2025,31,63953,2.58,19,1
+S00038,TX0013,C0020,Manish Tiwari,44,Male,Patna,P010,Wireless Mouse,Electronics,850,2,1700,S103,Tech Hub Bengaluru,South,2025-04-18,18,4,2,2025,22,68156,1.83,4,1
+S00039,TX0013,C0022,Gaurav Bansal,27,Male,Delhi,P008,Snacks,Snacks,50,2,100,S101,Metro Express Mumbai,West,2026-02-24,24,2,1,2026,4,4012,0.33,18,0
+S00040,TX0014,C0031,Sonal Agarwal,35,Female,Agra,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2026-01-29,29,1,1,2026,11,35376,0.92,15,1
+S00041,TX0014,C0007,Rahul Verma,52,Male,Lucknow,P011,Smartphone,Electronics,18000,2,36000,S107,Chennai Marina Outlet,South,2025-08-06,6,8,3,2025,32,111776,2.67,16,1
+S00042,TX0014,C0033,Pallavi Ghosh,29,Female,Ranchi,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-10-08,8,10,4,2025,29,73515,2.42,17,1
+S00043,TX0015,C0018,Nikhil Saxena,36,Male,Bhopal,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-02-09,9,2,1,2025,20,20340,1.67,9,1
+S00044,TX0015,C0010,Arjun Reddy,41,Male,Chennai,P007,Sugar,Grocery,45,1,45,S106,Jaipur Plaza Store,North,2025-04-20,20,4,2,2025,13,35854,1.08,14,1
+S00045,TX0015,C0023,Ritika Sen,39,Female,Kolkata,P018,Memory Card,Electronics,650,1,650,S103,Tech Hub Bengaluru,South,2026-01-21,21,1,1,2026,11,22616,0.92,107,1
+S00046,TX0016,C0030,Akash Chauhan,26,Male,Dehradun,P007,Sugar,Grocery,45,1,45,S102,Delhi Central Mart,North,2025-11-15,15,11,4,2025,15,21975,1.25,14,1
+S00047,TX0016,C0030,Akash Chauhan,26,Male,Dehradun,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-06-22,22,6,2,2025,1,3468,0.08,84,1
+S00048,TX0016,C0023,Ritika Sen,39,Female,Kolkata,P004,Tea,Beverages,120,4,480,S102,Delhi Central Mart,North,2025-11-29,29,11,4,2025,1,2944,0.08,34,0
+S00049,TX0017,C0031,Sonal Agarwal,35,Female,Agra,P002,Butter,Bakery & Dairy,60,2,120,S106,Jaipur Plaza Store,North,2025-02-28,28,2,1,2025,10,34630,0.83,106,1
+S00050,TX0017,C0011,Siddharth Roy,30,Male,Kolkata,P006,Coffee,Beverages,180,1,180,S103,Tech Hub Bengaluru,South,2025-02-25,25,2,1,2025,27,,2.25,24,1
+S00051,TX0017,C0008,Neha Kulkarni,24,Female,Pune,P005,Biscuits,Snacks,30,2,60,S107,Chennai Marina Outlet,South,2025-10-17,17,10,4,2025,2,4944,0.17,97,0
+S00052,TX0018,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P018,Memory Card,Electronics,650,1,650,S107,Chennai Marina Outlet,South,2025-09-08,8,9,3,2025,29,49880,2.42,9,1
+S00053,TX0018,C0006,Pooja Nair,29,Female,Kochi,P003,Milk,Bakery & Dairy,32,1,32,S103,Tech Hub Bengaluru,South,2025-08-19,19,8,3,2025,8,10144,0.67,60,1
+S00054,TX0018,C0022,Gaurav Bansal,27,Male,Delhi,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-11-02,2,11,4,2025,4,13396,0.33,67,1
+S00055,TX0019,C0016,Kunal Mehta,48,Male,Surat,P003,Milk,Bakery & Dairy,32,1,32,S106,Jaipur Plaza Store,North,2025-09-01,1,9,3,2025,11,30602,0.92,62,1
+S00056,TX0019,C0034,Yashvardhan K,33,Male,Mysuru,P018,Memory Card,Electronics,650,1,650,S103,Tech Hub Bengaluru,South,2025-08-06,6,8,3,2025,29,47995,2.42,10,1
+S00057,TX0019,C0013,Aditya Malhotra,35,Male,Delhi,P007,Sugar,Grocery,45,1,45,S103,Tech Hub Bengaluru,South,2025-03-03,3,3,1,2025,45,127980,3.75,11,1
+S00058,TX0020,C0013,Aditya Malhotra,35,Male,Delhi,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-04-27,27,4,2,2025,30,97680,2.5,6,1
+S00059,TX0020,C0032,Sameer Nanda,40,Male,Vadodara,P003,Milk,Bakery & Dairy,32,1,32,S101,Metro Express Mumbai,West,2025-01-07,7,1,1,2025,19,12673,1.58,14,1
+S00060,TX0020,C0004,Ananya Iyer,45,Female,Bengaluru,P010,Wireless Mouse,Electronics,850,1,850,S102,Delhi Central Mart,North,2025-03-18,18,3,1,2025,9,18936,0.75,92,1
+S00061,TX0021,C0015,Tanvi Bhat,26,Female,Bengaluru,P005,Biscuits,Snacks,30,1,30,S107,Chennai Marina Outlet,South,2025-09-25,25,9,3,2025,18,22518,1.5,22,1
+S00062,TX0021,C0006,Pooja Nair,29,Female,Kochi,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-05-03,3,5,2,2025,42,66864,3.5,3,1
+S00063,TX0021,C0019,Isha Mukherjee,29,Female,Kolkata,P002,Butter,Bakery & Dairy,60,2,120,S106,Jaipur Plaza Store,North,2025-08-21,21,8,3,2025,24,51384,2.0,5,1
+S00064,TX0022,C0010,Arjun Reddy,41,Male,Chennai,P002,Butter,Bakery & Dairy,60,1,60,S103,Tech Hub Bengaluru,South,2025-03-14,14,3,1,2025,30,65940,2.5,5,1
+S00065,TX0022,C0020,Manish Tiwari,44,Male,Patna,P017,Camera,Electronics,32000,1,32000,S106,Jaipur Plaza Store,North,2025-07-26,26,7,3,2025,14,30366,1.17,25,1
+S00066,TX0022,C0017,Rhea Kapoor,23,Female,Chandigarh,P007,Sugar,Grocery,45,1,45,S101,Metro Express Mumbai,West,2025-02-16,16,2,1,2025,13,45461,1.08,37,1
+S00067,TX0023,C0029,Simran Sethi,28,Female,Ludhiana,P014,Headphones,Electronics,1500,2,3000,S103,Tech Hub Bengaluru,South,2025-04-03,3,4,2,2025,17,39525,1.42,13,1
+S00068,TX0023,C0021,Priya Das,32,Female,Bhubaneswar,P011,Smartphone,Electronics,18000,1,18000,S106,Jaipur Plaza Store,North,2025-02-23,23,2,1,2025,37,98161,3.08,3,1
+S00069,TX0023,C0021,Priya Das,32,Female,Bhubaneswar,P007,Sugar,Grocery,45,1,45,S103,Tech Hub Bengaluru,South,2025-06-15,15,6,2,2025,6,17700,0.5,111,1
+S00070,TX0024,C0029,Simran Sethi,28,Female,Ludhiana,P009,Laptop,Electronics,55000,2,110000,S107,Chennai Marina Outlet,South,2025-01-27,27,1,1,2025,1,2662,0.08,67,1
+S00071,TX0024,C0008,Neha Kulkarni,24,Female,Pune,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-03-02,2,3,1,2025,5,10505,0.42,76,1
+S00072,TX0024,C0016,Kunal Mehta,48,Male,Surat,P001,Bread,Bakery & Dairy,40,3,120,S104,City Mega Store Kolkata,East,2025-10-10,10,10,4,2025,13,27287,1.08,58,1
+S00073,TX0025,C0033,Pallavi Ghosh,29,Female,Ranchi,P018,Memory Card,Electronics,650,1,650,S103,Tech Hub Bengaluru,South,2026-02-25,25,2,1,2026,4,13024,0.33,45,1
+S00074,TX0025,C0015,Tanvi Bhat,26,Female,Bengaluru,P002,Butter,Bakery & Dairy,60,2,120,S107,Chennai Marina Outlet,South,2026-02-02,2,2,1,2026,36,112248,3.0,22,1
+S00075,TX0025,C0032,Sameer Nanda,40,Male,Vadodara,P005,Biscuits,Snacks,30,2,60,S101,Metro Express Mumbai,West,2025-03-06,6,3,1,2025,10,32370,0.83,65,1
+S00076,TX0026,C0022,Gaurav Bansal,27,Male,Delhi,P013,Phone Case,Electronics,350,4,1400,S107,Chennai Marina Outlet,South,2025-12-12,12,12,4,2025,43,112488,3.58,3,1
+S00077,TX0026,C0016,Kunal Mehta,48,Male,Surat,P008,Snacks,Snacks,50,2,100,S106,Jaipur Plaza Store,North,2025-12-17,17,12,4,2025,18,53910,1.5,24,1
+S00078,TX0026,C0029,Simran Sethi,28,Female,Ludhiana,P002,Butter,Bakery & Dairy,60,2,120,S102,Delhi Central Mart,North,2025-12-22,22,12,4,2025,6,12984,0.5,33,1
+S00079,TX0027,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P004,Tea,Beverages,120,2,240,S105,West Gate Ahmedabad,West,2025-12-16,16,12,4,2025,11,15246,0.92,78,1
+S00080,TX0027,C0010,Arjun Reddy,41,Male,Chennai,P009,Laptop,Electronics,55000,1,55000,S102,Delhi Central Mart,North,2025-08-25,25,8,3,2025,31,93527,2.58,15,1
+S00081,TX0027,C0030,Akash Chauhan,26,Male,Dehradun,P002,Butter,Bakery & Dairy,60,1,60,S107,Chennai Marina Outlet,South,2025-06-04,4,6,2,2025,6,16524,0.5,52,1
+S00082,TX0028,C0019,Isha Mukherjee,29,Female,Kolkata,P001,Bread,Bakery & Dairy,40,3,120,S101,Metro Express Mumbai,West,2025-12-04,4,12,4,2025,30,40260,2.5,21,1
+S00083,TX0028,C0015,Tanvi Bhat,26,Female,Bengaluru,P018,Memory Card,Electronics,650,1,650,S106,Jaipur Plaza Store,North,2025-04-08,8,4,2,2025,3,2307,0.25,52,0
+S00084,TX0028,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P012,Screen Protector,Electronics,250,4,1000,S102,Delhi Central Mart,North,2025-04-13,13,4,2,2025,14,25018,1.17,117,1
+S00085,TX0029,C0005,Vikram Singh,31,Male,Jaipur,P022,T-Shirt,Fashion,699,2,1398,S102,Delhi Central Mart,North,2026-01-22,22,1,1,2026,35,26915,2.92,14,0
+S00086,TX0029,C0035,Swati Hegde,30,Female,Mangaluru,P005,Biscuits,Snacks,30,2,60,S101,Metro Express Mumbai,West,2025-08-21,21,8,3,2025,18,56952,1.5,9,1
+S00087,TX0029,C0021,Priya Das,32,Female,Bhubaneswar,P009,Laptop,Electronics,55000,4,220000,S105,West Gate Ahmedabad,West,2025-04-24,24,4,2,2025,8,7000,0.67,27,1
+S00088,TX0030,C0035,Swati Hegde,30,Female,Mangaluru,P012,Screen Protector,Electronics,250,2,500,S102,Delhi Central Mart,North,2025-07-18,18,7,3,2025,38,58710,3.17,3,1
+S00089,TX0030,C0014,Sneha Deshmukh,33,Female,Nagpur,P012,Screen Protector,Electronics,250,1,250,S104,City Mega Store Kolkata,East,2025-08-16,16,8,3,2025,34,22032,2.83,14,1
+S00090,TX0030,C0008,Neha Kulkarni,24,Female,Pune,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-08-21,21,8,3,2025,6,8382,0.5,31,1
+S00091,TX0031,C0014,Sneha Deshmukh,33,Female,Nagpur,P003,Milk,Bakery & Dairy,32,2,64,S101,Metro Express Mumbai,West,2026-01-27,27,1,1,2026,29,28768,2.42,6,1
+S00092,TX0031,C0012,Meera Joshi,27,Female,Mumbai,P005,Biscuits,Snacks,30,1,30,S101,Metro Express Mumbai,West,2025-12-05,5,12,4,2025,27,75897,2.25,12,0
+S00093,TX0031,C0017,Rhea Kapoor,23,Female,Chandigarh,P016,Socks,Fashion,150,1,150,S101,Metro Express Mumbai,West,2025-03-06,6,3,1,2025,6,15012,0.5,90,1
+S00094,TX0032,C0033,Pallavi Ghosh,29,Female,Ranchi,P012,Screen Protector,Electronics,250,2,500,S102,Delhi Central Mart,North,2025-11-11,11,11,4,2025,18,43344,1.5,24,1
+S00095,TX0032,C0005,Vikram Singh,31,Male,Jaipur,P002,Butter,Bakery & Dairy,60,2,120,S101,Metro Express Mumbai,West,2025-06-14,14,6,2,2025,32,62720,2.67,21,1
+S00096,TX0032,C0030,Akash Chauhan,26,Male,Dehradun,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-11-06,6,11,4,2025,38,67944,3.17,16,1
+S00097,TX0033,C0007,Rahul Verma,52,Male,Lucknow,P001,Bread,Bakery & Dairy,40,2,80,S103,Tech Hub Bengaluru,South,2025-08-07,7,8,3,2025,17,12733,1.42,4,1
+S00098,TX0033,C0024,Amit Choudhury,50,Male,Guwahati,P003,Milk,Bakery & Dairy,32,1,32,S107,Chennai Marina Outlet,South,2025-03-08,8,3,1,2025,39,130767,3.25,3,1
+S00099,TX0033,C0020,Manish Tiwari,44,Male,Patna,P002,Butter,Bakery & Dairy,60,1,60,S103,Tech Hub Bengaluru,South,2025-02-23,23,2,1,2025,14,37492,1.17,62,1
+S00100,TX0034,C0018,Nikhil Saxena,36,Male,Bhopal,P018,Memory Card,Electronics,650,4,2600,S105,West Gate Ahmedabad,West,2025-04-26,26,4,2,2025,13,37622,1.08,23,1
+S00101,TX0034,C0018,Nikhil Saxena,36,Male,Bhopal,P003,Milk,Bakery & Dairy,32,3,96,S101,Metro Express Mumbai,West,2025-04-03,3,4,2,2025,37,25345,3.08,6,1
+S00102,TX0034,C0002,Diya Patel,34,Female,Ahmedabad,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2026-01-18,18,1,1,2026,12,20736,1.0,114,1
+S00103,TX0035,C0006,Pooja Nair,29,Female,Kochi,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-03-21,21,3,1,2025,29,37178,2.42,18,1
+S00104,TX0035,C0028,Harshvardhan Goel,43,Male,Kanpur,P003,Milk,Bakery & Dairy,32,1,32,S101,Metro Express Mumbai,West,2025-05-26,26,5,2,2025,12,14844,1.0,11,1
+S00105,TX0035,C0009,Kavita Rao,38,Female,Hyderabad,P002,Butter,Bakery & Dairy,60,2,120,S107,Chennai Marina Outlet,South,2025-05-11,11,5,2,2025,7,18067,0.58,105,1
+S00106,TX0036,C0023,Ritika Sen,39,Female,Kolkata,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-07-23,23,7,3,2025,16,26912,1.33,20,1
+S00107,TX0036,C0026,Varun Khanna,37,Male,Amritsar,P001,Bread,Bakery & Dairy,40,4,160,S106,Jaipur Plaza Store,North,2025-11-24,24,11,4,2025,10,22840,0.83,103,1
+S00108,TX0036,C0006,Pooja Nair,29,Female,Kochi,P001,Bread,Bakery & Dairy,40,2,80,S104,City Mega Store Kolkata,East,2025-02-24,24,2,1,2025,13,14144,1.08,24,1
+S00109,TX0037,C0008,Neha Kulkarni,24,Female,Pune,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-09-19,19,9,3,2025,3,4344,0.25,40,0
+S00110,TX0037,C0010,Arjun Reddy,41,Male,Chennai,P002,Butter,Bakery & Dairy,60,1,60,S107,Chennai Marina Outlet,South,2026-01-24,24,1,1,2026,40,127560,3.33,20,1
+S00111,TX0037,C0021,Priya Das,32,Female,Bhubaneswar,P011,Smartphone,Electronics,18000,1,18000,S107,Chennai Marina Outlet,South,2025-11-18,18,11,4,2025,15,28650,1.25,11,0
+S00112,TX0038,C0006,Pooja Nair,29,Female,Kochi,P018,Memory Card,Electronics,650,1,650,S105,West Gate Ahmedabad,West,2025-11-01,1,11,4,2025,40,32920,3.33,12,1
+S00113,TX0038,C0006,Pooja Nair,29,Female,Kochi,P002,Butter,Bakery & Dairy,60,5,300,S105,West Gate Ahmedabad,West,2025-11-27,27,11,4,2025,22,41580,1.83,13,1
+S00114,TX0038,C0025,Shweta Mishra,25,Female,Indore,P006,Coffee,Beverages,180,1,180,S104,City Mega Store Kolkata,East,2026-02-01,1,2,1,2026,7,10941,0.58,47,1
+S00115,TX0039,C0010,Arjun Reddy,41,Male,Chennai,P002,Butter,Bakery & Dairy,60,1,60,S103,Tech Hub Bengaluru,South,2025-02-11,11,2,1,2025,37,34336,3.08,21,1
+S00116,TX0039,C0006,Pooja Nair,29,Female,Kochi,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-10-14,14,10,4,2025,33,78903,2.75,8,1
+S00117,TX0039,C0009,Kavita Rao,38,Female,Hyderabad,P004,Tea,Beverages,120,2,240,S102,Delhi Central Mart,North,2025-02-09,9,2,1,2025,22,73766,1.83,16,0
+S00118,TX0040,C0024,Amit Choudhury,50,Male,Guwahati,P005,Biscuits,Snacks,30,1,30,S106,Jaipur Plaza Store,North,2026-01-04,4,1,1,2026,13,30173,1.08,39,1
+S00119,TX0040,C0029,Simran Sethi,28,Female,Ludhiana,P002,Butter,Bakery & Dairy,60,4,240,S104,City Mega Store Kolkata,East,2026-01-29,29,1,1,2026,20,28480,1.67,3,1
+S00120,TX0040,C0024,Amit Choudhury,50,Male,Guwahati,P004,Tea,Beverages,120,2,240,S105,West Gate Ahmedabad,West,2025-02-22,22,2,1,2025,15,37530,1.25,33,1
+S00121,TX0041,C0006,Pooja Nair,29,Female,Kochi,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2026-02-23,23,2,1,2026,6,8190,0.5,64,1
+S00122,TX0041,C0024,Amit Choudhury,50,Male,Guwahati,P002,Butter,Bakery & Dairy,60,2,120,S102,Delhi Central Mart,North,2025-01-15,15,1,1,2025,5,11675,0.42,104,1
+S00123,TX0041,C0031,Sonal Agarwal,35,Female,Agra,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-11-12,12,11,4,2025,12,34716,1.0,82,1
+S00124,TX0042,C0019,Isha Mukherjee,29,Female,Kolkata,P002,Butter,Bakery & Dairy,60,1,60,S102,Delhi Central Mart,North,2025-06-04,4,6,2,2025,43,122292,3.58,19,0
+S00125,TX0042,C0033,Pallavi Ghosh,29,Female,Ranchi,P001,Bread,Bakery & Dairy,40,2,80,S105,West Gate Ahmedabad,West,2025-05-04,4,5,2,2025,7,8169,0.58,100,1
+S00126,TX0042,C0034,Yashvardhan K,33,Male,Mysuru,P018,Memory Card,Electronics,650,1,650,S103,Tech Hub Bengaluru,South,2025-02-04,4,2,1,2025,13,25987,1.08,17,0
+S00127,TX0043,C0025,Shweta Mishra,25,Female,Indore,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-05-10,10,5,2,2025,12,37092,1.0,95,1
+S00128,TX0043,C0022,Gaurav Bansal,27,Male,Delhi,P001,Bread,Bakery & Dairy,40,2,80,S102,Delhi Central Mart,North,2025-01-23,23,1,1,2025,42,125454,3.5,7,1
+S00129,TX0043,C0005,Vikram Singh,31,Male,Jaipur,P002,Butter,Bakery & Dairy,60,1,60,S106,Jaipur Plaza Store,North,2026-02-02,2,2,1,2026,4,2284,0.33,55,0
+S00130,TX0044,C0033,Pallavi Ghosh,29,Female,Ranchi,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2026-02-22,22,2,1,2026,15,46275,1.25,12,1
+S00131,TX0044,C0024,Amit Choudhury,50,Male,Guwahati,P004,Tea,Beverages,120,1,120,S104,City Mega Store Kolkata,East,2025-07-24,24,7,3,2025,45,67140,3.75,4,1
+S00132,TX0044,C0006,Pooja Nair,29,Female,Kochi,P006,Coffee,Beverages,180,1,180,S104,City Mega Store Kolkata,East,2025-11-05,5,11,4,2025,2,3486,0.17,99,0
+S00133,TX0045,C0029,Simran Sethi,28,Female,Ludhiana,P004,Tea,Beverages,120,2,240,S105,West Gate Ahmedabad,West,2026-01-03,3,1,1,2026,39,59436,3.25,22,1
+S00134,TX0045,C0004,Ananya Iyer,45,Female,Bengaluru,P001,Bread,Bakery & Dairy,40,4,160,S101,Metro Express Mumbai,West,2025-12-10,10,12,4,2025,10,31770,0.83,115,1
+S00135,TX0045,C0009,Kavita Rao,38,Female,Hyderabad,P005,Biscuits,Snacks,30,4,120,S101,Metro Express Mumbai,West,2025-05-01,1,5,2,2025,3,9543,0.25,72,0
+S00136,TX0046,C0024,Amit Choudhury,50,Male,Guwahati,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2026-01-26,26,1,1,2026,27,23328,2.25,2,1
+S00137,TX0046,C0032,Sameer Nanda,40,Male,Vadodara,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-07-18,18,7,3,2025,8,10224,0.67,93,1
+S00138,TX0046,C0032,Sameer Nanda,40,Male,Vadodara,P001,Bread,Bakery & Dairy,40,3,120,S102,Delhi Central Mart,North,2025-03-04,4,3,1,2025,17,54281,1.42,12,1
+S00139,TX0047,C0005,Vikram Singh,31,Male,Jaipur,P001,Bread,Bakery & Dairy,40,2,80,S105,West Gate Ahmedabad,West,2025-10-05,5,10,4,2025,23,43240,1.92,18,1
+S00140,TX0047,C0013,Aditya Malhotra,35,Male,Delhi,P005,Biscuits,Snacks,30,1,30,S107,Chennai Marina Outlet,South,2025-03-13,13,3,1,2025,20,58120,1.67,4,0
+S00141,TX0047,C0026,Varun Khanna,37,Male,Amritsar,P007,Sugar,Grocery,45,2,90,S106,Jaipur Plaza Store,North,2026-01-04,4,1,1,2026,45,81495,3.75,6,1
+S00142,TX0048,C0012,Meera Joshi,27,Female,Mumbai,P004,Tea,Beverages,120,1,120,S107,Chennai Marina Outlet,South,2025-03-08,8,3,1,2025,3,5163,0.25,105,0
+S00143,TX0048,C0034,Yashvardhan K,33,Male,Mysuru,P001,Bread,Bakery & Dairy,40,2,80,S103,Tech Hub Bengaluru,South,2025-02-10,10,2,1,2025,11,11990,0.92,90,1
+S00144,TX0048,C0010,Arjun Reddy,41,Male,Chennai,P004,Tea,Beverages,120,2,240,S102,Delhi Central Mart,North,2025-12-04,4,12,4,2025,1,3027,0.08,113,0
+S00145,TX0049,C0014,Sneha Deshmukh,,Female,Nagpur,P007,Sugar,Grocery,45,1,45,S107,Chennai Marina Outlet,South,2025-10-20,20,10,4,2025,37,59866,3.08,16,0
+S00146,TX0049,C0004,Ananya Iyer,45,Female,Bengaluru,P004,Tea,Beverages,120,1,120,S102,Delhi Central Mart,North,2025-08-14,14,8,3,2025,34,69122,2.83,6,1
+S00147,TX0049,C0033,Pallavi Ghosh,,Female,Ranchi,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-02-24,24,2,1,2025,7,20440,0.58,68,1
+S00148,TX0050,C0011,Siddharth Roy,30,Male,Kolkata,P024,Backpack,Fashion,1299,1,1299,S107,Chennai Marina Outlet,South,2025-06-17,17,6,2,2025,43,107844,3.58,16,1
+S00149,TX0050,C0020,Manish Tiwari,44,Male,Patna,P002,Butter,Bakery & Dairy,60,4,240,S104,City Mega Store Kolkata,East,2025-01-12,12,1,1,2025,6,3594,0.5,21,1
+S00150,TX0050,C0031,Sonal Agarwal,35,Female,Agra,P001,Bread,Bakery & Dairy,40,3,120,S103,Tech Hub Bengaluru,South,2025-10-02,2,10,4,2025,37,70226,3.08,3,1
+S00151,TX0051,C0013,Aditya Malhotra,35,Male,Delhi,P002,Butter,Bakery & Dairy,60,2,120,S103,Tech Hub Bengaluru,South,2025-10-11,11,10,4,2025,10,31860,0.83,93,1
+S00152,TX0051,C0007,Rahul Verma,52,Male,Lucknow,P005,Biscuits,Snacks,30,2,60,S104,City Mega Store Kolkata,East,2025-07-11,11,7,3,2025,9,18396,0.75,79,0
+S00153,TX0051,C0003,Rohan Gupta,22,Male,Delhi,P010,Wireless Mouse,Electronics,850,1,850,S102,Delhi Central Mart,North,2026-01-01,1,1,1,2026,10,34280,0.83,53,1
+S00154,TX0052,C0033,Pallavi Ghosh,29,Female,Ranchi,P004,Tea,Beverages,120,1,120,S107,Chennai Marina Outlet,South,2025-09-18,18,9,3,2025,38,106020,3.17,11,1
+S00155,TX0052,C0002,Diya Patel,34,Female,Ahmedabad,P006,Coffee,Beverages,180,1,180,S105,West Gate Ahmedabad,West,2025-08-31,31,8,3,2025,11,36883,0.92,94,1
+S00156,TX0052,C0025,Shweta Mishra,25,Female,Indore,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2026-02-25,25,2,1,2026,8,13472,0.67,68,1
+S00157,TX0053,C0014,Sneha Deshmukh,33,Female,Nagpur,P024,Backpack,Fashion,1299,2,2598,S104,City Mega Store Kolkata,East,2025-09-14,14,9,3,2025,45,56205,3.75,19,1
+S00158,TX0053,C0031,Sonal Agarwal,35,Female,Agra,P002,Butter,Bakery & Dairy,60,1,60,S105,West Gate Ahmedabad,West,2025-07-12,12,7,3,2025,28,81144,2.33,17,1
+S00159,TX0053,C0016,Kunal Mehta,48,Male,Surat,P023,Jeans,Fashion,1499,3,4497,S103,Tech Hub Bengaluru,South,2025-10-13,13,10,4,2025,6,5994,0.5,52,0
+S00160,TX0054,C0006,Pooja Nair,29,Female,Kochi,P005,Biscuits,Snacks,30,4,120,S103,Tech Hub Bengaluru,South,2025-08-15,15,8,3,2025,20,16940,1.67,21,1
+S00161,TX0054,C0016,Kunal Mehta,48,Male,Surat,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-01-26,26,1,1,2025,20,8420,1.67,19,1
+S00162,TX0054,C0011,Siddharth Roy,30,Male,Kolkata,P016,Socks,Fashion,150,1,150,S104,City Mega Store Kolkata,East,2025-12-01,1,12,4,2025,5,8575,0.42,51,1
+S00163,TX0055,C0006,Pooja Nair,29,Female,Kochi,P003,Milk,Bakery & Dairy,32,1,32,S106,Jaipur Plaza Store,North,2025-10-21,21,10,4,2025,14,28364,1.17,17,1
+S00164,TX0055,C0019,Isha Mukherjee,29,Female,Kolkata,P001,Bread,Bakery & Dairy,40,5,200,S101,Metro Express Mumbai,West,2025-01-05,5,1,1,2025,43,40807,3.58,18,1
+S00165,TX0055,C0013,Aditya Malhotra,35,Male,Delhi,P007,Sugar,Grocery,45,2,90,S107,Chennai Marina Outlet,South,2025-02-27,27,2,1,2025,24,26832,2.0,21,1
+S00166,TX0056,C0026,Varun Khanna,37,Male,Amritsar,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-08-07,7,8,3,2025,6,8496,0.5,15,1
+S00167,TX0056,C0016,Kunal Mehta,48,Male,Surat,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2026-01-21,21,1,1,2026,4,2616,0.33,100,0
+S00168,TX0056,C0020,Manish Tiwari,44,Male,Patna,P012,Screen Protector,Electronics,250,2,500,S102,Delhi Central Mart,North,2025-07-27,27,7,3,2025,3,7074,0.25,34,0
+S00169,TX0057,C0024,Amit Choudhury,50,Male,Guwahati,P006,Coffee,Beverages,180,2,360,S104,City Mega Store Kolkata,East,2025-12-26,26,12,4,2025,17,43384,1.42,16,1
+S00170,TX0057,C0024,Amit Choudhury,,Male,Guwahati,P003,Milk,Bakery & Dairy,32,1,32,S101,Metro Express Mumbai,West,2025-10-16,16,10,4,2025,40,35040,3.33,23,1
+S00171,TX0057,C0032,Sameer Nanda,40,Male,Vadodara,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-09-19,19,9,3,2025,15,40320,1.25,16,1
+S00172,TX0058,C0020,Manish Tiwari,44,Male,Patna,P007,Sugar,Grocery,45,2,90,S106,Jaipur Plaza Store,North,2025-01-12,12,1,1,2025,15,10230,1.25,17,0
+S00173,TX0058,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P007,Sugar,Grocery,45,1,45,S102,Delhi Central Mart,North,2026-01-29,29,1,1,2026,36,69768,3.0,4,1
+S00174,TX0058,C0035,Swati Hegde,30,Female,Mangaluru,P004,Tea,Beverages,120,1,120,S102,Delhi Central Mart,North,2025-12-01,1,12,4,2025,45,41445,3.75,25,1
+S00175,TX0059,C0001,Aarav Sharma,28,Male,Mumbai,P015,Running Shoes,Fashion,2400,2,4800,S107,Chennai Marina Outlet,South,2025-01-12,12,1,1,2025,36,48240,3.0,9,1
+S00176,TX0059,C0010,Arjun Reddy,41,Male,Chennai,P024,Backpack,Fashion,1299,2,2598,S103,Tech Hub Bengaluru,South,2025-04-07,7,4,2,2025,11,23287,0.92,93,1
+S00177,TX0059,C0002,Diya Patel,34,Female,Ahmedabad,P009,Laptop,Electronics,55000,1,55000,S102,Delhi Central Mart,North,2025-04-16,16,4,2,2025,4,13956,0.33,114,0
+S00178,TX0060,C0033,Pallavi Ghosh,29,Female,Ranchi,P024,Backpack,Fashion,1299,1,1299,S103,Tech Hub Bengaluru,South,2025-04-30,30,4,2,2025,32,43840,2.67,11,1
+S00179,TX0060,C0034,Yashvardhan K,33,Male,Mysuru,P001,Bread,Bakery & Dairy,40,2,80,S102,Delhi Central Mart,North,2025-07-31,31,7,3,2025,43,25456,3.58,13,1
+S00180,TX0060,C0025,Shweta Mishra,25,Female,Indore,P005,Biscuits,Snacks,30,1,30,S107,Chennai Marina Outlet,South,2025-09-26,26,9,3,2025,9,21051,0.75,45,1
+S00181,TX0061,C0020,Manish Tiwari,44,Male,Patna,P005,Biscuits,Snacks,30,4,120,S107,Chennai Marina Outlet,South,2025-12-29,29,12,4,2025,20,39800,1.67,9,1
+S00182,TX0061,C0022,Gaurav Bansal,27,Male,Delhi,P012,Screen Protector,Electronics,250,1,250,S106,Jaipur Plaza Store,North,2025-02-10,10,2,1,2025,24,14664,2.0,10,1
+S00183,TX0061,C0003,Rohan Gupta,22,Male,Delhi,P011,Smartphone,Electronics,18000,1,18000,S107,Chennai Marina Outlet,South,2025-02-07,7,2,1,2025,4,13748,0.33,30,1
+S00184,TX0062,C0031,Sonal Agarwal,35,Female,Agra,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-12-23,23,12,4,2025,36,83124,3.0,19,1
+S00185,TX0062,C0020,Manish Tiwari,44,Male,Patna,P005,Biscuits,Snacks,30,2,60,S103,Tech Hub Bengaluru,South,2025-07-04,4,7,3,2025,4,7672,0.33,55,0
+S00186,TX0062,C0015,Tanvi Bhat,26,Female,Bengaluru,P006,Coffee,Beverages,180,1,180,S106,Jaipur Plaza Store,North,2025-03-16,16,3,1,2025,14,19684,1.17,78,1
+S00187,TX0063,C0022,Gaurav Bansal,27,Male,Delhi,P024,Backpack,Fashion,1299,2,2598,S103,Tech Hub Bengaluru,South,2026-01-26,26,1,1,2026,22,74822,1.83,13,1
+S00188,TX0063,C0035,Swati Hegde,30,Female,Mangaluru,P018,Memory Card,Electronics,650,5,3250,S104,City Mega Store Kolkata,East,2025-04-05,5,4,2,2025,45,24210,3.75,4,1
+S00189,TX0063,C0004,Ananya Iyer,45,Female,Bengaluru,P004,Tea,Beverages,120,1,120,S107,Chennai Marina Outlet,South,2025-01-04,4,1,1,2025,35,22645,2.92,21,1
+S00190,TX0064,C0031,Sonal Agarwal,35,Female,Agra,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-09-07,7,9,3,2025,9,29322,0.75,101,1
+S00191,TX0064,C0012,Meera Joshi,27,Female,Mumbai,P002,Butter,Bakery & Dairy,60,2,120,S101,Metro Express Mumbai,West,2025-02-19,19,2,1,2025,7,5061,0.58,62,1
+S00192,TX0064,C0030,Akash Chauhan,26,Male,Dehradun,P008,Snacks,Snacks,50,1,50,S105,West Gate Ahmedabad,West,2025-05-05,5,5,2,2025,17,52309,1.42,22,1
+S00193,TX0065,C0006,Pooja Nair,29,Female,Kochi,P007,Sugar,Grocery,45,2,90,S104,City Mega Store Kolkata,East,2025-07-14,14,7,3,2025,14,11060,1.17,82,1
+S00194,TX0065,C0015,Tanvi Bhat,26,Female,Bengaluru,P016,Socks,Fashion,150,1,150,S102,Delhi Central Mart,North,2025-12-21,21,12,4,2025,29,76096,2.42,20,1
+S00195,TX0065,C0012,Meera Joshi,27,Female,Mumbai,P001,Bread,Bakery & Dairy,40,2,80,S107,Chennai Marina Outlet,South,2025-06-11,11,6,2,2025,37,26455,3.08,11,1
+S00196,TX0066,C0016,Kunal Mehta,48,Male,Surat,P004,Tea,Beverages,120,2,240,S105,West Gate Ahmedabad,West,2025-07-19,19,7,3,2025,17,41667,1.42,25,1
+S00197,TX0066,C0004,Ananya Iyer,45,Female,Bengaluru,P002,Butter,Bakery & Dairy,60,4,240,S101,Metro Express Mumbai,West,2025-08-12,12,8,3,2025,11,16709,0.92,115,1
+S00198,TX0066,C0032,Sameer Nanda,40,Male,Vadodara,P001,Bread,Bakery & Dairy,40,2,80,S102,Delhi Central Mart,North,2025-07-02,2,7,3,2025,17,49861,1.42,11,1
+S00199,TX0067,C0005,Vikram Singh,31,Male,Jaipur,P006,Coffee,Beverages,180,1,180,S101,Metro Express Mumbai,West,2025-05-18,18,5,2,2025,40,74960,3.33,10,1
+S00200,TX0067,C0006,Pooja Nair,29,Female,Kochi,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-08-09,9,8,3,2025,32,63264,2.67,2,1
+S00201,TX0067,C0025,Shweta Mishra,25,Female,Indore,P019,Shampoo,Personal Care,280,2,560,S107,Chennai Marina Outlet,South,2025-02-13,13,2,1,2025,3,2904,0.25,49,0
+S00202,TX0068,C0032,Sameer Nanda,40,Male,Vadodara,P002,Butter,Bakery & Dairy,60,1,60,S102,Delhi Central Mart,North,2025-02-02,2,2,1,2025,5,7050,0.42,107,0
+S00203,TX0068,C0013,Aditya Malhotra,35,Male,Delhi,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-02-24,24,2,1,2025,33,72699,2.75,12,1
+S00204,TX0068,C0009,Kavita Rao,38,Female,Hyderabad,P001,Bread,Bakery & Dairy,40,4,160,S103,Tech Hub Bengaluru,South,2025-06-14,14,6,2,2025,12,35904,1.0,77,1
+S00205,TX0069,C0016,Kunal Mehta,48,Male,Surat,P004,Tea,Beverages,120,1,120,S103,Tech Hub Bengaluru,South,2025-07-12,12,7,3,2025,13,43914,1.08,16,1
+S00206,TX0069,C0014,Sneha Deshmukh,33,Female,Nagpur,P015,Running Shoes,Fashion,2400,2,4800,S104,City Mega Store Kolkata,East,2026-02-13,13,2,1,2026,16,35824,1.33,21,1
+S00207,TX0069,C0026,Varun Khanna,37,Male,Amritsar,P023,Jeans,Fashion,1499,1,1499,S105,West Gate Ahmedabad,West,2025-09-17,17,9,3,2025,6,19638,0.5,118,1
+S00208,TX0070,C0006,Pooja Nair,29,Female,Kochi,P004,Tea,Beverages,120,1,120,S101,Metro Express Mumbai,West,2026-01-29,29,1,1,2026,37,128834,3.08,12,1
+S00209,TX0070,C0028,Harshvardhan Goel,43,Male,Kanpur,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-01-06,6,1,1,2025,13,41379,1.08,90,1
+S00210,TX0070,C0010,Arjun Reddy,41,Male,Chennai,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-01-13,13,1,1,2025,21,38346,1.75,11,1
+S00211,TX0071,C0014,Sneha Deshmukh,33,Female,Nagpur,P002,Butter,Bakery & Dairy,60,1,60,S105,West Gate Ahmedabad,West,2025-09-05,5,9,3,2025,13,43043,1.08,29,0
+S00212,TX0071,C0022,Gaurav Bansal,27,Male,Delhi,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-02-25,25,2,1,2025,33,,2.75,15,1
+S00213,TX0071,C0015,Tanvi Bhat,26,Female,Bengaluru,P002,Butter,Bakery & Dairy,60,1,60,S107,Chennai Marina Outlet,South,2025-07-27,27,7,3,2025,24,53784,2.0,20,1
+S00214,TX0072,C0001,Aarav Sharma,28,Male,Mumbai,P003,Milk,Bakery & Dairy,32,2,64,S106,Jaipur Plaza Store,North,2025-04-20,20,4,2,2025,35,60725,2.92,8,1
+S00215,TX0072,C0017,Rhea Kapoor,23,Female,Chandigarh,P010,Wireless Mouse,Electronics,850,2,1700,S106,Jaipur Plaza Store,North,2025-09-08,8,9,3,2025,14,44226,1.17,105,1
+S00216,TX0072,C0006,Pooja Nair,29,Female,Kochi,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-03-10,10,3,1,2025,44,87604,3.67,15,1
+S00217,TX0073,C0025,Shweta Mishra,25,Female,Indore,P006,Coffee,Beverages,180,1,180,S104,City Mega Store Kolkata,East,2025-04-06,6,4,2,2025,3,3498,0.25,55,0
+S00218,TX0073,C0004,Ananya Iyer,45,Female,Bengaluru,P016,Socks,Fashion,150,1,150,S107,Chennai Marina Outlet,South,2025-07-03,3,7,3,2025,44,135256,3.67,17,1
+S00219,TX0073,C0032,Sameer Nanda,40,Male,Vadodara,P016,Socks,Fashion,150,1,150,S104,City Mega Store Kolkata,East,2025-12-30,30,12,4,2025,26,41496,2.17,3,1
+S00220,TX0074,C0035,Swati Hegde,30,Female,Mangaluru,P016,Socks,Fashion,150,1,150,S103,Tech Hub Bengaluru,South,2025-03-28,28,3,1,2025,2,2994,0.17,114,0
+S00221,TX0074,C0024,Amit Choudhury,50,Male,Guwahati,P006,Coffee,Beverages,180,1,180,S105,West Gate Ahmedabad,West,2026-01-23,23,1,1,2026,40,59040,3.33,13,1
+S00222,TX0074,C0006,Pooja Nair,29,Female,Kochi,P005,Biscuits,Snacks,30,3,90,S104,City Mega Store Kolkata,East,2025-03-02,2,3,1,2025,39,42081,3.25,21,1
+S00223,TX0075,C0014,Sneha Deshmukh,33,Female,Nagpur,P019,Shampoo,Personal Care,280,1,280,S107,Chennai Marina Outlet,South,2025-04-16,16,4,2,2025,9,9801,0.75,56,1
+S00224,TX0075,C0019,Isha Mukherjee,29,Female,Kolkata,P007,Sugar,Grocery,45,3,135,S103,Tech Hub Bengaluru,South,2025-10-21,21,10,4,2025,20,65460,1.67,6,1
+S00225,TX0075,C0021,Priya Das,32,Female,Bhubaneswar,P016,Socks,Fashion,150,1,150,S107,Chennai Marina Outlet,South,2025-05-07,7,5,2,2025,38,73568,3.17,16,0
+S00226,TX0076,C0006,Pooja Nair,29,Female,Kochi,P015,Running Shoes,Fashion,2400,4,9600,S104,City Mega Store Kolkata,East,2025-09-21,21,9,3,2025,1,3401,0.08,26,1
+S00227,TX0076,C0030,Akash Chauhan,26,Male,Dehradun,P001,Bread,Bakery & Dairy,40,2,80,S106,Jaipur Plaza Store,North,2025-12-07,7,12,4,2025,32,49952,2.67,12,1
+S00228,TX0076,C0009,Kavita Rao,38,Female,Hyderabad,P002,Butter,Bakery & Dairy,60,1,60,S105,West Gate Ahmedabad,West,2025-09-06,6,9,3,2025,41,19106,3.42,5,1
+S00229,TX0077,C0011,Siddharth Roy,30,Male,Kolkata,P004,Tea,Beverages,120,3,360,S104,City Mega Store Kolkata,East,2025-08-22,22,8,3,2025,14,21308,1.17,26,1
+S00230,TX0077,C0017,Rhea Kapoor,23,,Chandigarh,P005,Biscuits,Snacks,30,2,60,S101,Metro Express Mumbai,West,2025-07-10,10,7,3,2025,13,17667,1.08,69,1
+S00231,TX0077,C0007,Rahul Verma,52,Male,Lucknow,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-04-20,20,4,2,2025,12,38988,1.0,12,1
+S00232,TX0078,C0028,Harshvardhan Goel,43,Male,Kanpur,P001,Bread,Bakery & Dairy,40,2,80,S106,Jaipur Plaza Store,North,2025-03-09,9,3,1,2025,6,11430,0.5,53,1
+S00233,TX0078,C0009,Kavita Rao,38,Female,Hyderabad,P004,Tea,Beverages,120,1,120,S106,Jaipur Plaza Store,North,2025-12-13,13,12,4,2025,21,43806,1.75,21,1
+S00234,TX0078,C0014,Sneha Deshmukh,33,Female,Nagpur,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-02-21,21,2,1,2025,20,28280,1.67,10,1
+S00235,TX0079,C0016,Kunal Mehta,48,Male,Surat,P013,Phone Case,Electronics,350,2,700,S105,West Gate Ahmedabad,West,2025-11-04,4,11,4,2025,7,11270,0.58,97,0
+S00236,TX0079,C0016,Kunal Mehta,48,Male,Surat,P016,Socks,Fashion,150,1,150,S104,City Mega Store Kolkata,East,2025-07-17,17,7,3,2025,42,29316,3.5,2,1
+S00237,TX0079,C0001,Aarav Sharma,28,Male,Mumbai,P002,Butter,Bakery & Dairy,60,1,60,S103,Tech Hub Bengaluru,South,2025-04-21,21,4,2,2025,44,92444,3.67,15,1
+S00238,TX0080,C0006,Pooja Nair,29,Female,Kochi,P001,Bread,,40,1,40,S106,Jaipur Plaza Store,North,2025-10-02,2,10,4,2025,25,25900,2.08,19,1
+S00239,TX0080,C0005,Vikram Singh,31,Male,Jaipur,P004,Tea,Beverages,120,1,120,S103,Tech Hub Bengaluru,South,2025-12-24,24,12,4,2025,41,119187,3.42,21,0
+S00240,TX0080,C0012,Meera Joshi,27,Female,Mumbai,P005,Biscuits,Snacks,30,1,30,S101,Metro Express Mumbai,West,2025-01-07,7,1,1,2025,28,30324,2.33,13,1
+S00241,TX0081,C0018,Nikhil Saxena,36,Male,Bhopal,P005,Biscuits,Snacks,30,1,30,S106,Jaipur Plaza Store,North,2025-03-02,2,3,1,2025,12,33132,1.0,95,0
+S00242,TX0081,C0030,Akash Chauhan,26,Male,Dehradun,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-07-04,4,7,3,2025,10,31610,0.83,107,1
+S00243,TX0081,C0033,Pallavi Ghosh,29,Female,Ranchi,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-01-23,23,1,1,2025,36,36504,3.0,7,1
+S00244,TX0082,C0003,Rohan Gupta,22,Male,Delhi,P024,Backpack,Fashion,1299,2,2598,S105,West Gate Ahmedabad,West,2026-02-16,16,2,1,2026,4,6872,0.33,46,0
+S00245,TX0082,C0021,Priya Das,32,Female,Bhubaneswar,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-02-09,9,2,1,2025,14,28588,1.17,4,1
+S00246,TX0082,C0019,Isha Mukherjee,29,Female,Kolkata,P004,Tea,Beverages,120,1,120,S107,Chennai Marina Outlet,South,2025-06-09,9,6,2,2025,27,62100,2.25,13,1
+S00247,TX0083,C0032,Sameer Nanda,40,Male,Vadodara,P003,Milk,Bakery & Dairy,32,4,128,S107,Chennai Marina Outlet,South,2026-02-02,2,2,1,2026,9,16362,0.75,96,1
+S00248,TX0083,C0001,Aarav Sharma,28,Male,Mumbai,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-01-01,1,1,1,2025,27,57213,2.25,17,1
+S00249,TX0083,C0010,Arjun Reddy,41,Male,Chennai,P009,Laptop,Electronics,55000,1,55000,S106,Jaipur Plaza Store,North,2025-05-24,24,5,2,2025,37,26122,3.08,20,1
+S00250,TX0084,C0028,Harshvardhan Goel,43,Male,Kanpur,P002,Butter,Bakery & Dairy,60,3,180,S106,Jaipur Plaza Store,North,2025-03-08,8,3,1,2025,14,47768,1.17,56,1
+S00251,TX0084,C0018,Nikhil Saxena,36,Male,Bhopal,P005,Biscuits,Snacks,30,2,60,S102,Delhi Central Mart,North,2025-02-08,8,2,1,2025,21,17472,1.75,7,1
+S00252,TX0084,C0021,Priya Das,32,Female,Bhubaneswar,P005,Biscuits,Snacks,30,1,30,S104,City Mega Store Kolkata,East,2025-03-03,3,3,1,2025,17,17765,1.42,23,1
+S00253,TX0085,C0003,Rohan Gupta,22,Male,Delhi,P003,Milk,Bakery & Dairy,32,2,64,S102,Delhi Central Mart,North,2025-06-17,17,6,2,2025,5,5560,0.42,18,1
+S00254,TX0085,C0029,Simran Sethi,28,Female,Ludhiana,P001,Bread,Bakery & Dairy,40,2,80,S105,West Gate Ahmedabad,West,2026-01-19,19,1,1,2026,1,652,0.08,114,0
+S00255,TX0085,C0009,Kavita Rao,38,Female,Hyderabad,P006,Coffee,Beverages,180,1,180,S102,Delhi Central Mart,North,2025-07-25,25,7,3,2025,15,45675,1.25,71,1
+S00256,TX0086,C0006,Pooja Nair,29,Female,Kochi,P002,Butter,Bakery & Dairy,60,1,60,S107,Chennai Marina Outlet,South,2026-02-19,19,2,1,2026,39,131313,3.25,14,1
+S00257,TX0086,C0025,Shweta Mishra,25,Female,Indore,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-08-07,7,8,3,2025,8,8064,0.67,19,1
+S00258,TX0086,C0016,Kunal Mehta,48,Male,Surat,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-06-01,1,6,2,2025,15,38295,1.25,46,1
+S00259,TX0087,C0035,Swati Hegde,30,Female,Mangaluru,P023,Jeans,Fashion,1499,1,1499,S107,Chennai Marina Outlet,South,2025-01-10,10,1,1,2025,43,77787,3.58,20,1
+S00260,TX0087,C0025,Shweta Mishra,25,Female,Indore,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-04-03,3,4,2,2025,8,20544,0.67,60,1
+S00261,TX0087,C0015,Tanvi Bhat,26,Female,Bengaluru,P001,Bread,Bakery & Dairy,40,2,80,S102,Delhi Central Mart,North,2025-02-21,21,2,1,2025,36,66708,3.0,7,1
+S00262,TX0088,C0021,Priya Das,32,Female,Bhubaneswar,P005,Biscuits,Snacks,30,4,120,S107,Chennai Marina Outlet,South,2026-01-13,13,1,1,2026,24,57984,2.0,19,1
+S00263,TX0088,C0032,Sameer Nanda,40,Male,Vadodara,P005,Biscuits,Snacks,30,1,30,S101,Metro Express Mumbai,West,2025-02-16,16,2,1,2025,24,22416,2.0,12,1
+S00264,TX0088,C0021,Priya Das,32,Female,Bhubaneswar,P004,Tea,Beverages,120,2,240,S101,Metro Express Mumbai,West,2025-01-12,12,1,1,2025,16,30880,1.33,24,1
+S00265,TX0089,C0026,Varun Khanna,37,Male,Amritsar,P001,Bread,Bakery & Dairy,40,2,80,S105,West Gate Ahmedabad,West,2025-02-21,21,2,1,2025,43,131537,3.58,12,1
+S00266,TX0089,C0023,Ritika Sen,39,Female,Kolkata,P002,Butter,Bakery & Dairy,60,2,120,S102,Delhi Central Mart,North,2025-12-07,7,12,4,2025,3,10155,0.25,15,1
+S00267,TX0089,C0026,Varun Khanna,37,Male,Amritsar,P002,Butter,Bakery & Dairy,60,1,60,S107,Chennai Marina Outlet,South,2026-01-30,30,1,1,2026,13,37752,1.08,43,1
+S00268,TX0090,C0007,Rahul Verma,52,Male,Lucknow,P002,Butter,Bakery & Dairy,60,5,300,S104,City Mega Store Kolkata,East,2025-03-14,14,3,1,2025,15,11445,1.25,120,1
+S00269,TX0090,C0022,Gaurav Bansal,27,Male,Delhi,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2025-01-06,6,1,1,2025,12,7164,1.0,14,1
+S00270,TX0090,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P002,Butter,Bakery & Dairy,60,1,60,S102,Delhi Central Mart,North,2025-07-31,31,7,3,2025,26,27716,2.17,16,0
+S00271,TX0091,C0003,Rohan Gupta,22,Male,Delhi,P004,Tea,Beverages,120,3,360,S103,Tech Hub Bengaluru,South,2025-01-11,11,1,1,2025,3,10194,0.25,24,1
+S00272,TX0091,C0006,Pooja Nair,29,Female,Kochi,P016,Socks,Fashion,150,2,300,S103,Tech Hub Bengaluru,South,2025-11-01,1,11,4,2025,22,63514,1.83,15,1
+S00273,TX0091,C0007,Rahul Verma,52,Male,Lucknow,P014,Headphones,Electronics,1500,2,3000,S103,Tech Hub Bengaluru,South,2025-04-16,16,4,2,2025,28,86940,2.33,11,1
+S00274,TX0092,C0007,Rahul Verma,52,Male,Lucknow,P005,Biscuits,Snacks,30,1,30,S101,Metro Express Mumbai,West,2025-07-21,21,7,3,2025,14,43554,1.17,95,1
+S00275,TX0092,C0013,Aditya Malhotra,35,Male,Delhi,P007,Sugar,Grocery,45,1,45,S101,Metro Express Mumbai,West,2025-01-14,14,1,1,2025,28,21644,2.33,22,1
+S00276,TX0092,C0012,Meera Joshi,27,Female,Mumbai,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-07-15,15,7,3,2025,15,15285,1.25,24,1
+S00277,TX0093,C0006,Pooja Nair,29,Female,Kochi,P014,Headphones,Electronics,1500,4,6000,S106,Jaipur Plaza Store,North,2025-06-26,26,6,2,2025,15,29775,1.25,18,1
+S00278,TX0093,C0035,Swati Hegde,30,Female,Mangaluru,P002,Butter,Bakery & Dairy,60,1,60,S106,Jaipur Plaza Store,North,2025-09-01,1,9,3,2025,14,34384,1.17,20,1
+S00279,TX0093,C0010,Arjun Reddy,41,Male,Chennai,P004,Tea,Beverages,120,2,240,S101,Metro Express Mumbai,West,2026-01-23,23,1,1,2026,7,5040,0.58,102,0
+S00280,TX0094,C0010,Arjun Reddy,41,Male,Chennai,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-11-01,1,11,4,2025,29,73312,2.42,16,1
+S00281,TX0094,C0001,Aarav Sharma,28,Male,Mumbai,P006,Coffee,Beverages,180,3,540,S107,Chennai Marina Outlet,South,2025-12-25,25,12,4,2025,18,28278,1.5,19,1
+S00282,TX0094,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-07-16,16,7,3,2025,37,20646,3.08,14,1
+S00283,TX0095,C0022,Gaurav Bansal,27,Male,Delhi,P005,Biscuits,Snacks,30,1,30,S106,Jaipur Plaza Store,North,2025-05-02,2,5,2,2025,31,51863,2.58,10,1
+S00284,TX0095,C0007,Rahul Verma,52,Male,Lucknow,P007,Sugar,Grocery,45,2,90,S107,Chennai Marina Outlet,South,2025-04-27,27,4,2,2025,8,10120,0.67,120,1
+S00285,TX0095,C0032,Sameer Nanda,40,Male,Vadodara,P002,Butter,Bakery & Dairy,60,1,60,S107,Chennai Marina Outlet,South,2025-09-22,22,9,3,2025,5,,0.42,79,1
+S00286,TX0096,C0034,Yashvardhan K,33,Male,Mysuru,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-01-15,15,1,1,2025,35,115010,2.92,8,1
+S00287,TX0096,C0030,Akash Chauhan,,Male,Dehradun,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2025-07-23,23,7,3,2025,40,45080,3.33,17,1
+S00288,TX0096,C0023,Ritika Sen,39,Female,Kolkata,P009,Laptop,Electronics,55000,2,110000,S103,Tech Hub Bengaluru,South,2025-03-25,25,3,1,2025,30,15360,2.5,14,0
+S00289,TX0097,C0014,Sneha Deshmukh,33,Female,Nagpur,P005,Biscuits,Snacks,30,1,30,S107,Chennai Marina Outlet,South,2025-04-24,24,4,2,2025,12,28092,1.0,6,1
+S00290,TX0097,C0001,Aarav Sharma,28,Male,Mumbai,P007,Sugar,Grocery,45,3,135,S102,Delhi Central Mart,North,2025-05-10,10,5,2,2025,25,57775,2.08,11,1
+S00291,TX0097,C0026,Varun Khanna,37,Male,Amritsar,P013,Phone Case,Electronics,350,1,350,S105,West Gate Ahmedabad,West,2025-02-22,22,2,1,2025,5,15115,0.42,56,1
+S00292,TX0098,C0017,Rhea Kapoor,23,Female,Chandigarh,P021,Face Wash,Personal Care,190,1,190,S106,Jaipur Plaza Store,North,2025-12-31,31,12,4,2025,3,7554,0.25,112,0
+S00293,TX0098,C0004,Ananya Iyer,45,Female,Bengaluru,P013,Phone Case,,350,2,700,S107,Chennai Marina Outlet,South,2026-02-15,15,2,1,2026,13,40092,1.08,17,1
+S00294,TX0098,C0017,Rhea Kapoor,23,Female,Chandigarh,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2025-07-27,27,7,3,2025,12,15720,1.0,102,1
+S00295,TX0099,C0031,Sonal Agarwal,35,Female,Agra,P006,Coffee,,180,1,180,S106,Jaipur Plaza Store,North,2025-07-03,3,7,3,2025,23,73232,1.92,12,1
+S00296,TX0099,C0015,Tanvi Bhat,26,Female,Bengaluru,P002,Butter,,60,1,60,S103,Tech Hub Bengaluru,South,2025-04-25,25,4,2,2025,41,36162,3.42,17,0
+S00297,TX0099,C0005,Vikram Singh,31,Male,Jaipur,P005,Biscuits,Snacks,30,1,30,S104,City Mega Store Kolkata,East,2025-04-10,10,4,2,2025,21,20202,1.75,8,1
+S00298,TX0100,C0030,Akash Chauhan,26,Male,Dehradun,P006,Coffee,Beverages,180,2,360,S102,Delhi Central Mart,North,2025-06-11,11,6,2,2025,23,38709,1.92,22,0
+S00299,TX0100,C0029,Simran Sethi,28,Female,Ludhiana,P004,Tea,Beverages,120,1,120,S103,Tech Hub Bengaluru,South,2025-04-18,18,4,2,2025,17,15810,1.42,21,1
+S00300,TX0100,C0028,Harshvardhan Goel,43,Male,Kanpur,P013,Phone Case,Electronics,350,1,350,S104,City Mega Store Kolkata,East,2025-08-08,8,8,3,2025,35,15995,2.92,12,1
+S00301,TX0101,C0034,Yashvardhan K,33,Male,Mysuru,P005,Biscuits,Snacks,30,1,30,S102,Delhi Central Mart,North,2025-01-10,10,1,1,2025,9,25299,0.75,54,1
+S00302,TX0101,C0003,Rohan Gupta,22,Male,Delhi,P010,Wireless Mouse,Electronics,850,1,850,S103,Tech Hub Bengaluru,South,2025-05-29,29,5,2,2025,4,4300,0.33,118,0
+S00303,TX0101,C0015,Tanvi Bhat,26,Female,Bengaluru,P007,Sugar,Grocery,45,2,90,S102,Delhi Central Mart,North,2026-01-08,8,1,1,2026,22,19888,1.83,13,1
+S00304,TX0102,C0003,Rohan Gupta,22,Male,Delhi,P004,Tea,Beverages,120,2,240,S104,City Mega Store Kolkata,East,2025-11-24,24,11,4,2025,11,5280,0.92,21,1
+S00305,TX0102,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2025-07-14,14,7,3,2025,12,19596,1.0,15,1
+S00306,TX0102,C0034,Yashvardhan K,33,Male,Mysuru,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-11-15,15,11,4,2025,30,25980,2.5,5,1
+S00307,TX0103,C0013,Aditya Malhotra,35,Male,Delhi,P007,Sugar,Grocery,45,1,45,S107,Chennai Marina Outlet,South,2025-05-15,15,5,2,2025,22,12342,1.83,19,1
+S00308,TX0103,C0014,Sneha Deshmukh,33,Female,Nagpur,P001,Bread,Bakery & Dairy,40,3,120,S106,Jaipur Plaza Store,North,2025-09-04,4,9,3,2025,43,43430,3.58,4,1
+S00309,TX0103,C0005,Vikram Singh,31,Male,Jaipur,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2026-01-06,6,1,1,2026,28,64428,2.33,3,0
+S00310,TX0104,C0012,Meera Joshi,27,Female,Mumbai,P012,Screen Protector,Electronics,250,2,500,S107,Chennai Marina Outlet,South,2025-01-21,21,1,1,2025,12,10488,1.0,27,1
+S00311,TX0104,C0003,Rohan Gupta,22,Male,Delhi,P002,Butter,Bakery & Dairy,60,3,180,S101,Metro Express Mumbai,West,2025-03-12,12,3,1,2025,10,14980,0.83,108,0
+S00312,TX0104,C0022,Gaurav Bansal,27,Male,Delhi,P005,Biscuits,Snacks,30,2,60,S102,Delhi Central Mart,North,2025-02-28,28,2,1,2025,38,116166,3.17,7,1
+S00313,TX0105,C0004,Ananya Iyer,45,Female,Bengaluru,P016,Socks,Fashion,150,3,450,S107,Chennai Marina Outlet,South,2025-03-23,23,3,1,2025,7,15435,0.58,20,0
+S00314,TX0105,C0021,Priya Das,32,Female,Bhubaneswar,P017,Camera,Electronics,32000,2,64000,S101,Metro Express Mumbai,West,2025-12-27,27,12,4,2025,26,81718,2.17,12,1
+S00315,TX0105,C0007,Rahul Verma,52,Male,Lucknow,P005,Biscuits,Snacks,30,2,60,S104,City Mega Store Kolkata,East,2025-12-05,5,12,4,2025,15,6705,1.25,22,1
+S00316,TX0106,C0033,Pallavi Ghosh,29,Female,Ranchi,P006,Coffee,Beverages,180,1,180,S107,Chennai Marina Outlet,South,2025-08-29,29,8,3,2025,27,47385,2.25,10,0
+S00317,TX0106,C0015,Tanvi Bhat,26,Female,Bengaluru,P005,Biscuits,Snacks,30,2,60,S105,West Gate Ahmedabad,West,2025-11-26,26,11,4,2025,43,95933,3.58,12,1
+S00318,TX0106,C0032,Sameer Nanda,40,Male,Vadodara,P004,Tea,Beverages,120,2,240,S106,Jaipur Plaza Store,North,2025-12-01,1,12,4,2025,31,76942,2.58,19,1
+S00319,TX0107,C0030,Akash Chauhan,26,Male,Dehradun,P008,Snacks,Snacks,50,2,100,S103,Tech Hub Bengaluru,South,2025-07-06,6,7,3,2025,13,38194,1.08,91,1
+S00320,TX0107,C0024,Amit Choudhury,50,Male,Guwahati,P005,Biscuits,Snacks,30,1,30,S106,Jaipur Plaza Store,North,2025-08-20,20,8,3,2025,30,79290,2.5,18,1
+S00321,TX0107,C0007,Rahul Verma,52,Male,Lucknow,P006,Coffee,Beverages,180,1,180,S101,Metro Express Mumbai,West,2025-03-26,26,3,1,2025,37,47471,3.08,16,1
+S00322,TX0108,C0013,Aditya Malhotra,,Male,Delhi,P020,Conditioner,Personal Care,310,1,310,S106,Jaipur Plaza Store,North,2025-06-23,23,6,2,2025,39,109044,3.25,17,1
+S00323,TX0108,C0012,Meera Joshi,27,Female,Mumbai,P005,Biscuits,Snacks,30,1,30,S106,Jaipur Plaza Store,North,2025-10-24,24,10,4,2025,10,32360,0.83,112,1
+S00324,TX0108,C0026,Varun Khanna,37,Male,Amritsar,P002,Butter,Bakery & Dairy,60,2,120,S103,Tech Hub Bengaluru,South,2025-05-31,31,5,2,2025,44,71456,3.67,24,1
+S00325,TX0109,C0021,Priya Das,32,Female,Bhubaneswar,P021,Face Wash,Personal Care,190,1,190,S106,Jaipur Plaza Store,North,2026-01-13,13,1,1,2026,12,19080,1.0,102,1
+S00326,TX0109,C0009,Kavita Rao,38,Female,Hyderabad,P006,Coffee,Beverages,180,1,180,S106,Jaipur Plaza Store,North,2025-11-29,29,11,4,2025,32,105888,2.67,5,1
+S00327,TX0109,C0031,Sonal Agarwal,35,Female,Agra,P023,Jeans,Fashion,1499,1,1499,S105,West Gate Ahmedabad,West,2025-10-20,20,10,4,2025,30,63900,2.5,2,1
+S00328,TX0110,C0002,Diya Patel,34,Female,Ahmedabad,P002,Butter,Bakery & Dairy,60,2,120,S104,City Mega Store Kolkata,East,2025-03-16,16,3,1,2025,5,15995,0.42,47,1
+S00329,TX0110,C0004,Ananya Iyer,45,Female,Bengaluru,P005,Biscuits,Snacks,30,1,30,S106,Jaipur Plaza Store,North,2026-02-06,6,2,1,2026,26,89440,2.17,22,1
+S00330,TX0110,C0016,Kunal Mehta,48,Male,Surat,P023,Jeans,Fashion,1499,2,2998,S105,West Gate Ahmedabad,West,2026-02-06,6,2,1,2026,36,75816,3.0,23,1
+S00331,TX0111,C0004,Ananya Iyer,45,Female,Bengaluru,P007,Sugar,Grocery,45,1,45,S101,Metro Express Mumbai,West,2026-01-16,16,1,1,2026,11,7755,0.92,38,1
+S00332,TX0111,C0033,Pallavi Ghosh,29,Female,Ranchi,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-07-13,13,7,3,2025,28,11844,2.33,12,1
+S00333,TX0111,C0010,Arjun Reddy,41,Male,Chennai,P020,Conditioner,Personal Care,310,1,310,S101,Metro Express Mumbai,West,2025-03-20,20,3,1,2025,31,74679,2.58,20,1
+S00334,TX0112,C0005,Vikram Singh,31,Male,Jaipur,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-12-29,29,12,4,2025,22,46266,1.83,19,1
+S00335,TX0112,C0006,Pooja Nair,29,Female,Kochi,P022,T-Shirt,Fashion,699,1,699,S103,Tech Hub Bengaluru,South,2025-04-24,24,4,2,2025,4,13928,0.33,94,1
+S00336,TX0112,C0001,Aarav Sharma,28,Male,Mumbai,P001,Bread,Bakery & Dairy,40,4,160,S101,Metro Express Mumbai,West,2025-12-09,9,12,4,2025,32,62784,2.67,5,1
+S00337,TX0113,C0035,Swati Hegde,30,Female,Mangaluru,P013,Phone Case,Electronics,350,1,350,S106,Jaipur Plaza Store,North,2025-05-25,25,5,2,2025,18,19530,1.5,19,1
+S00338,TX0113,C0005,Vikram Singh,31,Male,Jaipur,P002,Butter,Bakery & Dairy,60,2,120,S102,Delhi Central Mart,North,2025-12-10,10,12,4,2025,14,45892,1.17,109,1
+S00339,TX0113,C0005,Vikram Singh,31,Male,Jaipur,P004,Tea,Beverages,120,1,120,S106,Jaipur Plaza Store,North,2025-12-18,18,12,4,2025,5,13425,0.42,24,1
+S00340,TX0114,C0015,Tanvi Bhat,26,Female,Bengaluru,P003,Milk,Bakery & Dairy,32,1,32,S103,Tech Hub Bengaluru,South,2025-07-28,28,7,3,2025,16,55936,1.33,25,1
+S00341,TX0114,C0005,Vikram Singh,31,Male,Jaipur,P004,Tea,Beverages,120,1,120,S103,Tech Hub Bengaluru,South,2025-09-15,15,9,3,2025,36,72648,3.0,23,0
+S00342,TX0114,C0011,Siddharth Roy,30,Male,Kolkata,P002,Butter,Bakery & Dairy,60,4,240,S105,West Gate Ahmedabad,West,2025-04-23,23,4,2,2025,11,37257,0.92,97,1
+S00343,TX0115,C0001,Aarav Sharma,28,Male,Mumbai,P002,Butter,Bakery & Dairy,60,1,60,S105,West Gate Ahmedabad,West,2025-10-12,12,10,4,2025,31,39060,2.58,25,1
+S00344,TX0115,C0023,Ritika Sen,39,Female,Kolkata,P017,Camera,Electronics,32000,1,32000,S102,Delhi Central Mart,North,2025-07-31,31,7,3,2025,10,14350,0.83,39,1
+S00345,TX0115,C0004,Ananya Iyer,45,Female,Bengaluru,P018,Memory Card,Electronics,650,1,650,S107,Chennai Marina Outlet,South,2026-01-20,20,1,1,2026,30,94530,2.5,4,1
+S00346,TX0116,C0013,Aditya Malhotra,35,Male,Delhi,P001,Bread,Bakery & Dairy,40,2,80,S106,Jaipur Plaza Store,North,2025-10-25,25,10,4,2025,5,14685,0.42,23,1
+S00347,TX0116,C0021,Priya Das,32,Female,Bhubaneswar,P001,Bread,Bakery & Dairy,40,2,80,S104,City Mega Store Kolkata,East,2025-08-19,19,8,3,2025,22,9218,1.83,12,1
+S00348,TX0116,C0015,Tanvi Bhat,26,Female,Bengaluru,P002,Butter,Bakery & Dairy,60,1,60,S106,Jaipur Plaza Store,North,2026-01-14,14,1,1,2026,42,96390,3.5,16,1
+S00349,TX0117,C0020,Manish Tiwari,44,Male,Patna,P005,Biscuits,Snacks,30,3,90,S104,City Mega Store Kolkata,East,2025-10-10,10,10,4,2025,9,10836,0.75,48,1
+S00350,TX0117,C0005,Vikram Singh,31,Male,Jaipur,P017,Camera,Electronics,32000,2,64000,S106,Jaipur Plaza Store,North,2025-02-08,8,2,1,2025,37,104192,3.08,8,1
+S00351,TX0117,C0017,Rhea Kapoor,23,Female,Chandigarh,P004,Tea,Beverages,120,3,360,S105,West Gate Ahmedabad,West,2025-10-04,4,10,4,2025,10,34030,0.83,52,1
+S00352,TX0118,C0033,Pallavi Ghosh,29,Female,Ranchi,P013,Phone Case,Electronics,350,1,350,S105,West Gate Ahmedabad,West,2025-02-16,16,2,1,2025,10,27170,0.83,99,1
+S00353,TX0118,C0010,Arjun Reddy,41,Male,Chennai,P001,Bread,Bakery & Dairy,40,2,80,S106,Jaipur Plaza Store,North,2026-01-10,10,1,1,2026,5,9565,0.42,44,0
+S00354,TX0118,C0014,Sneha Deshmukh,33,Female,Nagpur,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2026-02-10,10,2,1,2026,29,99702,2.42,10,1
+S00355,TX0119,C0012,Meera Joshi,27,Female,Mumbai,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2025-12-01,1,12,4,2025,45,92790,3.75,13,1
+S00356,TX0119,C0023,Ritika Sen,39,Female,Kolkata,P003,Milk,,32,1,32,S104,City Mega Store Kolkata,East,2026-02-10,10,2,1,2026,29,36714,2.42,6,1
+S00357,TX0119,C0024,Amit Choudhury,50,Male,Guwahati,P022,T-Shirt,Fashion,699,1,699,S105,West Gate Ahmedabad,West,2026-01-03,3,1,1,2026,19,45068,1.58,23,1
+S00358,TX0120,C0014,Sneha Deshmukh,33,Female,Nagpur,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-03-24,24,3,1,2025,11,27489,0.92,20,1
+S00359,TX0120,C0010,Arjun Reddy,41,Male,Chennai,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-03-27,27,3,1,2025,13,43511,1.08,25,1
+S00360,TX0120,C0019,Isha Mukherjee,29,Female,Kolkata,P001,Bread,Bakery & Dairy,40,2,80,S101,Metro Express Mumbai,West,2025-04-21,21,4,2,2025,23,67896,1.92,23,1
+S00361,TX0121,C0011,Siddharth Roy,30,Male,Kolkata,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-12-18,18,12,4,2025,9,22185,0.75,102,1
+S00362,TX0121,C0010,Arjun Reddy,41,Male,Chennai,P013,Phone Case,Electronics,350,1,350,S105,West Gate Ahmedabad,West,2025-02-19,19,2,1,2025,12,38148,1.0,22,1
+S00363,TX0121,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P015,Running Shoes,Fashion,2400,1,2400,S103,Tech Hub Bengaluru,South,2025-01-23,23,1,1,2025,13,17576,1.08,25,1
+S00364,TX0122,C0035,Swati Hegde,30,Female,Mangaluru,P006,Coffee,Beverages,180,1,180,S104,City Mega Store Kolkata,East,2025-05-12,12,5,2,2025,13,22009,1.08,67,1
+S00365,TX0122,C0010,Arjun Reddy,41,Male,Chennai,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-11-30,30,11,4,2025,37,129204,3.08,8,1
+S00366,TX0122,C0031,Sonal Agarwal,35,Female,Agra,P009,Laptop,Electronics,55000,3,165000,S102,Delhi Central Mart,North,2025-07-09,9,7,3,2025,26,57954,2.17,24,1
+S00367,TX0123,C0007,Rahul Verma,52,Male,Lucknow,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-09-18,18,9,3,2025,12,9276,1.0,6,1
+S00368,TX0123,C0028,Harshvardhan Goel,43,Male,Kanpur,P001,Bread,Bakery & Dairy,40,2,80,S101,Metro Express Mumbai,West,2025-02-02,2,2,1,2025,37,107818,3.08,22,1
+S00369,TX0123,C0004,Ananya Iyer,45,Female,Bengaluru,P005,Biscuits,Snacks,30,1,30,S107,Chennai Marina Outlet,South,2026-02-24,24,2,1,2026,44,110528,3.67,24,1
+S00370,TX0124,C0011,Siddharth Roy,30,Male,Kolkata,P001,Bread,Bakery & Dairy,40,2,80,S106,Jaipur Plaza Store,North,2025-01-19,19,1,1,2025,7,14420,0.58,90,1
+S00371,TX0124,C0001,Aarav Sharma,28,Male,Mumbai,P002,Butter,Bakery & Dairy,60,2,120,S106,Jaipur Plaza Store,North,2025-12-27,27,12,4,2025,34,61982,2.83,10,1
+S00372,TX0124,C0013,Aditya Malhotra,35,Male,Delhi,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-07-26,26,7,3,2025,44,70620,3.67,12,1
+S00373,TX0125,C0033,Pallavi Ghosh,29,Female,Ranchi,P019,Shampoo,Personal Care,280,1,280,S103,Tech Hub Bengaluru,South,2025-10-03,3,10,4,2025,36,97416,3.0,17,1
+S00374,TX0125,C0022,Gaurav Bansal,27,Male,Delhi,P010,Wireless Mouse,Electronics,850,2,1700,S107,Chennai Marina Outlet,South,2025-08-23,23,8,3,2025,26,44018,2.17,15,1
+S00375,TX0125,C0034,Yashvardhan K,33,Male,Mysuru,P002,Butter,Bakery & Dairy,60,1,60,S105,West Gate Ahmedabad,West,2025-01-05,5,1,1,2025,33,23463,2.75,19,1
+S00376,TX0126,C0031,Sonal Agarwal,35,Female,Agra,P004,Tea,Beverages,120,1,120,S103,Tech Hub Bengaluru,South,2025-07-01,1,7,3,2025,12,16692,1.0,48,1
+S00377,TX0126,C0013,Aditya Malhotra,35,Male,Delhi,P012,Screen Protector,Electronics,250,1,250,S107,Chennai Marina Outlet,South,2025-05-08,8,5,2,2025,15,10815,1.25,101,1
+S00378,TX0126,C0032,Sameer Nanda,40,Male,Vadodara,P002,Butter,Bakery & Dairy,60,2,120,S105,West Gate Ahmedabad,West,2025-01-04,4,1,1,2025,6,14496,0.5,88,1
+S00379,TX0127,C0032,Sameer Nanda,40,Male,Vadodara,P009,Laptop,Electronics,55000,1,55000,S102,Delhi Central Mart,North,2026-01-27,27,1,1,2026,20,12420,1.67,18,1
+S00380,TX0127,C0031,Sonal Agarwal,35,Female,Agra,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2025-01-17,17,1,1,2025,9,20556,0.75,55,1
+S00381,TX0127,C0001,Aarav Sharma,28,Male,Mumbai,P002,Butter,Bakery & Dairy,60,2,120,S106,Jaipur Plaza Store,North,2025-04-18,18,4,2,2025,9,13284,0.75,45,1
+S00382,TX0128,C0022,Gaurav Bansal,27,Male,Delhi,P002,Butter,Bakery & Dairy,60,1,60,S103,Tech Hub Bengaluru,South,2025-04-05,5,4,2,2025,40,45440,3.33,20,1
+S00383,TX0128,C0015,Tanvi Bhat,26,Female,Bengaluru,P007,Sugar,Grocery,45,1,45,S107,Chennai Marina Outlet,South,2025-02-21,21,2,1,2025,21,49077,1.75,2,1
+S00384,TX0128,C0032,Sameer Nanda,40,Male,Vadodara,P003,Milk,Bakery & Dairy,32,1,32,S102,Delhi Central Mart,North,2025-11-19,19,11,4,2025,15,19230,1.25,10,1
+S00385,TX0129,C0007,Rahul Verma,52,Male,Lucknow,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2026-01-17,17,1,1,2026,34,108222,2.83,21,1
+S00386,TX0129,C0035,Swati Hegde,30,Female,Mangaluru,P002,Butter,Bakery & Dairy,60,2,120,S102,Delhi Central Mart,North,2026-02-04,4,2,1,2026,17,33320,1.42,21,1
+S00387,TX0129,C0010,Arjun Reddy,41,Male,Chennai,P012,Screen Protector,Electronics,250,1,250,S107,Chennai Marina Outlet,South,2025-03-27,27,3,1,2025,5,16545,0.42,49,1
+S00388,TX0130,C0026,Varun Khanna,37,Male,Amritsar,P024,Backpack,Fashion,1299,1,1299,S103,Tech Hub Bengaluru,South,2025-08-16,16,8,3,2025,38,41230,3.17,7,1
+S00389,TX0130,C0009,Kavita Rao,38,Female,Hyderabad,P003,Milk,Bakery & Dairy,32,1,32,S106,Jaipur Plaza Store,North,2025-05-01,1,5,2,2025,15,35070,1.25,85,0
+S00390,TX0130,C0026,Varun Khanna,37,Male,Amritsar,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2026-01-27,27,1,1,2026,11,21956,0.92,54,1
+S00391,TX0131,C0019,Isha Mukherjee,29,Female,Kolkata,P004,Tea,Beverages,120,2,240,S104,City Mega Store Kolkata,East,2025-11-17,17,11,4,2025,32,75200,2.67,16,1
+S00392,TX0131,C0035,Swati Hegde,30,Female,Mangaluru,P001,Bread,Bakery & Dairy,40,2,80,S103,Tech Hub Bengaluru,South,2025-10-08,8,10,4,2025,39,99216,3.25,22,1
+S00393,TX0131,C0020,Manish Tiwari,44,Male,Patna,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-09-04,4,9,3,2025,9,8622,0.75,59,1
+S00394,TX0132,C0035,Swati Hegde,30,Female,Mangaluru,P016,Socks,,150,1,150,S101,Metro Express Mumbai,West,2025-12-19,19,12,4,2025,30,85350,2.5,9,1
+S00395,TX0132,C0024,Amit Choudhury,50,Male,Guwahati,P014,Headphones,Electronics,1500,1,1500,S102,Delhi Central Mart,North,2025-07-30,30,7,3,2025,12,36540,1.0,64,1
+S00396,TX0132,C0015,Tanvi Bhat,26,Female,Bengaluru,P002,Butter,Bakery & Dairy,60,1,60,S103,Tech Hub Bengaluru,South,2025-02-10,10,2,1,2025,29,60639,2.42,8,1
+S00397,TX0133,C0012,Meera Joshi,27,Female,Mumbai,P009,Laptop,Electronics,55000,1,55000,S102,Delhi Central Mart,North,2025-05-29,29,5,2,2025,23,18814,1.92,11,1
+S00398,TX0133,C0029,Simran Sethi,28,Female,Ludhiana,P002,Butter,Bakery & Dairy,60,1,60,S106,Jaipur Plaza Store,North,2025-01-05,5,1,1,2025,43,82603,3.58,16,1
+S00399,TX0133,C0003,Rohan Gupta,22,Male,Delhi,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-02-11,11,2,1,2025,13,26091,1.08,24,1
+S00400,TX0134,C0012,Meera Joshi,27,Female,Mumbai,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-05-09,9,5,2,2025,27,53352,2.25,16,1
+S00401,TX0134,C0003,Rohan Gupta,22,Male,Delhi,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-08-24,24,8,3,2025,11,18458,0.92,56,1
+S00402,TX0134,C0003,Rohan Gupta,22,Male,Delhi,P002,Butter,Bakery & Dairy,60,1,60,S106,Jaipur Plaza Store,North,2025-10-09,9,10,4,2025,15,9195,1.25,100,1
+S00403,TX0135,C0008,Neha Kulkarni,24,Female,Pune,P002,Butter,Bakery & Dairy,60,1,60,S102,Delhi Central Mart,North,2025-11-21,21,11,4,2025,7,9765,0.58,16,1
+S00404,TX0135,C0031,Sonal Agarwal,35,Female,Agra,P005,Biscuits,Snacks,30,1,30,S106,Jaipur Plaza Store,North,2025-11-02,2,11,4,2025,15,9660,1.25,13,1
+S00405,TX0135,C0035,Swati Hegde,30,Female,Mangaluru,P002,Butter,Bakery & Dairy,60,2,120,S107,Chennai Marina Outlet,South,2025-02-24,24,2,1,2025,24,11688,2.0,24,1
+S00406,TX0136,C0009,Kavita Rao,38,Female,Hyderabad,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-01-21,21,1,1,2025,6,10350,0.5,108,1
+S00407,TX0136,C0011,Siddharth Roy,30,Male,Kolkata,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-09-29,29,9,3,2025,44,85888,3.67,25,1
+S00408,TX0136,C0002,Diya Patel,34,Female,Ahmedabad,P004,Tea,Beverages,120,2,240,S105,West Gate Ahmedabad,West,2025-07-06,6,7,3,2025,36,42372,3.0,18,1
+S00409,TX0137,C0010,Arjun Reddy,41,Male,Chennai,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-05-25,25,5,2,2025,23,12144,1.92,8,1
+S00410,TX0137,C0013,Aditya Malhotra,35,Male,Delhi,P010,Wireless Mouse,Electronics,850,1,850,S101,Metro Express Mumbai,West,2025-01-17,17,1,1,2025,12,15048,1.0,22,1
+S00411,TX0137,C0006,Pooja Nair,29,Female,Kochi,P002,Butter,Bakery & Dairy,60,2,120,S104,City Mega Store Kolkata,East,2026-02-15,15,2,1,2026,15,43890,1.25,10,1
+S00412,TX0138,C0005,Vikram Singh,31,Male,Jaipur,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-06-05,5,6,2,2025,7,8232,0.58,39,1
+S00413,TX0138,C0016,Kunal Mehta,48,Male,Surat,P018,Memory Card,Electronics,650,2,1300,S105,West Gate Ahmedabad,West,2025-11-17,17,11,4,2025,18,54270,1.5,20,1
+S00414,TX0138,C0030,Akash Chauhan,26,Male,Dehradun,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-12-07,7,12,4,2025,22,56892,1.83,21,1
+S00415,TX0139,C0023,Ritika Sen,39,Female,Kolkata,P011,Smartphone,Electronics,18000,2,36000,S103,Tech Hub Bengaluru,South,2025-10-09,9,10,4,2025,39,131547,3.25,12,1
+S00416,TX0139,C0035,Swati Hegde,30,Female,Mangaluru,P009,Laptop,Electronics,55000,1,55000,S102,Delhi Central Mart,North,2025-07-12,12,7,3,2025,37,14800,3.08,25,0
+S00417,TX0139,C0019,Isha Mukherjee,29,Female,Kolkata,P005,Biscuits,Snacks,30,5,150,S105,West Gate Ahmedabad,West,2025-01-09,9,1,1,2025,6,2928,0.5,113,0
+S00418,TX0140,C0018,Nikhil Saxena,36,Male,Bhopal,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-09-19,19,9,3,2025,5,9515,0.42,89,1
+S00419,TX0140,C0017,Rhea Kapoor,23,Female,Chandigarh,P001,Bread,Bakery & Dairy,40,2,80,S107,Chennai Marina Outlet,South,2025-06-03,3,6,2,2025,12,20748,1.0,116,1
+S00420,TX0140,C0032,Sameer Nanda,40,Male,Vadodara,P005,Biscuits,Snacks,30,1,30,S107,Chennai Marina Outlet,South,2025-12-20,20,12,4,2025,36,25956,3.0,3,1
+S00421,TX0141,C0022,Gaurav Bansal,27,Male,Delhi,P004,Tea,Beverages,120,2,240,S103,Tech Hub Bengaluru,South,2026-02-23,23,2,1,2026,12,35952,1.0,22,1
+S00422,TX0141,C0020,Manish Tiwari,44,Male,Patna,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-01-22,22,1,1,2025,37,82325,3.08,21,1
+S00423,TX0141,C0006,Pooja Nair,29,Female,Kochi,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-08-10,10,8,3,2025,15,39675,1.25,14,1
+S00424,TX0142,C0026,Varun Khanna,37,Male,Amritsar,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-08-11,11,8,3,2025,7,21497,0.58,88,1
+S00425,TX0142,C0034,Yashvardhan K,33,Male,Mysuru,P004,Tea,Beverages,120,1,120,S102,Delhi Central Mart,North,2025-05-05,5,5,2,2025,35,63910,2.92,8,1
+S00426,TX0142,C0002,Diya Patel,34,Female,Ahmedabad,P002,Butter,Bakery & Dairy,60,2,120,S107,Chennai Marina Outlet,South,2025-06-06,6,6,2,2025,26,31642,2.17,23,1
+S00427,TX0143,C0006,Pooja Nair,29,Female,Kochi,P009,Laptop,Electronics,55000,1,55000,S101,Metro Express Mumbai,West,2026-01-14,14,1,1,2026,33,41448,2.75,25,1
+S00428,TX0143,C0014,Sneha Deshmukh,33,Female,Nagpur,P020,Conditioner,Personal Care,310,2,620,S105,West Gate Ahmedabad,West,2025-09-25,25,9,3,2025,12,37644,1.0,17,1
+S00429,TX0143,C0034,Yashvardhan K,33,Male,Mysuru,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-05-11,11,5,2,2025,12,8064,1.0,14,1
+S00430,TX0144,C0024,Amit Choudhury,50,Male,Guwahati,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-02-25,25,2,1,2025,32,76320,2.67,21,1
+S00431,TX0144,C0012,Meera Joshi,27,Female,Mumbai,P018,Memory Card,Electronics,650,3,1950,S102,Delhi Central Mart,North,2025-09-14,14,9,3,2025,4,10272,0.33,54,1
+S00432,TX0144,C0026,Varun Khanna,37,Male,Amritsar,P005,Biscuits,Snacks,30,1,30,S106,Jaipur Plaza Store,North,2025-03-22,22,3,1,2025,44,67276,3.67,3,1
+S00433,TX0145,C0025,Shweta Mishra,25,Female,Indore,P009,Laptop,Electronics,55000,1,55000,S107,Chennai Marina Outlet,South,2025-01-16,16,1,1,2025,6,12054,0.5,99,1
+S00434,TX0145,C0025,Shweta Mishra,25,Female,Indore,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-12-14,14,12,4,2025,7,11753,0.58,92,1
+S00435,TX0145,C0035,Swati Hegde,30,Female,Mangaluru,P003,Milk,Bakery & Dairy,32,1,32,S102,Delhi Central Mart,North,2025-04-16,16,4,2,2025,45,42885,3.75,15,1
+S00436,TX0146,C0010,Arjun Reddy,41,Male,Chennai,P011,Smartphone,Electronics,18000,1,18000,S106,Jaipur Plaza Store,North,2025-10-17,17,10,4,2025,19,21926,1.58,12,1
+S00437,TX0146,C0010,Arjun Reddy,41,Male,Chennai,P014,Headphones,Electronics,1500,4,6000,S106,Jaipur Plaza Store,North,2025-01-16,16,1,1,2025,12,36096,1.0,109,1
+S00438,TX0146,C0013,Aditya Malhotra,35,Male,Delhi,P003,Milk,Bakery & Dairy,32,1,32,S101,Metro Express Mumbai,West,2025-03-09,9,3,1,2025,1,1871,0.08,25,1
+S00439,TX0147,C0031,Sonal Agarwal,35,Female,Agra,P016,Socks,Fashion,150,2,300,S102,Delhi Central Mart,North,2025-09-15,15,9,3,2025,14,27818,1.17,77,1
+S00440,TX0147,C0011,Siddharth Roy,30,Male,Kolkata,P005,Biscuits,Snacks,30,4,120,S102,Delhi Central Mart,North,2025-04-26,26,4,2,2025,11,13530,0.92,111,1
+S00441,TX0147,C0012,Meera Joshi,27,Female,Mumbai,P002,Butter,Bakery & Dairy,60,3,180,S104,City Mega Store Kolkata,East,2025-11-12,12,11,4,2025,14,,1.17,25,1
+S00442,TX0148,C0021,Priya Das,32,Female,Bhubaneswar,P019,Shampoo,Personal Care,280,1,280,S104,City Mega Store Kolkata,East,2025-11-10,10,11,4,2025,14,35448,1.17,5,1
+S00443,TX0148,C0003,Rohan Gupta,22,Male,Delhi,P005,Biscuits,Snacks,30,1,30,S102,Delhi Central Mart,North,2025-09-23,23,9,3,2025,11,6611,0.92,39,1
+S00444,TX0148,C0026,Varun Khanna,37,Male,Amritsar,P015,Running Shoes,Fashion,2400,1,2400,S103,Tech Hub Bengaluru,South,2026-02-01,1,2,1,2026,15,9345,1.25,103,1
+S00445,TX0149,C0010,Arjun Reddy,41,Male,Chennai,P004,Tea,Beverages,120,1,120,S104,City Mega Store Kolkata,East,2025-11-27,27,11,4,2025,1,1132,0.08,73,0
+S00446,TX0149,C0013,Aditya Malhotra,35,Male,Delhi,P009,Laptop,Electronics,55000,2,110000,S104,City Mega Store Kolkata,East,2025-02-16,16,2,1,2025,17,43265,1.42,24,1
+S00447,TX0149,C0033,Pallavi Ghosh,29,Female,Ranchi,P001,Bread,Bakery & Dairy,40,3,120,S105,West Gate Ahmedabad,West,2025-03-23,23,3,1,2025,21,22344,1.75,6,1
+S00448,TX0150,C0004,Ananya Iyer,45,Female,Bengaluru,P006,Coffee,Beverages,180,4,720,S104,City Mega Store Kolkata,East,2025-06-07,7,6,2,2025,13,18668,1.08,16,1
+S00449,TX0150,C0032,Sameer Nanda,40,Male,Vadodara,P005,Biscuits,Snacks,30,1,30,S105,West Gate Ahmedabad,West,2026-02-18,18,2,1,2026,12,16824,1.0,19,1
+S00450,TX0150,C0014,Sneha Deshmukh,33,Female,Nagpur,P004,Tea,Beverages,120,2,240,S101,Metro Express Mumbai,West,2025-04-05,5,4,2,2025,31,54436,2.58,4,0
+S00451,TX0151,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P016,Socks,Fashion,150,2,300,S102,Delhi Central Mart,North,2025-03-24,24,3,1,2025,1,781,0.08,113,0
+S00452,TX0151,C0024,Amit Choudhury,50,Male,Guwahati,P003,Milk,Bakery & Dairy,32,1,32,S104,City Mega Store Kolkata,East,2026-02-24,24,2,1,2026,33,84414,2.75,15,1
+S00453,TX0151,C0014,Sneha Deshmukh,33,Female,Nagpur,P018,Memory Card,Electronics,650,1,650,S105,West Gate Ahmedabad,West,2025-01-30,30,1,1,2025,34,31654,2.83,21,1
+S00454,TX0152,C0034,Yashvardhan K,33,Male,Mysuru,P001,Bread,Bakery & Dairy,40,4,160,S106,Jaipur Plaza Store,North,2025-11-20,20,11,4,2025,1,2304,0.08,95,0
+S00455,TX0152,C0014,Sneha Deshmukh,33,Female,Nagpur,P014,Headphones,Electronics,1500,1,1500,S107,Chennai Marina Outlet,South,2025-11-12,12,11,4,2025,13,39143,1.08,42,0
+S00456,TX0152,C0013,Aditya Malhotra,35,Male,Delhi,P002,Butter,Bakery & Dairy,60,1,60,S106,Jaipur Plaza Store,North,2025-05-25,25,5,2,2025,1,866,0.08,102,0
+S00457,TX0153,C0026,Varun Khanna,37,Male,Amritsar,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-10-19,19,10,4,2025,42,98406,3.5,3,1
+S00458,TX0153,C0031,Sonal Agarwal,35,Female,Agra,P013,Phone Case,Electronics,350,1,350,S102,Delhi Central Mart,North,2025-11-18,18,11,4,2025,32,85568,2.67,19,0
+S00459,TX0153,C0022,Gaurav Bansal,27,Male,Delhi,P004,Tea,Beverages,120,1,120,S107,Chennai Marina Outlet,South,2026-02-12,12,2,1,2026,9,9711,0.75,88,1
+S00460,TX0154,C0012,Meera Joshi,27,Female,Mumbai,P010,Wireless Mouse,Electronics,850,2,1700,S105,West Gate Ahmedabad,West,2025-03-01,1,3,1,2025,1,1512,0.08,67,1
+S00461,TX0154,C0016,Kunal Mehta,48,Male,Surat,P010,Wireless Mouse,Electronics,850,1,850,S103,Tech Hub Bengaluru,South,2025-08-20,20,8,3,2025,2,3864,0.17,115,1
+S00462,TX0154,C0013,Aditya Malhotra,35,Male,Delhi,P001,Bread,Bakery & Dairy,40,3,120,S101,Metro Express Mumbai,West,2025-08-16,16,8,3,2025,45,75195,3.75,12,1
+S00463,TX0155,C0007,Rahul Verma,52,Male,Lucknow,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-09-22,22,9,3,2025,45,39330,3.75,2,1
+S00464,TX0155,C0003,Rohan Gupta,22,Male,Delhi,P011,Smartphone,Electronics,18000,1,18000,S106,Jaipur Plaza Store,North,2025-11-01,1,11,4,2025,1,822,0.08,81,0
+S00465,TX0155,C0020,Manish Tiwari,44,Male,Patna,P007,Sugar,Grocery,45,1,45,S101,Metro Express Mumbai,West,2025-10-23,23,10,4,2025,5,12900,0.42,55,1
+S00466,TX0156,C0008,Neha Kulkarni,24,Female,Pune,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-03-18,18,3,1,2025,6,15900,0.5,55,1
+S00467,TX0156,C0019,Isha Mukherjee,29,Female,Kolkata,P002,Butter,Bakery & Dairy,60,1,60,S105,West Gate Ahmedabad,West,2025-05-06,6,5,2,2025,1,2328,0.08,101,1
+S00468,TX0156,C0025,Shweta Mishra,25,Female,Indore,P002,Butter,Bakery & Dairy,60,2,120,S101,Metro Express Mumbai,West,2025-02-14,14,2,1,2025,5,8805,0.42,119,1
+S00469,TX0157,C0035,Swati Hegde,30,Female,Mangaluru,P003,Milk,Bakery & Dairy,32,2,64,S101,Metro Express Mumbai,West,2026-01-22,22,1,1,2026,41,32718,3.42,16,1
+S00470,TX0157,C0030,Akash Chauhan,26,Male,Dehradun,P005,Biscuits,Snacks,30,3,90,S104,City Mega Store Kolkata,East,2025-04-29,29,4,2,2025,35,70175,2.92,7,1
+S00471,TX0157,C0022,Gaurav Bansal,27,Male,Delhi,P002,Butter,Bakery & Dairy,60,1,60,S107,Chennai Marina Outlet,South,2025-06-16,16,6,2,2025,22,34232,1.83,13,1
+S00472,TX0158,C0009,Kavita Rao,38,Female,Hyderabad,P004,Tea,Beverages,120,2,240,S105,West Gate Ahmedabad,West,2025-02-22,22,2,1,2025,37,104266,3.08,15,1
+S00473,TX0158,C0016,Kunal Mehta,48,Male,Surat,P013,Phone Case,Electronics,350,1,350,S105,West Gate Ahmedabad,West,2025-03-23,23,3,1,2025,12,33840,1.0,70,1
+S00474,TX0158,C0028,Harshvardhan Goel,43,Male,Kanpur,P004,Tea,Beverages,120,2,240,S105,West Gate Ahmedabad,West,2026-02-08,8,2,1,2026,43,37324,3.58,20,1
+S00475,TX0159,C0021,Priya Das,32,Female,Bhubaneswar,P006,Coffee,Beverages,180,1,180,S105,West Gate Ahmedabad,West,2025-02-19,19,2,1,2025,18,57726,1.5,21,1
+S00476,TX0159,C0025,Shweta Mishra,25,Female,Indore,P001,Bread,Bakery & Dairy,40,2,80,S103,Tech Hub Bengaluru,South,2025-09-11,11,9,3,2025,15,41670,1.25,111,1
+S00477,TX0159,C0001,Aarav Sharma,28,Male,Mumbai,P005,Biscuits,Snacks,30,1,30,S107,Chennai Marina Outlet,South,2025-03-17,17,3,1,2025,32,52064,2.67,20,1
+S00478,TX0160,C0020,Manish Tiwari,44,Male,Patna,P012,Screen Protector,Electronics,250,5,1250,S104,City Mega Store Kolkata,East,2026-01-03,3,1,1,2026,44,90420,3.67,6,1
+S00479,TX0160,C0004,Ananya Iyer,45,Female,Bengaluru,P001,Bread,Bakery & Dairy,40,2,80,S103,Tech Hub Bengaluru,South,2025-10-09,9,10,4,2025,34,28866,2.83,11,1
+S00480,TX0160,C0016,Kunal Mehta,48,Male,Surat,P009,Laptop,Electronics,55000,1,55000,S104,City Mega Store Kolkata,East,2025-12-26,26,12,4,2025,7,13125,0.58,68,1
+S00481,TX0161,C0009,Kavita Rao,38,Female,Hyderabad,P002,Butter,Bakery & Dairy,60,2,120,S102,Delhi Central Mart,North,2025-01-06,6,1,1,2025,20,14920,1.67,6,1
+S00482,TX0161,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P023,Jeans,Fashion,1499,2,2998,S107,Chennai Marina Outlet,South,2025-08-22,22,8,3,2025,23,52003,1.92,18,1
+S00483,TX0161,C0029,Simran Sethi,28,Female,Ludhiana,P005,Biscuits,Snacks,30,2,60,S104,City Mega Store Kolkata,East,2025-07-01,1,7,3,2025,9,13518,0.75,67,1
+S00484,TX0162,C0024,Amit Choudhury,50,Male,Guwahati,P005,Biscuits,Snacks,30,4,120,S101,Metro Express Mumbai,West,2025-01-20,20,1,1,2025,12,40740,1.0,82,1
+S00485,TX0162,C0018,Nikhil Saxena,36,Male,Bhopal,P005,Biscuits,Snacks,30,2,60,S104,City Mega Store Kolkata,East,2025-09-22,22,9,3,2025,16,51216,1.33,22,1
+S00486,TX0162,C0020,Manish Tiwari,44,Male,Patna,P018,Memory Card,Electronics,650,2,1300,S105,West Gate Ahmedabad,West,2025-01-28,28,1,1,2025,44,102124,3.67,20,1
+S00487,TX0163,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P002,Butter,Bakery & Dairy,60,2,120,S103,Tech Hub Bengaluru,South,2026-02-13,13,2,1,2026,15,44655,1.25,17,1
+S00488,TX0163,C0004,Ananya Iyer,45,Female,Bengaluru,P020,Conditioner,Personal Care,310,1,310,S106,Jaipur Plaza Store,North,2025-05-30,30,5,2,2025,20,49400,1.67,4,1
+S00489,TX0163,C0018,Nikhil Saxena,36,Male,Bhopal,P002,Butter,Bakery & Dairy,60,1,60,S103,Tech Hub Bengaluru,South,2025-03-09,9,3,1,2025,3,8469,0.25,109,0
+S00490,TX0164,C0029,Simran Sethi,28,Female,Ludhiana,P004,Tea,Beverages,120,2,240,S103,Tech Hub Bengaluru,South,2026-02-18,18,2,1,2026,33,24585,2.75,6,1
+S00491,TX0164,C0010,Arjun Reddy,41,Male,Chennai,P013,Phone Case,Electronics,350,1,350,S107,Chennai Marina Outlet,South,2025-09-11,11,9,3,2025,22,27786,1.83,20,1
+S00492,TX0164,C0023,Ritika Sen,39,Female,Kolkata,P005,Biscuits,Snacks,30,1,30,S101,Metro Express Mumbai,West,2025-11-25,25,11,4,2025,12,41772,1.0,83,1
+S00493,TX0165,C0025,Shweta Mishra,25,Female,Indore,P005,Biscuits,Snacks,30,1,30,S104,City Mega Store Kolkata,East,2025-05-15,15,5,2,2025,6,15426,0.5,102,1
+S00494,TX0165,C0007,Rahul Verma,52,Male,Lucknow,P007,Sugar,Grocery,45,1,45,S105,West Gate Ahmedabad,West,2025-11-23,23,11,4,2025,11,30712,0.92,65,1
+S00495,TX0165,C0016,Kunal Mehta,48,Male,Surat,P002,Butter,Bakery & Dairy,60,2,120,S106,Jaipur Plaza Store,North,2025-12-11,11,12,4,2025,32,84576,2.67,2,1
+S00496,TX0166,C0005,Vikram Singh,31,Male,Jaipur,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-07-30,30,7,3,2025,28,33320,2.33,3,0
+S00497,TX0166,C0006,Pooja Nair,29,Female,Kochi,P015,Running Shoes,Fashion,2400,1,2400,S101,Metro Express Mumbai,West,2025-11-01,1,11,4,2025,23,19642,1.92,24,1
+S00498,TX0166,C0019,Isha Mukherjee,29,Female,Kolkata,P021,Face Wash,Personal Care,190,1,190,S104,City Mega Store Kolkata,East,2025-12-05,5,12,4,2025,39,126165,3.25,23,1
+S00499,TX0167,C0021,Priya Das,32,Female,Bhubaneswar,P004,Tea,Beverages,120,1,120,S103,Tech Hub Bengaluru,South,2025-03-24,24,3,1,2025,1,1457,0.08,,0
+S00500,TX0167,C0029,Simran Sethi,28,Female,Ludhiana,P007,Sugar,Grocery,45,2,90,S101,Metro Express Mumbai,West,2025-09-09,9,9,3,2025,8,6752,0.67,33,1
+S00501,TX0167,C0028,Harshvardhan Goel,43,Male,Kanpur,P003,Milk,Bakery & Dairy,32,1,32,S102,Delhi Central Mart,North,2025-11-11,11,11,4,2025,40,19040,3.33,17,1
+S00502,TX0168,C0001,Aarav Sharma,28,Male,Mumbai,P002,Butter,Bakery & Dairy,60,3,180,S101,Metro Express Mumbai,West,2025-12-07,7,12,4,2025,44,145112,3.67,17,1
+S00503,TX0168,C0026,Varun Khanna,37,Male,Amritsar,P018,Memory Card,Electronics,650,1,650,S107,Chennai Marina Outlet,South,2026-01-08,8,1,1,2026,12,28488,1.0,30,1
+S00504,TX0168,C0023,Ritika Sen,39,Female,Kolkata,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-12-16,16,12,4,2025,33,24057,2.75,16,1
+S00505,TX0169,C0019,Isha Mukherjee,29,Female,Kolkata,P002,Butter,Bakery & Dairy,60,2,120,S106,Jaipur Plaza Store,North,2025-04-14,14,4,2,2025,7,5859,0.58,95,1
+S00506,TX0169,C0032,Sameer Nanda,40,Male,Vadodara,P001,Bread,,40,1,40,S101,Metro Express Mumbai,West,2025-11-20,20,11,4,2025,27,64881,2.25,14,0
+S00507,TX0169,C0035,Swati Hegde,30,Female,Mangaluru,P007,Sugar,Grocery,45,1,45,S106,Jaipur Plaza Store,North,2025-06-07,7,6,2,2025,14,28840,1.17,5,1
+S00508,TX0170,C0034,Yashvardhan K,33,Male,Mysuru,P018,Memory Card,Electronics,650,1,650,S104,City Mega Store Kolkata,East,2025-12-14,14,12,4,2025,16,8816,1.33,25,1
+S00509,TX0170,C0002,Diya Patel,34,Female,Ahmedabad,P004,Tea,Beverages,120,2,240,S104,City Mega Store Kolkata,East,2025-11-13,13,11,4,2025,18,40824,1.5,21,1
+S00510,TX0170,C0005,Vikram Singh,31,Male,Jaipur,P003,Milk,Bakery & Dairy,32,1,32,S107,Chennai Marina Outlet,South,2026-02-23,23,2,1,2026,37,63936,3.08,5,1
+S00511,TX0171,C0035,Swati Hegde,30,Female,Mangaluru,P007,Sugar,Grocery,45,2,90,S102,Delhi Central Mart,North,2025-06-14,14,6,2,2025,33,21714,2.75,5,1
+S00512,TX0171,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P001,Bread,Bakery & Dairy,40,3,120,S102,Delhi Central Mart,North,2025-12-23,23,12,4,2025,2,5978,0.17,93,0
+S00513,TX0171,C0011,Siddharth Roy,30,Male,Kolkata,P001,Bread,Bakery & Dairy,40,2,80,S101,Metro Express Mumbai,West,2025-09-07,7,9,3,2025,30,63120,2.5,24,1
+S00514,TX0172,C0031,Sonal Agarwal,35,Female,Agra,P011,Smartphone,Electronics,18000,2,36000,S106,Jaipur Plaza Store,North,2025-03-06,6,3,1,2025,17,50456,1.42,11,1
+S00515,TX0172,C0001,Aarav Sharma,28,Male,Mumbai,P019,Shampoo,Personal Care,280,1,280,S105,West Gate Ahmedabad,West,2025-05-01,1,5,2,2025,42,102354,3.5,7,1
+S00516,TX0172,C0003,Rohan Gupta,22,Male,Delhi,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-11-27,27,11,4,2025,13,29328,1.08,20,1
+S00517,TX0173,C0004,Ananya Iyer,45,Female,Bengaluru,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2025-04-01,1,4,2,2025,8,22616,0.67,89,1
+S00518,TX0173,C0013,Aditya Malhotra,35,Male,Delhi,P008,Snacks,Snacks,50,2,100,S106,Jaipur Plaza Store,North,2025-12-13,13,12,4,2025,2,2742,0.17,109,0
+S00519,TX0173,C0013,Aditya Malhotra,35,Male,Delhi,P005,Biscuits,Snacks,30,1,30,S104,City Mega Store Kolkata,East,2025-04-23,23,4,2,2025,41,46289,3.42,14,1
+S00520,TX0174,C0030,Akash Chauhan,26,Male,Dehradun,P004,Tea,Beverages,120,1,120,S106,Jaipur Plaza Store,North,2025-04-10,10,4,2,2025,29,27811,2.42,5,1
+S00521,TX0174,C0030,Akash Chauhan,26,Male,Dehradun,P005,Biscuits,Snacks,30,2,60,S104,City Mega Store Kolkata,East,2025-03-29,29,3,1,2025,22,60874,1.83,19,1
+S00522,TX0174,C0006,Pooja Nair,29,Female,Kochi,P007,Sugar,Grocery,45,2,90,S104,City Mega Store Kolkata,East,2025-09-25,25,9,3,2025,6,13068,0.5,89,1
+S00523,TX0175,C0010,Arjun Reddy,41,Male,Chennai,P002,Butter,Bakery & Dairy,60,2,120,S105,West Gate Ahmedabad,West,2025-01-03,3,1,1,2025,39,100425,3.25,14,1
+S00524,TX0175,C0007,Rahul Verma,52,Male,Lucknow,P005,Biscuits,Snacks,30,4,120,S104,City Mega Store Kolkata,East,2025-09-11,11,9,3,2025,5,6895,0.42,97,0
+S00525,TX0175,C0002,Diya Patel,34,Female,Ahmedabad,P007,Sugar,Grocery,45,1,45,S104,City Mega Store Kolkata,East,2025-12-09,9,12,4,2025,12,24720,1.0,38,1
+S00526,TX0176,C0024,Amit Choudhury,50,Male,Guwahati,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-08-26,26,8,3,2025,45,23985,3.75,11,1
+S00527,TX0176,C0018,Nikhil Saxena,36,Male,Bhopal,P001,Bread,Bakery & Dairy,40,2,80,S106,Jaipur Plaza Store,North,2025-11-10,10,11,4,2025,15,47445,1.25,61,1
+S00528,TX0176,C0008,Neha Kulkarni,24,Female,Pune,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-07-07,7,7,3,2025,9,29583,0.75,23,1
+S00529,TX0177,C0014,Sneha Deshmukh,33,Female,Nagpur,P002,Butter,Bakery & Dairy,60,2,120,S102,Delhi Central Mart,North,2025-06-21,21,6,2,2025,25,87100,2.08,25,1
+S00530,TX0177,C0021,Priya Das,32,Female,Bhubaneswar,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-05-17,17,5,2,2025,45,40590,3.75,17,1
+S00531,TX0177,C0035,Swati Hegde,30,Female,Mangaluru,P010,Wireless Mouse,Electronics,850,1,850,S103,Tech Hub Bengaluru,South,2025-08-20,20,8,3,2025,3,,0.25,24,1
+S00532,TX0178,C0018,Nikhil Saxena,36,Male,Bhopal,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-12-23,23,12,4,2025,30,63180,2.5,23,1
+S00533,TX0178,C0009,Kavita Rao,38,Female,Hyderabad,P004,Tea,Beverages,120,1,120,S104,City Mega Store Kolkata,East,2025-06-27,27,6,2,2025,26,65728,2.17,22,1
+S00534,TX0178,C0022,Gaurav Bansal,27,Male,Delhi,P022,T-Shirt,Fashion,699,2,1398,S106,Jaipur Plaza Store,North,2025-11-27,27,11,4,2025,40,91000,3.33,11,1
+S00535,TX0179,C0020,Manish Tiwari,44,Male,Patna,P007,Sugar,Grocery,45,1,45,S102,Delhi Central Mart,North,2026-02-09,9,2,1,2026,22,72930,1.83,19,1
+S00536,TX0179,C0012,Meera Joshi,27,Female,Mumbai,P004,Tea,Beverages,120,1,120,S107,Chennai Marina Outlet,South,2025-12-29,29,12,4,2025,20,44100,1.67,10,1
+S00537,TX0179,C0014,Sneha Deshmukh,33,Female,Nagpur,P002,Butter,Bakery & Dairy,60,1,60,S105,West Gate Ahmedabad,West,2025-12-29,29,12,4,2025,22,56870,1.83,11,1
+S00538,TX0180,C0002,Diya Patel,34,Female,Ahmedabad,P011,Smartphone,Electronics,18000,1,18000,S104,City Mega Store Kolkata,East,2025-09-13,13,9,3,2025,44,77264,3.67,22,1
+S00539,TX0180,C0031,Sonal Agarwal,35,Female,Agra,P019,Shampoo,Personal Care,280,2,560,S103,Tech Hub Bengaluru,South,2026-01-22,22,1,1,2026,40,71480,3.33,24,1
+S00540,TX0180,C0031,Sonal Agarwal,35,Female,Agra,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-03-13,13,3,1,2025,40,74520,3.33,4,1
+S00541,TX0181,C0013,Aditya Malhotra,35,Male,Delhi,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-09-27,27,9,3,2025,17,42432,1.42,14,1
+S00542,TX0181,C0021,Priya Das,32,Female,Bhubaneswar,P002,Butter,Bakery & Dairy,60,1,60,S105,West Gate Ahmedabad,West,2025-11-06,6,11,4,2025,39,74646,3.25,14,1
+S00543,TX0181,C0019,Isha Mukherjee,29,Female,Kolkata,P001,Bread,Bakery & Dairy,40,2,80,S103,Tech Hub Bengaluru,South,2025-06-29,29,6,2,2025,40,63280,3.33,7,1
+S00544,TX0182,C0028,Harshvardhan Goel,43,Male,Kanpur,P004,Tea,Beverages,120,1,120,S106,Jaipur Plaza Store,North,2025-08-01,1,8,3,2025,45,79785,3.75,4,1
+S00545,TX0182,C0025,Shweta Mishra,25,Female,Indore,P011,Smartphone,Electronics,18000,2,36000,S101,Metro Express Mumbai,West,2025-01-04,4,1,1,2025,5,13340,0.42,77,0
+S00546,TX0182,C0020,Manish Tiwari,44,Male,Patna,P003,Milk,Bakery & Dairy,32,1,32,S107,Chennai Marina Outlet,South,2025-10-27,27,10,4,2025,11,33077,0.92,75,1
+S00547,TX0183,C0019,Isha Mukherjee,29,Female,Kolkata,P004,Tea,Beverages,120,2,240,S104,City Mega Store Kolkata,East,2025-04-02,2,4,2,2025,16,45648,1.33,25,1
+S00548,TX0183,C0031,Sonal Agarwal,35,Female,Agra,P021,Face Wash,Personal Care,190,2,380,S105,West Gate Ahmedabad,West,2025-08-12,12,8,3,2025,19,36632,1.58,18,1
+S00549,TX0183,C0002,Diya Patel,34,Female,Ahmedabad,P002,Butter,Bakery & Dairy,60,1,60,S107,Chennai Marina Outlet,South,2025-05-13,13,5,2,2025,34,36312,2.83,3,1
+S00550,TX0184,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-07-02,2,7,3,2025,23,18101,1.92,21,1
+S00551,TX0184,C0035,Swati Hegde,30,Female,Mangaluru,P022,T-Shirt,Fashion,699,2,1398,S103,Tech Hub Bengaluru,South,2025-06-11,11,6,2,2025,12,38628,1.0,61,0
+S00552,TX0184,C0023,Ritika Sen,39,Female,Kolkata,P005,Biscuits,Snacks,30,1,30,S107,Chennai Marina Outlet,South,2025-03-15,15,3,1,2025,22,18018,1.83,8,1
+S00553,TX0185,C0015,Tanvi Bhat,26,Female,Bengaluru,P023,Jeans,Fashion,1499,2,2998,S107,Chennai Marina Outlet,South,2025-04-07,7,4,2,2025,19,40071,1.58,16,1
+S00554,TX0185,C0008,Neha Kulkarni,24,Female,Pune,P016,Socks,Fashion,150,1,150,S107,Chennai Marina Outlet,South,2025-03-09,9,3,1,2025,12,22620,1.0,32,1
+S00555,TX0185,C0034,Yashvardhan K,33,Male,Mysuru,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-06-25,25,6,2,2025,21,67578,1.75,9,1
+S00556,TX0186,C0014,Sneha Deshmukh,33,Female,Nagpur,P004,Tea,Beverages,120,2,240,S102,Delhi Central Mart,North,2025-02-10,10,2,1,2025,14,16856,1.17,5,0
+S00557,TX0186,C0033,Pallavi Ghosh,29,Female,Ranchi,P005,Biscuits,Snacks,30,2,60,S105,West Gate Ahmedabad,West,2025-01-31,31,1,1,2025,19,54416,1.58,8,1
+S00558,TX0186,C0013,Aditya Malhotra,35,Male,Delhi,P002,Butter,Bakery & Dairy,60,4,240,S102,Delhi Central Mart,North,2025-12-10,10,12,4,2025,3,7350,0.25,114,0
+S00559,TX0187,C0016,Kunal Mehta,48,Male,Surat,P013,Phone Case,Electronics,350,1,350,S105,West Gate Ahmedabad,West,2025-10-19,19,10,4,2025,25,61625,2.08,24,1
+S00560,TX0187,C0012,Meera Joshi,27,Female,Mumbai,P006,Coffee,Beverages,180,2,360,S104,City Mega Store Kolkata,East,2025-12-11,11,12,4,2025,39,49803,3.25,18,1
+S00561,TX0187,C0008,Neha Kulkarni,24,Female,Pune,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-06-10,10,6,2,2025,6,19716,0.5,51,1
+S00562,TX0188,C0003,Rohan Gupta,22,Male,Delhi,P002,Butter,Bakery & Dairy,60,2,120,S101,Metro Express Mumbai,West,2025-06-17,17,6,2,2025,5,16070,0.42,71,1
+S00563,TX0188,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P002,Butter,Bakery & Dairy,60,4,240,S103,Tech Hub Bengaluru,South,2025-08-08,8,8,3,2025,1,3161,0.08,77,0
+S00564,TX0188,C0026,Varun Khanna,37,Male,Amritsar,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2025-09-25,25,9,3,2025,18,61848,1.5,7,0
+S00565,TX0189,C0013,Aditya Malhotra,35,Male,Delhi,P005,Biscuits,Snacks,30,2,60,S103,Tech Hub Bengaluru,South,2025-04-13,13,4,2,2025,12,33396,1.0,90,1
+S00566,TX0189,C0026,Varun Khanna,37,Male,Amritsar,P010,Wireless Mouse,Electronics,850,1,850,S103,Tech Hub Bengaluru,South,2025-09-01,1,9,3,2025,8,10760,0.67,95,1
+S00567,TX0189,C0002,Diya Patel,34,Female,Ahmedabad,P001,Bread,Bakery & Dairy,40,4,160,S101,Metro Express Mumbai,West,2026-01-13,13,1,1,2026,11,19129,0.92,34,1
+S00568,TX0190,C0007,Rahul Verma,52,Male,Lucknow,P010,Wireless Mouse,Electronics,850,1,850,S107,Chennai Marina Outlet,South,2025-02-09,9,2,1,2025,6,15684,0.5,84,0
+S00569,TX0190,C0003,Rohan Gupta,22,Male,Delhi,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-03-02,2,3,1,2025,1,534,0.08,37,0
+S00570,TX0190,C0020,Manish Tiwari,44,Male,Patna,P002,Butter,Bakery & Dairy,60,1,60,S106,Jaipur Plaza Store,North,2025-03-26,26,3,1,2025,11,26499,0.92,99,1
+S00571,TX0191,C0035,Swati Hegde,30,Female,Mangaluru,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2025-08-29,29,8,3,2025,11,20284,0.92,113,1
+S00572,TX0191,C0021,Priya Das,32,Female,Bhubaneswar,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-01-15,15,1,1,2025,13,38480,1.08,12,1
+S00573,TX0191,C0028,Harshvardhan Goel,43,Male,Kanpur,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-07-02,2,7,3,2025,17,54706,1.42,4,1
+S00574,TX0192,C0008,Neha Kulkarni,24,Female,Pune,P002,Butter,Bakery & Dairy,60,2,120,S103,Tech Hub Bengaluru,South,2025-03-28,28,3,1,2025,7,19082,0.58,80,1
+S00575,TX0192,C0018,Nikhil Saxena,36,Male,Bhopal,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-12-23,23,12,4,2025,10,8000,0.83,118,1
+S00576,TX0192,C0014,Sneha Deshmukh,33,Female,Nagpur,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-09-12,12,9,3,2025,43,129086,3.58,4,1
+S00577,TX0193,C0035,Swati Hegde,30,Female,Mangaluru,P002,Butter,Bakery & Dairy,60,2,120,S102,Delhi Central Mart,North,2025-05-28,28,5,2,2025,17,56763,1.42,20,0
+S00578,TX0193,C0022,Gaurav Bansal,27,Male,Delhi,P003,Milk,Bakery & Dairy,32,2,64,S103,Tech Hub Bengaluru,South,2025-02-04,4,2,1,2025,13,21164,1.08,70,1
+S00579,TX0193,C0021,Priya Das,32,Female,Bhubaneswar,P006,Coffee,Beverages,180,2,360,S102,Delhi Central Mart,North,2025-08-01,1,8,3,2025,23,63526,1.92,17,1
+S00580,TX0194,C0030,Akash Chauhan,26,Male,Dehradun,P015,Running Shoes,Fashion,2400,1,2400,S103,Tech Hub Bengaluru,South,2025-11-23,23,11,4,2025,31,67673,2.58,15,1
+S00581,TX0194,C0005,Vikram Singh,31,Male,Jaipur,P009,Laptop,Electronics,55000,2,110000,S106,Jaipur Plaza Store,North,2025-04-15,15,4,2,2025,28,89964,2.33,21,1
+S00582,TX0194,C0016,Kunal Mehta,48,Male,Surat,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-03-18,18,3,1,2025,39,82992,3.25,22,1
+S00583,TX0195,C0013,Aditya Malhotra,35,Male,Delhi,P002,Butter,Bakery & Dairy,60,2,120,S102,Delhi Central Mart,North,2025-05-20,20,5,2,2025,14,8008,1.17,107,1
+S00584,TX0195,C0002,Diya Patel,34,Female,Ahmedabad,P001,Bread,Bakery & Dairy,40,3,120,S101,Metro Express Mumbai,West,2025-02-12,12,2,1,2025,35,110285,2.92,23,1
+S00585,TX0195,C0026,Varun Khanna,37,Male,Amritsar,P008,Snacks,Snacks,50,1,50,S107,Chennai Marina Outlet,South,2026-01-06,6,1,1,2026,19,48203,1.58,23,1
+S00586,TX0196,C0034,Yashvardhan K,33,Male,Mysuru,P008,Snacks,Snacks,50,1,50,S103,Tech Hub Bengaluru,South,2025-09-12,12,9,3,2025,32,55936,2.67,20,1
+S00587,TX0196,C0016,Kunal Mehta,48,Male,Surat,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-04-22,22,4,2,2025,10,6290,0.83,77,1
+S00588,TX0196,C0008,Neha Kulkarni,24,Female,Pune,P010,Wireless Mouse,Electronics,850,2,1700,S103,Tech Hub Bengaluru,South,2025-10-07,7,10,4,2025,1,3043,0.08,92,1
+S00589,TX0197,C0004,Ananya Iyer,45,Female,Bengaluru,P002,Butter,Bakery & Dairy,60,1,60,S106,Jaipur Plaza Store,North,2026-02-08,8,2,1,2026,35,112210,2.92,5,1
+S00590,TX0197,C0016,Kunal Mehta,48,Male,Surat,P005,Biscuits,Snacks,30,1,30,S107,Chennai Marina Outlet,South,2025-08-15,15,8,3,2025,27,43686,2.25,8,1
+S00591,TX0197,C0011,Siddharth Roy,30,Male,Kolkata,P006,Coffee,Beverages,180,2,360,S104,City Mega Store Kolkata,East,2025-11-20,20,11,4,2025,42,143556,3.5,15,1
+S00592,TX0198,C0022,Gaurav Bansal,27,Male,Delhi,P004,Tea,Beverages,120,2,240,S106,Jaipur Plaza Store,North,2025-08-05,5,8,3,2025,44,29524,3.67,13,1
+S00593,TX0198,C0021,Priya Das,32,Female,Bhubaneswar,P001,Bread,Bakery & Dairy,40,2,80,S104,City Mega Store Kolkata,East,2025-12-22,22,12,4,2025,20,8240,1.67,14,1
+S00594,TX0198,C0020,Manish Tiwari,44,Male,Patna,P001,Bread,Bakery & Dairy,40,2,80,S103,Tech Hub Bengaluru,South,2025-10-22,22,10,4,2025,32,,2.67,17,1
+S00595,TX0199,C0009,Kavita Rao,38,Female,Hyderabad,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-03-30,30,3,1,2025,7,19152,0.58,43,0
+S00596,TX0199,C0002,Diya Patel,34,Female,Ahmedabad,P001,Bread,Bakery & Dairy,40,4,160,S105,West Gate Ahmedabad,West,2025-11-28,28,11,4,2025,12,13092,1.0,21,1
+S00597,TX0199,C0028,Harshvardhan Goel,43,Male,Kanpur,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-05-14,14,5,2,2025,41,129519,3.42,17,1
+S00598,TX0200,C0014,Sneha Deshmukh,33,Female,Nagpur,P005,Biscuits,Snacks,30,1,30,S102,Delhi Central Mart,North,2026-02-21,21,2,1,2026,25,71425,2.08,8,1
+S00599,TX0200,C0019,Isha Mukherjee,29,Female,Kolkata,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-12-13,13,12,4,2025,27,79110,2.25,16,1
+S00600,TX0200,C0024,Amit Choudhury,50,Male,Guwahati,P002,Butter,Bakery & Dairy,60,1,60,S105,West Gate Ahmedabad,West,2025-12-17,17,12,4,2025,12,24336,1.0,102,1
+S00601,TX0201,C0025,Shweta Mishra,25,Female,Indore,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-08-05,5,8,3,2025,1,1763,0.08,45,0
+S00602,TX0201,C0023,Ritika Sen,39,Female,Kolkata,P020,Conditioner,Personal Care,310,2,620,S105,West Gate Ahmedabad,West,2025-12-10,10,12,4,2025,12,17256,1.0,18,1
+S00603,TX0201,C0020,Manish Tiwari,44,Male,Patna,P007,Sugar,Grocery,45,4,180,S104,City Mega Store Kolkata,East,2025-12-10,10,12,4,2025,20,15340,1.67,12,1
+S00604,TX0202,C0028,Harshvardhan Goel,43,Male,Kanpur,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-05-14,14,5,2,2025,29,100427,2.42,13,1
+S00605,TX0202,C0019,Isha Mukherjee,29,Female,Kolkata,P009,Laptop,Electronics,55000,1,55000,S103,Tech Hub Bengaluru,South,2025-11-10,10,11,4,2025,22,37224,1.83,25,1
+S00606,TX0202,C0010,Arjun Reddy,41,Male,Chennai,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-12-03,3,12,4,2025,5,5345,0.42,105,0
+S00607,TX0203,C0008,Neha Kulkarni,24,Female,Pune,P006,Coffee,Beverages,180,1,180,S104,City Mega Store Kolkata,East,2025-01-21,21,1,1,2025,2,2468,0.17,51,0
+S00608,TX0203,C0011,Siddharth Roy,30,Male,Kolkata,P019,Shampoo,Personal Care,280,3,840,S106,Jaipur Plaza Store,North,2025-09-18,18,9,3,2025,12,30648,1.0,20,1
+S00609,TX0203,C0005,Vikram Singh,31,Male,Jaipur,P002,Butter,Bakery & Dairy,60,1,60,S102,Delhi Central Mart,North,2026-01-29,29,1,1,2026,19,38266,1.58,13,1
+S00610,TX0204,C0007,Rahul Verma,52,Male,Lucknow,P002,Butter,Bakery & Dairy,60,1,60,S107,Chennai Marina Outlet,South,2025-06-15,15,6,2,2025,12,20988,1.0,3,1
+S00611,TX0204,C0029,Simran Sethi,28,Female,Ludhiana,P019,Shampoo,Personal Care,280,1,280,S103,Tech Hub Bengaluru,South,2026-01-10,10,1,1,2026,30,51690,2.5,3,1
+S00612,TX0204,C0025,Shweta Mishra,25,Female,Indore,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-07-24,24,7,3,2025,14,17528,1.17,35,1
+S00613,TX0205,C0026,Varun Khanna,37,Male,Amritsar,P004,Tea,Beverages,120,1,120,S103,Tech Hub Bengaluru,South,2025-11-28,28,11,4,2025,31,99355,2.58,21,1
+S00614,TX0205,C0007,Rahul Verma,52,Male,Lucknow,P023,Jeans,Fashion,1499,4,5996,S107,Chennai Marina Outlet,South,2025-07-08,8,7,3,2025,21,50988,1.75,18,1
+S00615,TX0205,C0034,Yashvardhan K,33,Male,Mysuru,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-05-29,29,5,2,2025,31,43958,2.58,18,1
+S00616,TX0206,C0004,Ananya Iyer,45,Female,Bengaluru,P017,Camera,Electronics,32000,1,32000,S105,West Gate Ahmedabad,West,2025-02-09,9,2,1,2025,18,41454,1.5,23,1
+S00617,TX0206,C0017,Rhea Kapoor,23,Female,Chandigarh,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-05-11,11,5,2,2025,3,6027,0.25,20,0
+S00618,TX0206,C0020,Manish Tiwari,44,Male,Patna,P011,Smartphone,Electronics,18000,4,72000,S103,Tech Hub Bengaluru,South,2025-10-28,28,10,4,2025,23,29072,1.92,7,0
+S00619,TX0207,C0017,Rhea Kapoor,23,Female,Chandigarh,P004,Tea,Beverages,120,1,120,S107,Chennai Marina Outlet,South,2025-12-11,11,12,4,2025,11,25894,0.92,73,1
+S00620,TX0207,C0032,Sameer Nanda,40,Male,Vadodara,P020,Conditioner,Personal Care,310,1,310,S103,Tech Hub Bengaluru,South,2025-11-13,13,11,4,2025,37,60643,3.08,4,1
+S00621,TX0207,C0001,Aarav Sharma,,Male,Mumbai,P023,Jeans,Fashion,1499,4,5996,S102,Delhi Central Mart,North,2025-02-27,27,2,1,2025,25,59250,2.08,22,1
+S00622,TX0208,C0016,Kunal Mehta,48,Male,Surat,P018,Memory Card,Electronics,650,1,650,S104,City Mega Store Kolkata,East,2025-11-17,17,11,4,2025,8,8048,0.67,75,1
+S00623,TX0208,C0008,Neha Kulkarni,24,Female,Pune,P020,Conditioner,Personal Care,310,1,310,S102,Delhi Central Mart,North,2025-03-20,20,3,1,2025,4,6428,0.33,87,0
+S00624,TX0208,C0026,Varun Khanna,37,Male,Amritsar,P018,Memory Card,Electronics,650,1,650,S101,Metro Express Mumbai,West,2025-06-20,20,6,2,2025,43,58007,3.58,24,0
+S00625,TX0209,C0002,Diya Patel,34,Female,Ahmedabad,P002,Butter,Bakery & Dairy,60,3,180,S104,City Mega Store Kolkata,East,2025-10-23,23,10,4,2025,10,30460,0.83,59,1
+S00626,TX0209,C0028,Harshvardhan Goel,43,Male,Kanpur,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-03-24,24,3,1,2025,33,94578,2.75,24,1
+S00627,TX0209,C0009,Kavita Rao,38,Female,Hyderabad,P016,Socks,Fashion,150,2,300,S103,Tech Hub Bengaluru,South,2026-01-06,6,1,1,2026,25,38900,2.08,24,1
+S00628,TX0210,C0031,Sonal Agarwal,35,Female,Agra,P005,Biscuits,Snacks,30,4,120,S102,Delhi Central Mart,North,2025-03-30,30,3,1,2025,27,33939,2.25,19,0
+S00629,TX0210,C0002,Diya Patel,34,Female,Ahmedabad,P001,Bread,Bakery & Dairy,40,2,80,S103,Tech Hub Bengaluru,South,2025-05-14,14,5,2,2025,2,5858,0.17,44,0
+S00630,TX0210,C0015,Tanvi Bhat,26,Female,Bengaluru,P012,Screen Protector,Electronics,250,2,500,S104,City Mega Store Kolkata,East,2025-05-13,13,5,2,2025,29,29551,2.42,24,1
+S00631,TX0211,C0007,Rahul Verma,52,Male,Lucknow,P015,Running Shoes,Fashion,2400,2,4800,S106,Jaipur Plaza Store,North,2025-01-26,26,1,1,2025,19,15827,1.58,21,1
+S00632,TX0211,C0007,Rahul Verma,52,Male,Lucknow,P001,Bread,Bakery & Dairy,40,3,120,S107,Chennai Marina Outlet,South,2025-10-15,15,10,4,2025,22,74426,1.83,11,1
+S00633,TX0211,C0033,Pallavi Ghosh,29,Female,Ranchi,P005,Biscuits,Snacks,30,2,60,S104,City Mega Store Kolkata,East,2026-01-11,11,1,1,2026,3,2709,0.25,40,0
+S00634,TX0212,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P003,Milk,Bakery & Dairy,32,1,32,S107,Chennai Marina Outlet,South,2026-01-29,29,1,1,2026,13,27287,1.08,61,1
+S00635,TX0212,C0016,Kunal Mehta,48,Male,Surat,P008,Snacks,Snacks,50,1,50,S102,Delhi Central Mart,North,2026-01-21,21,1,1,2026,38,86602,3.17,18,1
+S00636,TX0212,C0024,Amit Choudhury,50,Male,Guwahati,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-08-15,15,8,3,2025,13,13949,1.08,70,0
+S00637,TX0213,C0003,Rohan Gupta,22,Male,Delhi,P011,Smartphone,Electronics,18000,3,54000,S106,Jaipur Plaza Store,North,2025-11-25,25,11,4,2025,1,1545,0.08,82,0
+S00638,TX0213,C0010,Arjun Reddy,41,Male,Chennai,P002,Butter,Bakery & Dairy,60,2,120,S106,Jaipur Plaza Store,North,2025-07-26,26,7,3,2025,37,44696,3.08,11,0
+S00639,TX0213,C0035,Swati Hegde,30,Female,Mangaluru,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-07-19,19,7,3,2025,31,78585,2.58,12,1
+S00640,TX0214,C0011,Siddharth Roy,30,Male,Kolkata,P018,Memory Card,Electronics,650,1,650,S101,Metro Express Mumbai,West,2025-01-15,15,1,1,2025,13,21372,1.08,107,1
+S00641,TX0214,C0033,Pallavi Ghosh,29,Female,Ranchi,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2026-01-10,10,1,1,2026,19,42522,1.58,11,1
+S00642,TX0214,C0001,Aarav Sharma,28,Male,Mumbai,P024,Backpack,Fashion,1299,5,6495,S104,City Mega Store Kolkata,East,2025-06-23,23,6,2,2025,26,47684,2.17,11,1
+S00643,TX0215,C0009,Kavita Rao,38,Female,Hyderabad,P002,Butter,Bakery & Dairy,60,1,60,S106,Jaipur Plaza Store,North,2025-07-13,13,7,3,2025,13,24427,1.08,73,0
+S00644,TX0215,C0028,Harshvardhan Goel,43,Male,Kanpur,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-07-30,30,7,3,2025,35,111020,2.92,18,1
+S00645,TX0215,C0034,Yashvardhan K,33,Male,Mysuru,P019,Shampoo,Personal Care,280,1,280,S107,Chennai Marina Outlet,South,2025-07-22,22,7,3,2025,40,128880,3.33,17,1
+S00646,TX0216,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P002,Butter,Bakery & Dairy,60,1,60,S107,Chennai Marina Outlet,South,2025-03-25,25,3,1,2025,45,39735,3.75,24,1
+S00647,TX0216,C0031,Sonal Agarwal,35,Female,Agra,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2026-01-18,18,1,1,2026,5,2820,0.42,81,0
+S00648,TX0216,C0024,Amit Choudhury,50,Male,Guwahati,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-07-11,11,7,3,2025,30,38490,2.5,7,1
+S00649,TX0217,C0032,Sameer Nanda,40,Male,Vadodara,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-03-04,4,3,1,2025,40,71320,3.33,14,1
+S00650,TX0217,C0009,Kavita Rao,38,Female,Hyderabad,P010,Wireless Mouse,Electronics,850,1,850,S107,Chennai Marina Outlet,South,2025-03-12,12,3,1,2025,33,86295,2.75,3,1
+S00651,TX0217,C0029,Simran Sethi,28,Female,Ludhiana,P015,Running Shoes,Fashion,2400,1,2400,S106,Jaipur Plaza Store,North,2025-05-23,23,5,2,2025,15,41025,1.25,18,1
+S00652,TX0218,C0031,Sonal Agarwal,35,Female,Agra,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-01-10,10,1,1,2025,14,46060,1.17,89,1
+S00653,TX0218,C0035,Swati Hegde,30,Female,Mangaluru,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2025-06-14,14,6,2,2025,1,2562,0.08,55,0
+S00654,TX0218,C0006,Pooja Nair,29,Female,Kochi,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-02-20,20,2,1,2025,5,10340,0.42,101,1
+S00655,TX0219,C0021,Priya Das,32,Female,Bhubaneswar,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-01-14,14,1,1,2025,32,46592,2.67,14,1
+S00656,TX0219,C0008,Neha Kulkarni,24,Female,Pune,P005,Biscuits,Snacks,30,4,120,S101,Metro Express Mumbai,West,2025-04-14,14,4,2,2025,5,3240,0.42,55,0
+S00657,TX0219,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P003,Milk,Bakery & Dairy,32,1,32,S101,Metro Express Mumbai,West,2025-09-05,5,9,3,2025,20,32940,1.67,20,1
+S00658,TX0220,C0006,Pooja Nair,29,Female,Kochi,P004,Tea,Beverages,120,2,240,S107,Chennai Marina Outlet,South,2025-11-22,22,11,4,2025,39,104247,3.25,16,0
+S00659,TX0220,C0030,Akash Chauhan,26,Male,Dehradun,P005,Biscuits,Snacks,30,1,30,S107,Chennai Marina Outlet,South,2025-11-14,14,11,4,2025,11,21527,0.92,59,1
+S00660,TX0220,C0014,Sneha Deshmukh,33,Female,Nagpur,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2025-09-19,19,9,3,2025,2,1944,0.17,107,0
+S00661,TX0221,C0018,Nikhil Saxena,36,Male,Bhopal,P005,Biscuits,Snacks,30,2,60,S104,City Mega Store Kolkata,East,2025-04-18,18,4,2,2025,40,60720,3.33,9,1
+S00662,TX0221,C0021,Priya Das,32,Female,Bhubaneswar,P004,Tea,Beverages,120,2,240,S103,Tech Hub Bengaluru,South,2025-04-18,18,4,2,2025,8,3336,0.67,16,1
+S00663,TX0221,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P003,Milk,Bakery & Dairy,32,1,32,S105,West Gate Ahmedabad,West,2025-12-23,23,12,4,2025,40,126120,3.33,5,1
+S00664,TX0222,C0025,Shweta Mishra,25,Female,Indore,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-11-04,4,11,4,2025,6,7140,0.5,71,0
+S00665,TX0222,C0002,Diya Patel,34,Female,Ahmedabad,P005,Biscuits,Snacks,30,2,60,S107,Chennai Marina Outlet,South,2025-05-24,24,5,2,2025,8,15088,0.67,19,1
+S00666,TX0222,C0014,Sneha Deshmukh,33,Female,Nagpur,P021,Face Wash,Personal Care,190,1,190,S101,Metro Express Mumbai,West,2025-04-11,11,4,2,2025,44,106612,3.67,7,1
+S00667,TX0223,C0012,Meera Joshi,27,Female,Mumbai,P002,Butter,Bakery & Dairy,60,4,240,S101,Metro Express Mumbai,West,2025-10-29,29,10,4,2025,45,152325,3.75,10,1
+S00668,TX0223,C0002,Diya Patel,34,Female,Ahmedabad,P002,Butter,Bakery & Dairy,60,1,60,S106,Jaipur Plaza Store,North,2025-12-14,14,12,4,2025,15,25845,1.25,15,1
+S00669,TX0223,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P004,Tea,Beverages,120,3,360,S103,Tech Hub Bengaluru,South,2025-03-04,4,3,1,2025,5,10600,0.42,83,1
+S00670,TX0224,C0001,Aarav Sharma,28,Male,Mumbai,P007,Sugar,Grocery,45,4,180,S104,City Mega Store Kolkata,East,2025-04-10,10,4,2,2025,24,25752,2.0,12,1
+S00671,TX0224,C0007,Rahul Verma,52,Male,Lucknow,P002,Butter,Bakery & Dairy,60,2,120,S101,Metro Express Mumbai,West,2025-09-03,3,9,3,2025,8,11008,0.67,58,1
+S00672,TX0224,C0022,Gaurav Bansal,27,Male,Delhi,P002,Butter,Bakery & Dairy,60,2,120,S105,West Gate Ahmedabad,West,2026-02-11,11,2,1,2026,19,14250,1.58,3,1
+S00673,TX0225,C0025,Shweta Mishra,25,Female,Indore,P002,Butter,Bakery & Dairy,60,1,60,S103,Tech Hub Bengaluru,South,2025-12-22,22,12,4,2025,10,29640,0.83,70,0
+S00674,TX0225,C0004,Ananya Iyer,45,Female,Bengaluru,P001,Bread,Bakery & Dairy,40,2,80,S105,West Gate Ahmedabad,West,2025-01-27,27,1,1,2025,12,27084,1.0,14,1
+S00675,TX0225,C0028,Harshvardhan Goel,43,Male,Kanpur,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2025-11-14,14,11,4,2025,1,2837,0.08,106,1
+S00676,TX0226,C0013,Aditya Malhotra,35,Male,Delhi,P002,Butter,Bakery & Dairy,60,1,60,S105,West Gate Ahmedabad,West,2025-03-06,6,3,1,2025,23,32085,1.92,6,1
+S00677,TX0226,C0004,Ananya Iyer,45,Female,Bengaluru,P003,Milk,Bakery & Dairy,32,1,32,S102,Delhi Central Mart,North,2025-06-09,9,6,2,2025,6,9552,0.5,62,1
+S00678,TX0226,C0034,Yashvardhan K,33,Male,Mysuru,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2025-12-03,3,12,4,2025,4,12092,0.33,40,1
+S00679,TX0227,C0022,Gaurav Bansal,27,Male,Delhi,P012,Screen Protector,Electronics,250,1,250,S102,Delhi Central Mart,North,2025-12-08,8,12,4,2025,8,4576,0.67,78,1
+S00680,TX0227,C0001,Aarav Sharma,28,Male,Mumbai,P005,Biscuits,Snacks,30,2,60,S106,Jaipur Plaza Store,North,2025-04-25,25,4,2,2025,33,113223,2.75,14,1
+S00681,TX0227,C0012,Meera Joshi,27,Female,Mumbai,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-01-04,4,1,1,2025,8,9568,0.67,95,1
+S00682,TX0228,C0024,Amit Choudhury,50,Male,Guwahati,P001,Bread,Bakery & Dairy,40,3,120,S101,Metro Express Mumbai,West,2025-01-16,16,1,1,2025,33,88143,2.75,9,1
+S00683,TX0228,C0002,Diya Patel,34,Female,Ahmedabad,P001,Bread,,40,2,80,S102,Delhi Central Mart,North,2025-05-15,15,5,2,2025,11,9394,0.92,58,1
+S00684,TX0228,C0020,Manish Tiwari,44,Male,Patna,P001,Bread,Bakery & Dairy,40,4,160,S104,City Mega Store Kolkata,East,2025-05-03,3,5,2,2025,39,129168,3.25,4,1
+S00685,TX0229,C0009,Kavita Rao,38,Female,Hyderabad,P002,Butter,Bakery & Dairy,60,1,60,S107,Chennai Marina Outlet,South,2025-04-08,8,4,2,2025,27,15903,2.25,21,1
+S00686,TX0229,C0035,Swati Hegde,30,Female,Mangaluru,P002,Butter,Bakery & Dairy,60,3,180,S103,Tech Hub Bengaluru,South,2026-02-09,9,2,1,2026,43,54051,3.58,25,0
+S00687,TX0229,C0031,Sonal Agarwal,35,Female,Agra,P002,Butter,Bakery & Dairy,60,2,120,S107,Chennai Marina Outlet,South,2025-12-06,6,12,4,2025,44,85008,3.67,17,1
+S00688,TX0230,C0012,Meera Joshi,27,Female,Mumbai,P007,Sugar,Grocery,45,2,90,S103,Tech Hub Bengaluru,South,2025-12-31,31,12,4,2025,14,17472,1.17,9,1
+S00689,TX0230,C0029,Simran Sethi,28,Female,Ludhiana,P002,Butter,Bakery & Dairy,60,1,60,S107,Chennai Marina Outlet,South,2025-05-01,1,5,2,2025,35,50470,2.92,19,0
+S00690,TX0230,C0006,Pooja Nair,29,Female,Kochi,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-08-16,16,8,3,2025,39,87633,3.25,16,1
+S00691,TX0231,C0024,Amit Choudhury,50,Male,Guwahati,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-09-12,12,9,3,2025,2,3740,0.17,25,1
+S00692,TX0231,C0033,Pallavi Ghosh,29,Female,Ranchi,P003,Milk,Bakery & Dairy,32,1,32,S105,West Gate Ahmedabad,West,2025-10-07,7,10,4,2025,33,39765,2.75,23,1
+S00693,TX0231,C0020,Manish Tiwari,44,Male,Patna,P007,Sugar,Grocery,45,2,90,S106,Jaipur Plaza Store,North,2026-02-22,22,2,1,2026,28,12152,2.33,11,1
+S00694,TX0232,C0023,Ritika Sen,39,Female,Kolkata,P019,Shampoo,Personal Care,280,2,560,S107,Chennai Marina Outlet,South,2025-07-26,26,7,3,2025,11,27489,0.92,112,1
+S00695,TX0232,C0026,Varun Khanna,37,Male,Amritsar,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-04-27,27,4,2,2025,41,137719,3.42,16,1
+S00696,TX0232,C0006,Pooja Nair,29,Female,Kochi,P009,Laptop,Electronics,55000,1,55000,S103,Tech Hub Bengaluru,South,2025-04-07,7,4,2,2025,12,5268,1.0,78,1
+S00697,TX0233,C0023,Ritika Sen,39,Female,Kolkata,P009,Laptop,Electronics,55000,1,55000,S103,Tech Hub Bengaluru,South,2025-04-26,26,4,2,2025,3,3087,0.25,57,0
+S00698,TX0233,C0026,Varun Khanna,37,Male,Amritsar,P003,Milk,Bakery & Dairy,32,1,32,S104,City Mega Store Kolkata,East,2025-04-15,15,4,2,2025,2,3492,0.17,87,0
+S00699,TX0233,C0020,Manish Tiwari,44,Male,Patna,P005,Biscuits,Snacks,30,1,30,S101,Metro Express Mumbai,West,2025-03-29,29,3,1,2025,15,29700,1.25,51,1
+S00700,TX0234,C0019,Isha Mukherjee,29,Female,Kolkata,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-09-26,26,9,3,2025,38,76038,3.17,7,1
+S00701,TX0234,C0009,Kavita Rao,38,Female,Hyderabad,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2025-08-03,3,8,3,2025,7,23142,0.58,100,1
+S00702,TX0234,C0020,Manish Tiwari,44,Male,Patna,P004,Tea,Beverages,120,5,600,S105,West Gate Ahmedabad,West,2025-04-14,14,4,2,2025,37,106449,3.08,9,1
+S00703,TX0235,C0032,Sameer Nanda,40,Male,Vadodara,P005,Biscuits,Snacks,30,1,30,S104,City Mega Store Kolkata,East,2025-08-25,25,8,3,2025,31,62031,2.58,21,1
+S00704,TX0235,C0012,Meera Joshi,27,Female,Mumbai,P003,Milk,Bakery & Dairy,32,2,64,S104,City Mega Store Kolkata,East,2025-05-08,8,5,2,2025,12,6936,1.0,45,1
+S00705,TX0235,C0011,Siddharth Roy,30,Male,Kolkata,P004,Tea,Beverages,120,3,360,S103,Tech Hub Bengaluru,South,2025-11-18,18,11,4,2025,19,36290,1.58,4,1
+S00706,TX0236,C0033,Pallavi Ghosh,29,Female,Ranchi,P004,Tea,Beverages,120,1,120,S107,Chennai Marina Outlet,South,2026-02-04,4,2,1,2026,12,38004,1.0,110,1
+S00707,TX0236,C0022,Gaurav Bansal,27,Male,Delhi,P013,Phone Case,Electronics,350,1,350,S106,Jaipur Plaza Store,North,2025-07-24,24,7,3,2025,12,11508,1.0,56,1
+S00708,TX0236,C0030,Akash Chauhan,26,Male,Dehradun,P005,Biscuits,Snacks,30,1,30,S104,City Mega Store Kolkata,East,2025-08-25,25,8,3,2025,22,24156,1.83,2,1
+S00709,TX0237,C0012,Meera Joshi,27,Female,Mumbai,P001,Bread,Bakery & Dairy,40,2,80,S103,Tech Hub Bengaluru,South,2025-03-05,5,3,1,2025,5,5140,0.42,71,0
+S00710,TX0237,C0014,Sneha Deshmukh,33,Female,Nagpur,P018,Memory Card,Electronics,650,1,650,S106,Jaipur Plaza Store,North,2025-01-18,18,1,1,2025,45,136125,3.75,23,1
+S00711,TX0237,C0007,Rahul Verma,52,Male,Lucknow,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2025-12-20,20,12,4,2025,4,5688,0.33,62,0
+S00712,TX0238,C0013,Aditya Malhotra,35,Male,Delhi,P004,Tea,Beverages,120,2,240,S101,Metro Express Mumbai,West,2025-01-09,9,1,1,2025,15,11925,1.25,117,1
+S00713,TX0238,C0011,Siddharth Roy,30,Male,Kolkata,P003,Milk,Bakery & Dairy,32,2,64,S106,Jaipur Plaza Store,North,2025-03-27,27,3,1,2025,37,79624,3.08,5,1
+S00714,TX0238,C0007,Rahul Verma,52,Male,Lucknow,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-06-15,15,6,2,2025,11,16940,0.92,98,1
+S00715,TX0239,C0003,Rohan Gupta,22,Male,Delhi,P017,Camera,Electronics,32000,1,32000,S101,Metro Express Mumbai,West,2025-04-22,22,4,2,2025,11,35772,0.92,64,1
+S00716,TX0239,C0009,Kavita Rao,38,Female,Hyderabad,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-03-31,31,3,1,2025,15,41940,1.25,72,1
+S00717,TX0239,C0015,Tanvi Bhat,26,Female,Bengaluru,P001,Bread,Bakery & Dairy,40,2,80,S105,West Gate Ahmedabad,West,2025-10-28,28,10,4,2025,31,42408,2.58,25,1
+S00718,TX0240,C0016,Kunal Mehta,48,Male,Surat,P002,Butter,Bakery & Dairy,60,1,60,S105,West Gate Ahmedabad,West,2025-02-10,10,2,1,2025,11,6105,0.92,45,1
+S00719,TX0240,C0029,Simran Sethi,28,Female,Ludhiana,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-06-18,18,6,2,2025,30,104220,2.5,2,1
+S00720,TX0240,C0022,Gaurav Bansal,27,Male,Delhi,P001,Bread,Bakery & Dairy,40,2,80,S103,Tech Hub Bengaluru,South,2025-05-05,5,5,2,2025,26,75140,2.17,14,1
+S00721,TX0241,C0012,Meera Joshi,27,Female,Mumbai,P004,Tea,Beverages,120,1,120,S104,City Mega Store Kolkata,East,2025-11-19,19,11,4,2025,25,22850,2.08,4,1
+S00722,TX0241,C0014,Sneha Deshmukh,33,Female,Nagpur,P004,Tea,Beverages,120,1,120,S102,Delhi Central Mart,North,2025-09-17,17,9,3,2025,4,6564,0.33,51,0
+S00723,TX0241,C0013,Aditya Malhotra,35,Male,Delhi,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2026-02-05,5,2,1,2026,44,127424,3.67,25,1
+S00724,TX0242,C0010,Arjun Reddy,41,Male,Chennai,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2026-02-11,11,2,1,2026,12,13428,1.0,47,1
+S00725,TX0242,C0020,Manish Tiwari,44,Male,Patna,P004,Tea,Beverages,120,2,240,S104,City Mega Store Kolkata,East,2025-05-26,26,5,2,2025,15,17640,1.25,15,0
+S00726,TX0242,C0033,Pallavi Ghosh,29,Female,Ranchi,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2026-01-07,7,1,1,2026,10,6910,0.83,67,1
+S00727,TX0243,C0008,Neha Kulkarni,24,Female,Pune,P010,Wireless Mouse,Electronics,850,2,1700,S104,City Mega Store Kolkata,East,2025-10-17,17,10,4,2025,6,19512,0.5,22,1
+S00728,TX0243,C0028,Harshvardhan Goel,43,Male,Kanpur,P002,Butter,Bakery & Dairy,60,2,120,S106,Jaipur Plaza Store,North,2025-05-07,7,5,2,2025,21,30870,1.75,21,1
+S00729,TX0243,C0010,Arjun Reddy,41,Male,Chennai,P003,Milk,Bakery & Dairy,32,2,64,S103,Tech Hub Bengaluru,South,2025-05-07,7,5,2,2025,37,121804,3.08,20,1
+S00730,TX0244,C0006,Pooja Nair,29,Female,Kochi,P006,Coffee,Beverages,180,2,360,S105,West Gate Ahmedabad,West,2025-04-07,7,4,2,2025,5,12250,0.42,83,1
+S00731,TX0244,C0025,Shweta Mishra,25,Female,Indore,P004,Tea,Beverages,120,2,240,S105,West Gate Ahmedabad,West,2025-06-07,7,6,2,2025,13,23530,1.08,119,1
+S00732,TX0244,C0014,Sneha Deshmukh,33,Female,Nagpur,P001,Bread,Bakery & Dairy,40,2,80,S106,Jaipur Plaza Store,North,2025-07-23,23,7,3,2025,2,6504,0.17,68,0
+S00733,TX0245,C0019,Isha Mukherjee,29,Female,Kolkata,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-08-09,9,8,3,2025,2,4490,0.17,87,0
+S00734,TX0245,C0012,Meera Joshi,27,Female,Mumbai,P005,Biscuits,Snacks,30,1,30,S102,Delhi Central Mart,North,2025-01-31,31,1,1,2025,18,54108,1.5,7,0
+S00735,TX0245,C0006,Pooja Nair,29,Female,Kochi,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2025-03-05,5,3,1,2025,18,7884,1.5,3,1
+S00736,TX0246,C0001,Aarav Sharma,28,Male,Mumbai,P004,Tea,Beverages,120,1,120,S106,Jaipur Plaza Store,North,2025-10-26,26,10,4,2025,10,25300,0.83,112,1
+S00737,TX0246,C0032,Sameer Nanda,40,Male,Vadodara,P005,Biscuits,Snacks,30,5,150,S104,City Mega Store Kolkata,East,2026-01-23,23,1,1,2026,35,109340,2.92,14,1
+S00738,TX0246,C0004,Ananya Iyer,45,Female,Bengaluru,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-06-19,19,6,2,2025,20,10100,1.67,21,1
+S00739,TX0247,C0034,Yashvardhan K,33,Male,Mysuru,P005,Biscuits,Snacks,30,2,60,S103,Tech Hub Bengaluru,South,2025-12-25,25,12,4,2025,42,105378,3.5,15,1
+S00740,TX0247,C0001,Aarav Sharma,28,Male,Mumbai,P012,Screen Protector,Electronics,250,1,250,S106,Jaipur Plaza Store,North,2026-02-21,21,2,1,2026,17,,1.42,15,1
+S00741,TX0247,C0031,Sonal Agarwal,35,Female,Agra,P024,Backpack,Fashion,1299,1,1299,S106,Jaipur Plaza Store,North,2025-12-25,25,12,4,2025,21,53130,1.75,20,1
+S00742,TX0248,C0033,Pallavi Ghosh,29,Female,Ranchi,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-03-07,7,3,1,2025,19,45106,1.58,23,1
+S00743,TX0248,C0016,Kunal Mehta,48,Male,Surat,P003,Milk,Bakery & Dairy,32,1,32,S102,Delhi Central Mart,North,2025-03-29,29,3,1,2025,13,13728,1.08,12,1
+S00744,TX0248,C0018,Nikhil Saxena,36,Male,Bhopal,P003,Milk,Bakery & Dairy,32,3,96,S102,Delhi Central Mart,North,2026-01-04,4,1,1,2026,43,33110,3.58,24,1
+S00745,TX0249,C0015,Tanvi Bhat,26,Female,Bengaluru,P003,Milk,Bakery & Dairy,32,2,64,S105,West Gate Ahmedabad,West,2026-01-28,28,1,1,2026,12,41316,1.0,109,1
+S00746,TX0249,C0028,Harshvardhan Goel,43,Male,Kanpur,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-04-30,30,4,2,2025,10,11700,0.83,110,1
+S00747,TX0249,C0024,Amit Choudhury,50,Male,Guwahati,P019,Shampoo,Personal Care,280,2,560,S102,Delhi Central Mart,North,2025-06-10,10,6,2,2025,10,25930,0.83,39,1
+S00748,TX0250,C0028,Harshvardhan Goel,43,Male,Kanpur,P010,Wireless Mouse,Electronics,850,1,850,S103,Tech Hub Bengaluru,South,2026-01-30,30,1,1,2026,32,31744,2.67,11,1
+S00749,TX0250,C0032,Sameer Nanda,40,Male,Vadodara,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-08-22,22,8,3,2025,12,10860,1.0,50,1
+S00750,TX0250,C0031,Sonal Agarwal,35,Female,Agra,P005,Biscuits,Snacks,30,1,30,S106,Jaipur Plaza Store,North,2025-04-21,21,4,2,2025,26,84968,2.17,25,0
+S00751,TX0251,C0012,Meera Joshi,27,Female,Mumbai,P001,Bread,Bakery & Dairy,40,5,200,S107,Chennai Marina Outlet,South,2025-09-07,7,9,3,2025,33,70290,2.75,23,1
+S00752,TX0251,C0023,Ritika Sen,39,Female,Kolkata,P004,Tea,Beverages,120,2,240,S107,Chennai Marina Outlet,South,2025-07-20,20,7,3,2025,18,16848,1.5,12,1
+S00753,TX0251,C0004,Ananya Iyer,45,Female,Bengaluru,P013,Phone Case,Electronics,350,1,350,S107,Chennai Marina Outlet,South,2025-12-30,30,12,4,2025,35,118055,2.92,20,1
+S00754,TX0252,C0010,Arjun Reddy,41,Male,Chennai,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2025-08-07,7,8,3,2025,23,14122,1.92,5,1
+S00755,TX0252,C0022,Gaurav Bansal,27,Male,Delhi,P021,Face Wash,Personal Care,190,2,380,S105,West Gate Ahmedabad,West,2025-08-11,11,8,3,2025,2,2772,0.17,65,0
+S00756,TX0252,C0012,Meera Joshi,27,Female,Mumbai,P016,Socks,Fashion,150,1,150,S106,Jaipur Plaza Store,North,2026-01-17,17,1,1,2026,2,1798,0.17,77,0
+S00757,TX0253,C0033,Pallavi Ghosh,29,Female,Ranchi,P006,Coffee,Beverages,180,1,180,S102,Delhi Central Mart,North,2025-01-12,12,1,1,2025,39,63258,3.25,20,1
+S00758,TX0253,C0021,Priya Das,32,Female,Bhubaneswar,P018,Memory Card,Electronics,650,1,650,S101,Metro Express Mumbai,West,2026-01-01,1,1,1,2026,13,26156,1.08,19,1
+S00759,TX0253,C0034,Yashvardhan K,33,Male,Mysuru,P006,Coffee,Beverages,180,4,720,S104,City Mega Store Kolkata,East,2025-02-02,2,2,1,2025,23,65619,1.92,24,1
+S00760,TX0254,C0029,Simran Sethi,28,Female,Ludhiana,P001,Bread,Bakery & Dairy,40,2,80,S107,Chennai Marina Outlet,South,2025-06-10,10,6,2,2025,5,17420,0.42,19,0
+S00761,TX0254,C0008,Neha Kulkarni,24,Female,Pune,P007,Sugar,Grocery,45,1,45,S105,West Gate Ahmedabad,West,2025-06-02,2,6,2,2025,9,14409,0.75,99,1
+S00762,TX0254,C0009,Kavita Rao,38,Female,Hyderabad,P003,Milk,Bakery & Dairy,32,2,64,S105,West Gate Ahmedabad,West,2025-09-09,9,9,3,2025,14,19194,1.17,3,1
+S00763,TX0255,C0020,Manish Tiwari,44,Male,Patna,P020,Conditioner,Personal Care,310,1,310,S107,Chennai Marina Outlet,South,2025-04-21,21,4,2,2025,29,26854,2.42,25,1
+S00764,TX0255,C0005,Vikram Singh,31,Male,Jaipur,P005,Biscuits,Snacks,30,1,30,S105,West Gate Ahmedabad,West,2025-05-11,11,5,2,2025,7,22708,0.58,33,1
+S00765,TX0255,C0005,Vikram Singh,31,Male,Jaipur,P015,Running Shoes,Fashion,2400,1,2400,S106,Jaipur Plaza Store,North,2026-01-11,11,1,1,2026,36,18216,3.0,21,1
+S00766,TX0256,C0018,Nikhil Saxena,36,Male,Bhopal,P004,Tea,Beverages,120,1,120,S101,Metro Express Mumbai,West,2025-09-30,30,9,3,2025,5,4995,0.42,117,0
+S00767,TX0256,C0001,Aarav Sharma,28,Male,Mumbai,P008,Snacks,Snacks,50,1,50,S101,Metro Express Mumbai,West,2025-07-13,13,7,3,2025,15,13575,1.25,37,1
+S00768,TX0256,C0020,Manish Tiwari,44,Male,Patna,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2026-02-25,25,2,1,2026,30,79770,2.5,10,1
+S00769,TX0257,C0004,Ananya Iyer,45,Female,Bengaluru,P013,Phone Case,Electronics,350,1,350,S102,Delhi Central Mart,North,2025-06-12,12,6,2,2025,37,87061,3.08,20,1
+S00770,TX0257,C0001,Aarav Sharma,28,Male,Mumbai,P005,Biscuits,Snacks,30,1,30,S106,Jaipur Plaza Store,North,2025-09-20,20,9,3,2025,35,115395,2.92,9,1
+S00771,TX0257,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P007,Sugar,Grocery,45,1,45,S106,Jaipur Plaza Store,North,2025-08-23,23,8,3,2025,26,42900,2.17,22,1
+S00772,TX0258,C0020,Manish Tiwari,44,Male,Patna,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2026-01-30,30,1,1,2026,2,2152,0.17,88,1
+S00773,TX0258,C0019,Isha Mukherjee,29,,Kolkata,P001,Bread,Bakery & Dairy,40,4,160,S105,West Gate Ahmedabad,West,2025-09-10,10,9,3,2025,44,149292,3.67,6,1
+S00774,TX0258,C0033,Pallavi Ghosh,29,Female,Ranchi,P023,Jeans,Fashion,1499,1,1499,S106,Jaipur Plaza Store,North,2025-12-13,13,12,4,2025,4,13820,0.33,15,1
+S00775,TX0259,C0035,Swati Hegde,30,Female,Mangaluru,P008,Snacks,Snacks,50,1,50,S106,Jaipur Plaza Store,North,2025-06-26,26,6,2,2025,3,7512,0.25,60,0
+S00776,TX0259,C0028,Harshvardhan Goel,43,,Kanpur,P004,Tea,Beverages,120,2,240,S104,City Mega Store Kolkata,East,2025-07-14,14,7,3,2025,19,30172,1.58,11,1
+S00777,TX0259,C0017,Rhea Kapoor,23,Female,Chandigarh,P005,Biscuits,Snacks,30,3,90,S102,Delhi Central Mart,North,2025-01-02,2,1,1,2025,11,27621,0.92,120,1
+S00778,TX0260,C0030,Akash Chauhan,26,Male,Dehradun,P002,Butter,Bakery & Dairy,60,1,60,S105,West Gate Ahmedabad,West,2025-09-07,7,9,3,2025,1,1832,0.08,107,0
+S00779,TX0260,C0023,Ritika Sen,39,Female,Kolkata,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-02-21,21,2,1,2025,12,12444,1.0,23,1
+S00780,TX0260,C0031,Sonal Agarwal,35,Female,Agra,P005,Biscuits,Snacks,30,1,30,S104,City Mega Store Kolkata,East,2025-07-11,11,7,3,2025,40,42480,3.33,6,1
+S00781,TX0261,C0028,Harshvardhan Goel,43,Male,Kanpur,P023,Jeans,Fashion,1499,1,1499,S101,Metro Express Mumbai,West,2025-07-03,3,7,3,2025,1,947,0.08,65,0
+S00782,TX0261,C0022,Gaurav Bansal,27,Male,Delhi,P010,Wireless Mouse,Electronics,850,1,850,S101,Metro Express Mumbai,West,2025-03-24,24,3,1,2025,20,34600,1.67,14,1
+S00783,TX0261,C0025,Shweta Mishra,25,Female,Indore,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-02-26,26,2,1,2025,6,14688,0.5,16,1
+S00784,TX0262,C0016,Kunal Mehta,48,Male,Surat,P014,Headphones,Electronics,1500,4,6000,S101,Metro Express Mumbai,West,2025-12-14,14,12,4,2025,39,92274,3.25,11,1
+S00785,TX0262,C0006,Pooja Nair,29,Female,Kochi,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-08-08,8,8,3,2025,28,91588,2.33,9,1
+S00786,TX0262,C0028,Harshvardhan Goel,43,Male,Kanpur,P019,Shampoo,Personal Care,280,1,280,S102,Delhi Central Mart,North,2025-08-31,31,8,3,2025,1,1521,0.08,39,0
+S00787,TX0263,C0028,Harshvardhan Goel,43,Male,Kanpur,P005,Biscuits,Snacks,30,2,60,S101,Metro Express Mumbai,West,2025-11-12,12,11,4,2025,26,46176,2.17,15,1
+S00788,TX0263,C0033,Pallavi Ghosh,29,Female,Ranchi,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-11-26,26,11,4,2025,7,9877,0.58,55,1
+S00789,TX0263,C0012,Meera Joshi,27,Female,Mumbai,P005,Biscuits,Snacks,30,1,30,S101,Metro Express Mumbai,West,2025-01-01,1,1,1,2025,39,45123,3.25,10,1
+S00790,TX0264,C0024,Amit Choudhury,50,Male,Guwahati,P007,Sugar,Grocery,45,2,90,S103,Tech Hub Bengaluru,South,2025-06-05,5,6,2,2025,13,36556,1.08,82,1
+S00791,TX0264,C0016,Kunal Mehta,48,Male,Surat,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-05-22,22,5,2,2025,19,10792,1.58,20,1
+S00792,TX0264,C0013,Aditya Malhotra,35,Male,Delhi,P002,Butter,Bakery & Dairy,60,1,60,S102,Delhi Central Mart,North,2025-12-27,27,12,4,2025,24,62040,2.0,25,1
+S00793,TX0265,C0009,Kavita Rao,38,Female,Hyderabad,P002,Butter,Bakery & Dairy,60,3,180,S102,Delhi Central Mart,North,2025-08-03,3,8,3,2025,19,41534,1.58,4,1
+S00794,TX0265,C0034,Yashvardhan K,33,Male,Mysuru,P003,Milk,Bakery & Dairy,32,4,128,S105,West Gate Ahmedabad,West,2026-02-09,9,2,1,2026,12,14148,1.0,109,1
+S00795,TX0265,C0032,Sameer Nanda,40,Male,Vadodara,P003,Milk,Bakery & Dairy,32,1,32,S106,Jaipur Plaza Store,North,2025-09-30,30,9,3,2025,36,97308,3.0,14,1
+S00796,TX0266,C0018,Nikhil Saxena,36,Male,Bhopal,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-04-05,5,4,2,2025,28,45976,2.33,9,1
+S00797,TX0266,C0018,Nikhil Saxena,36,Male,Bhopal,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2025-03-02,2,3,1,2025,29,27376,2.42,10,1
+S00798,TX0266,C0004,Ananya Iyer,45,Female,Bengaluru,P007,Sugar,Grocery,45,1,45,S106,Jaipur Plaza Store,North,2025-05-08,8,5,2,2025,6,17946,0.5,92,1
+S00799,TX0267,C0021,Priya Das,32,Female,Bhubaneswar,P009,Laptop,Electronics,55000,2,110000,S101,Metro Express Mumbai,West,2025-12-28,28,12,4,2025,30,51870,2.5,3,1
+S00800,TX0267,C0001,Aarav Sharma,28,Male,Mumbai,P004,Tea,Beverages,120,1,120,S107,Chennai Marina Outlet,South,2025-07-02,2,7,3,2025,18,60462,1.5,25,1
+S00801,TX0267,C0017,Rhea Kapoor,23,Female,Chandigarh,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-11-17,17,11,4,2025,11,38313,0.92,65,1
+S00802,TX0268,C0015,Tanvi Bhat,26,Female,Bengaluru,P002,Butter,Bakery & Dairy,60,1,60,S106,Jaipur Plaza Store,North,2026-01-07,7,1,1,2026,3,3363,0.25,39,0
+S00803,TX0268,C0012,Meera Joshi,27,Female,Mumbai,P001,Bread,Bakery & Dairy,40,2,80,S106,Jaipur Plaza Store,North,2025-05-25,25,5,2,2025,24,16416,2.0,6,0
+S00804,TX0268,C0016,Kunal Mehta,48,Male,Surat,P004,Tea,Beverages,120,2,240,S104,City Mega Store Kolkata,East,2025-11-27,27,11,4,2025,13,5824,1.08,92,0
+S00805,TX0269,C0025,Shweta Mishra,25,Female,Indore,P021,Face Wash,Personal Care,190,4,760,S101,Metro Express Mumbai,West,2025-02-26,26,2,1,2025,3,4251,0.25,113,1
+S00806,TX0269,C0010,Arjun Reddy,41,Male,Chennai,P001,Bread,Bakery & Dairy,40,3,120,S106,Jaipur Plaza Store,North,2025-11-04,4,11,4,2025,3,7101,0.25,112,0
+S00807,TX0269,C0029,Simran Sethi,28,Female,Ludhiana,P005,Biscuits,Snacks,30,2,60,S107,Chennai Marina Outlet,South,2025-03-25,25,3,1,2025,14,8148,1.17,28,1
+S00808,TX0270,C0007,Rahul Verma,52,Male,Lucknow,P005,Biscuits,Snacks,30,1,30,S105,West Gate Ahmedabad,West,2025-08-01,1,8,3,2025,5,6625,0.42,102,0
+S00809,TX0270,C0008,Neha Kulkarni,24,Female,Pune,P008,Snacks,Snacks,50,1,50,S104,City Mega Store Kolkata,East,2025-03-28,28,3,1,2025,5,9315,0.42,24,1
+S00810,TX0270,C0008,Neha Kulkarni,24,Female,Pune,P020,Conditioner,Personal Care,310,1,310,S103,Tech Hub Bengaluru,South,2025-02-13,13,2,1,2025,7,18004,0.58,57,1
+S00811,TX0271,C0028,Harshvardhan Goel,43,Male,Kanpur,P004,Tea,Beverages,120,1,120,S102,Delhi Central Mart,North,2025-12-08,8,12,4,2025,35,52045,2.92,24,1
+S00812,TX0271,C0001,Aarav Sharma,28,Male,Mumbai,P004,Tea,Beverages,120,1,120,S107,Chennai Marina Outlet,South,2025-03-18,18,3,1,2025,42,28350,3.5,5,1
+S00813,TX0271,C0018,Nikhil Saxena,36,Male,Bhopal,P002,Butter,Bakery & Dairy,60,1,60,S102,Delhi Central Mart,North,2025-02-16,16,2,1,2025,42,136080,3.5,15,1
+S00814,TX0272,C0022,Gaurav Bansal,27,Male,Delhi,P008,Snacks,Snacks,50,1,50,S102,Delhi Central Mart,North,2026-02-15,15,2,1,2026,43,110983,3.58,19,1
+S00815,TX0272,C0025,Shweta Mishra,25,Female,Indore,P019,Shampoo,Personal Care,280,1,280,S101,Metro Express Mumbai,West,2025-10-25,25,10,4,2025,1,1232,0.08,17,1
+S00816,TX0272,C0031,Sonal Agarwal,35,Female,Agra,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-02-26,26,2,1,2025,14,37212,1.17,68,1
+S00817,TX0273,C0015,Tanvi Bhat,26,Female,Bengaluru,P003,Milk,Bakery & Dairy,32,2,64,S101,Metro Express Mumbai,West,2026-01-18,18,1,1,2026,15,49080,1.25,5,1
+S00818,TX0273,C0005,Vikram Singh,31,Male,Jaipur,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2025-11-01,1,11,4,2025,4,2860,0.33,16,1
+S00819,TX0273,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P007,Sugar,Grocery,45,2,90,S102,Delhi Central Mart,North,2026-01-27,27,1,1,2026,12,18888,1.0,5,1
+S00820,TX0274,C0003,Rohan Gupta,22,Male,Delhi,P002,Butter,Bakery & Dairy,60,2,120,S105,West Gate Ahmedabad,West,2026-01-20,20,1,1,2026,11,24860,0.92,85,1
+S00821,TX0274,C0017,Rhea Kapoor,23,Female,Chandigarh,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2025-09-14,14,9,3,2025,2,5072,0.17,63,0
+S00822,TX0274,C0009,Kavita Rao,38,Female,Hyderabad,P002,Butter,Bakery & Dairy,60,1,60,S106,Jaipur Plaza Store,North,2025-04-19,19,4,2,2025,16,51776,1.33,16,1
+S00823,TX0275,C0026,Varun Khanna,37,Male,Amritsar,P003,Milk,Bakery & Dairy,32,1,32,S107,Chennai Marina Outlet,South,2025-07-14,14,7,3,2025,13,23062,1.08,18,1
+S00824,TX0275,C0011,Siddharth Roy,30,Male,Kolkata,P003,Milk,Bakery & Dairy,32,2,64,S105,West Gate Ahmedabad,West,2025-02-24,24,2,1,2025,5,3740,0.42,87,0
+S00825,TX0275,C0031,Sonal Agarwal,35,Female,Agra,P005,Biscuits,Snacks,30,2,60,S101,Metro Express Mumbai,West,2025-01-25,25,1,1,2025,44,52712,3.67,12,1
+S00826,TX0276,C0023,Ritika Sen,39,Female,Kolkata,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-12-26,26,12,4,2025,13,36465,1.08,14,1
+S00827,TX0276,C0003,Rohan Gupta,22,Male,Delhi,P003,Milk,Bakery & Dairy,32,3,96,S103,Tech Hub Bengaluru,South,2025-03-24,24,3,1,2025,13,41483,1.08,98,1
+S00828,TX0276,C0011,Siddharth Roy,30,Male,Kolkata,P020,Conditioner,Personal Care,310,2,620,S105,West Gate Ahmedabad,West,2025-09-22,22,9,3,2025,33,73656,2.75,6,1
+S00829,TX0277,C0024,Amit Choudhury,50,Male,Guwahati,P003,Milk,Bakery & Dairy,32,4,128,S105,West Gate Ahmedabad,West,2025-08-09,9,8,3,2025,43,34314,3.58,2,1
+S00830,TX0277,C0020,Manish Tiwari,44,Male,Patna,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2026-02-13,13,2,1,2026,5,5305,0.42,23,1
+S00831,TX0277,C0024,Amit Choudhury,50,Male,Guwahati,P023,Jeans,Fashion,1499,1,1499,S103,Tech Hub Bengaluru,South,2025-02-15,15,2,1,2025,20,44100,1.67,13,1
+S00832,TX0278,C0021,Priya Das,32,Female,Bhubaneswar,P004,Tea,Beverages,120,2,240,S103,Tech Hub Bengaluru,South,2025-02-12,12,2,1,2025,27,88182,2.25,19,0
+S00833,TX0278,C0007,Rahul Verma,52,Male,Lucknow,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-07-12,12,7,3,2025,17,31093,1.42,16,1
+S00834,TX0278,C0035,Swati Hegde,30,,Mangaluru,P001,Bread,Bakery & Dairy,40,3,120,S107,Chennai Marina Outlet,South,2025-08-27,27,8,3,2025,39,47463,3.25,14,1
+S00835,TX0279,C0021,Priya Das,32,Female,Bhubaneswar,P003,Milk,Bakery & Dairy,32,1,32,S103,Tech Hub Bengaluru,South,2025-11-06,6,11,4,2025,21,63462,1.75,8,1
+S00836,TX0279,C0003,Rohan Gupta,22,Male,Delhi,P005,Biscuits,Snacks,30,4,120,S105,West Gate Ahmedabad,West,2026-02-01,1,2,1,2026,4,2484,0.33,42,0
+S00837,TX0279,C0028,Harshvardhan Goel,43,Male,Kanpur,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-05-10,10,5,2,2025,14,46438,1.17,72,1
+S00838,TX0280,C0034,Yashvardhan K,33,Male,Mysuru,P006,Coffee,Beverages,180,2,360,S102,Delhi Central Mart,North,2025-12-09,9,12,4,2025,15,32325,1.25,58,1
+S00839,TX0280,C0020,Manish Tiwari,44,Male,Patna,P007,Sugar,Grocery,45,1,45,S102,Delhi Central Mart,North,2025-04-12,12,4,2,2025,36,15840,3.0,19,1
+S00840,TX0280,C0013,Aditya Malhotra,35,Male,Delhi,P005,Biscuits,Snacks,30,1,30,S101,Metro Express Mumbai,West,2026-01-06,6,1,1,2026,21,51345,1.75,12,1
+S00841,TX0281,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P021,Face Wash,Personal Care,190,1,190,S103,Tech Hub Bengaluru,South,2025-09-24,24,9,3,2025,18,9882,1.5,8,1
+S00842,TX0281,C0013,Aditya Malhotra,35,Male,Delhi,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-12-23,23,12,4,2025,4,12732,0.33,88,1
+S00843,TX0281,C0024,Amit Choudhury,50,Male,Guwahati,P018,Memory Card,Electronics,650,1,650,S107,Chennai Marina Outlet,South,2025-07-06,6,7,3,2025,19,21280,1.58,16,1
+S00844,TX0282,C0012,Meera Joshi,27,Female,Mumbai,P005,Biscuits,Snacks,30,2,60,S105,West Gate Ahmedabad,West,2025-11-01,1,11,4,2025,18,13644,1.5,5,0
+S00845,TX0282,C0002,Diya Patel,34,Female,Ahmedabad,P020,Conditioner,Personal Care,310,1,310,S105,West Gate Ahmedabad,West,2025-07-30,30,7,3,2025,14,32522,1.17,30,1
+S00846,TX0282,C0030,Akash Chauhan,26,Male,Dehradun,P005,Biscuits,Snacks,30,2,60,S104,City Mega Store Kolkata,East,2026-02-25,25,2,1,2026,29,89813,2.42,10,1
+S00847,TX0283,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P004,Tea,Beverages,120,1,120,S106,Jaipur Plaza Store,North,2025-05-04,4,5,2,2025,14,35350,1.17,119,1
+S00848,TX0283,C0021,Priya Das,32,Female,Bhubaneswar,P014,Headphones,Electronics,1500,1,1500,S103,Tech Hub Bengaluru,South,2025-03-29,29,3,1,2025,24,70176,2.0,22,1
+S00849,TX0283,C0004,Ananya Iyer,45,Female,Bengaluru,P004,Tea,Beverages,120,1,120,S107,Chennai Marina Outlet,South,2025-10-23,23,10,4,2025,3,6573,0.25,44,1
+S00850,TX0284,C0009,Kavita Rao,38,Female,Hyderabad,P006,Coffee,Beverages,180,4,720,S105,West Gate Ahmedabad,West,2025-03-02,2,3,1,2025,2,1010,0.17,70,1
+S00851,TX0284,C0010,Arjun Reddy,41,Male,Chennai,P005,Biscuits,Snacks,30,1,30,S101,Metro Express Mumbai,West,2025-11-13,13,11,4,2025,41,122918,3.42,22,1
+S00852,TX0284,C0012,Meera Joshi,27,Female,Mumbai,P010,Wireless Mouse,Electronics,850,1,850,S102,Delhi Central Mart,North,2025-12-01,1,12,4,2025,36,52776,3.0,23,0
+S00853,TX0285,C0006,Pooja Nair,29,Female,Kochi,P003,Milk,Bakery & Dairy,32,1,32,S102,Delhi Central Mart,North,2025-11-18,18,11,4,2025,15,17085,1.25,26,0
+S00854,TX0285,C0024,Amit Choudhury,50,Male,Guwahati,P004,Tea,Beverages,120,1,120,S107,Chennai Marina Outlet,South,2025-04-17,17,4,2,2025,25,80375,2.08,15,1
+S00855,TX0285,C0021,Priya Das,32,Female,Bhubaneswar,P006,Coffee,Beverages,180,1,180,S106,Jaipur Plaza Store,North,2025-08-19,19,8,3,2025,14,12320,1.17,12,1
+S00856,TX0286,C0031,Sonal Agarwal,35,Female,Agra,P002,Butter,Bakery & Dairy,60,3,180,S105,West Gate Ahmedabad,West,2025-11-04,4,11,4,2025,1,2595,0.08,17,1
+S00857,TX0286,C0010,Arjun Reddy,41,Male,Chennai,P002,Butter,Bakery & Dairy,60,1,60,S102,Delhi Central Mart,North,2025-07-06,6,7,3,2025,12,11016,1.0,49,1
+S00858,TX0286,C0013,Aditya Malhotra,35,Male,Delhi,P013,Phone Case,Electronics,350,3,1050,S101,Metro Express Mumbai,West,2025-06-28,28,6,2,2025,4,12856,0.33,106,1
+S00859,TX0287,C0026,Varun Khanna,37,Male,Amritsar,P006,Coffee,Beverages,180,2,360,S101,Metro Express Mumbai,West,2025-10-26,26,10,4,2025,43,,3.58,16,1
+S00860,TX0287,C0018,Nikhil Saxena,36,Male,Bhopal,P006,Coffee,Beverages,180,1,180,S107,Chennai Marina Outlet,South,2025-06-13,13,6,2,2025,44,63184,3.67,20,1
+S00861,TX0287,C0034,Yashvardhan K,33,Male,Mysuru,P002,Butter,Bakery & Dairy,60,1,60,S103,Tech Hub Bengaluru,South,2025-07-23,23,7,3,2025,4,2788,0.33,42,0
+S00862,TX0288,C0024,Amit Choudhury,50,Male,Guwahati,P001,Bread,Bakery & Dairy,40,2,80,S102,Delhi Central Mart,North,2026-02-04,4,2,1,2026,10,17170,0.83,44,1
+S00863,TX0288,C0025,Shweta Mishra,25,Female,Indore,P002,Butter,Bakery & Dairy,60,2,120,S103,Tech Hub Bengaluru,South,2025-11-05,5,11,4,2025,15,47235,1.25,24,1
+S00864,TX0288,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P004,Tea,Beverages,120,2,240,S106,Jaipur Plaza Store,North,2026-01-23,23,1,1,2026,29,61625,2.42,5,1
+S00865,TX0289,C0011,Siddharth Roy,30,Male,Kolkata,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2025-06-17,17,6,2,2025,12,27492,1.0,,1
+S00866,TX0289,C0026,Varun Khanna,37,Male,Amritsar,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-10-01,1,10,4,2025,8,6312,0.67,117,1
+S00867,TX0289,C0020,Manish Tiwari,44,Male,Patna,P018,Memory Card,Electronics,650,2,1300,S103,Tech Hub Bengaluru,South,2025-06-12,12,6,2,2025,15,30165,1.25,11,1
+S00868,TX0290,C0030,Akash Chauhan,26,Male,Dehradun,P004,Tea,Beverages,120,2,240,S104,City Mega Store Kolkata,East,2025-11-25,25,11,4,2025,18,9342,1.5,9,0
+S00869,TX0290,C0001,Aarav Sharma,28,Male,Mumbai,P023,Jeans,Fashion,1499,2,2998,S102,Delhi Central Mart,North,2025-02-23,23,2,1,2025,2,2364,0.17,107,0
+S00870,TX0290,C0024,Amit Choudhury,50,Male,Guwahati,P023,Jeans,Fashion,1499,3,4497,S107,Chennai Marina Outlet,South,2025-10-03,3,10,4,2025,13,7488,1.08,29,0
+S00871,TX0291,C0020,Manish Tiwari,44,Male,Patna,P003,Milk,Bakery & Dairy,32,3,96,S101,Metro Express Mumbai,West,2025-05-16,16,5,2,2025,19,17423,1.58,12,1
+S00872,TX0291,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P005,Biscuits,Snacks,30,2,60,S106,Jaipur Plaza Store,North,2025-08-17,17,8,3,2025,32,108576,2.67,17,1
+S00873,TX0291,C0017,Rhea Kapoor,23,Female,Chandigarh,P001,Bread,Bakery & Dairy,40,2,80,S107,Chennai Marina Outlet,South,2025-06-01,1,6,2,2025,12,14916,1.0,103,0
+S00874,TX0292,C0032,Sameer Nanda,40,Male,Vadodara,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-04-19,19,4,2,2025,4,11272,0.33,112,1
+S00875,TX0292,C0021,Priya Das,32,Female,Bhubaneswar,P015,Running Shoes,Fashion,2400,1,2400,S107,Chennai Marina Outlet,South,2025-06-09,9,6,2,2025,8,23528,0.67,80,1
+S00876,TX0292,C0026,Varun Khanna,37,Male,Amritsar,P002,Butter,Bakery & Dairy,60,4,240,S102,Delhi Central Mart,North,2025-02-05,5,2,1,2025,18,18054,1.5,16,1
+S00877,TX0293,C0008,Neha Kulkarni,24,Female,Pune,P006,Coffee,Beverages,180,1,180,S102,Delhi Central Mart,North,2025-01-09,9,1,1,2025,8,24888,0.67,82,1
+S00878,TX0293,C0017,Rhea Kapoor,23,Female,Chandigarh,P005,Biscuits,Snacks,30,1,30,S101,Metro Express Mumbai,West,2025-10-09,9,10,4,2025,1,2207,0.08,49,0
+S00879,TX0293,C0004,Ananya Iyer,45,Female,Bengaluru,P005,Biscuits,Snacks,30,1,30,S106,Jaipur Plaza Store,North,2025-07-15,15,7,3,2025,10,24210,0.83,81,1
+S00880,TX0294,C0004,Ananya Iyer,45,Female,Bengaluru,P008,Snacks,Snacks,50,1,50,S106,Jaipur Plaza Store,North,2025-05-08,8,5,2,2025,29,39933,2.42,4,1
+S00881,TX0294,C0018,Nikhil Saxena,36,Male,Bhopal,P004,Tea,Beverages,120,2,240,S102,Delhi Central Mart,North,2025-11-14,14,11,4,2025,29,70412,2.42,8,1
+S00882,TX0294,C0014,Sneha Deshmukh,33,Female,Nagpur,P001,Bread,Bakery & Dairy,40,2,80,S103,Tech Hub Bengaluru,South,2025-11-23,23,11,4,2025,27,29619,2.25,12,1
+S00883,TX0295,C0011,Siddharth Roy,30,Male,Kolkata,P005,Biscuits,Snacks,30,4,120,S102,Delhi Central Mart,North,2025-06-20,20,6,2,2025,39,68952,3.25,2,1
+S00884,TX0295,C0017,Rhea Kapoor,23,Female,Chandigarh,P017,Camera,Electronics,32000,1,32000,S101,Metro Express Mumbai,West,2025-03-29,29,3,1,2025,1,2723,0.08,102,0
+S00885,TX0295,C0015,Tanvi Bhat,26,Female,Bengaluru,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2025-09-15,15,9,3,2025,33,74349,2.75,17,1
+S00886,TX0296,C0035,Swati Hegde,30,Female,Mangaluru,P001,Bread,Bakery & Dairy,40,2,80,S103,Tech Hub Bengaluru,South,2025-12-06,6,12,4,2025,6,15126,0.5,114,1
+S00887,TX0296,C0031,Sonal Agarwal,35,Female,Agra,P005,Biscuits,Snacks,30,3,90,S101,Metro Express Mumbai,West,2025-05-19,19,5,2,2025,21,39123,1.75,17,0
+S00888,TX0296,C0028,Harshvardhan Goel,43,Male,Kanpur,P002,Butter,Bakery & Dairy,60,2,120,S103,Tech Hub Bengaluru,South,2025-04-16,16,4,2,2025,40,102320,3.33,7,1
+S00889,TX0297,C0023,Ritika Sen,39,Female,Kolkata,P004,Tea,Beverages,120,1,120,S103,Tech Hub Bengaluru,South,2025-07-20,20,7,3,2025,33,95964,2.75,5,1
+S00890,TX0297,C0030,Akash Chauhan,26,Male,Dehradun,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2026-02-10,10,2,1,2026,41,130749,3.42,6,1
+S00891,TX0297,C0019,Isha Mukherjee,29,Female,Kolkata,P002,Butter,Bakery & Dairy,60,1,60,S105,West Gate Ahmedabad,West,2025-10-13,13,10,4,2025,8,4536,0.67,42,1
+S00892,TX0298,C0008,Neha Kulkarni,24,Female,Pune,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-09-08,8,9,3,2025,15,23400,1.25,115,1
+S00893,TX0298,C0010,Arjun Reddy,41,Male,Chennai,P004,Tea,Beverages,120,1,120,S101,Metro Express Mumbai,West,2026-01-01,1,1,1,2026,15,27780,1.25,46,1
+S00894,TX0298,C0025,Shweta Mishra,25,Female,Indore,P004,Tea,Beverages,120,3,360,S104,City Mega Store Kolkata,East,2025-07-24,24,7,3,2025,15,24555,1.25,91,1
+S00895,TX0299,C0028,Harshvardhan Goel,43,Male,Kanpur,P005,Biscuits,Snacks,30,2,60,S106,Jaipur Plaza Store,North,2025-06-15,15,6,2,2025,3,6315,0.25,85,0
+S00896,TX0299,C0020,Manish Tiwari,44,Male,Patna,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-06-02,2,6,2,2025,32,78816,2.67,23,1
+S00897,TX0299,C0030,Akash Chauhan,26,Male,Dehradun,P007,Sugar,Grocery,45,1,45,S103,Tech Hub Bengaluru,South,2025-08-07,7,8,3,2025,15,24570,1.25,115,1
+S00898,TX0300,C0033,Pallavi Ghosh,29,Female,Ranchi,P001,Bread,Bakery & Dairy,40,1,40,S103,Tech Hub Bengaluru,South,2025-03-07,7,3,1,2025,41,103361,3.42,16,1
+S00899,TX0300,C0006,Pooja Nair,29,Female,Kochi,P021,Face Wash,Personal Care,190,1,190,S101,Metro Express Mumbai,West,2025-05-19,19,5,2,2025,30,81480,2.5,17,1
+S00900,TX0300,C0004,Ananya Iyer,45,Female,Bengaluru,P015,Running Shoes,Fashion,2400,1,2400,S101,Metro Express Mumbai,West,2026-01-15,15,1,1,2026,15,6390,1.25,118,1
+S00901,TX0301,C0013,Aditya Malhotra,35,Male,Delhi,P004,Tea,Beverages,120,1,120,S101,Metro Express Mumbai,West,2025-02-04,4,2,1,2025,1,,0.08,71,0
+S00902,TX0301,C0008,Neha Kulkarni,24,Female,Pune,P001,Bread,Bakery & Dairy,40,2,80,S103,Tech Hub Bengaluru,South,2025-07-27,27,7,3,2025,9,13194,0.75,120,1
+S00903,TX0301,C0029,Simran Sethi,28,Female,Ludhiana,P003,Milk,Bakery & Dairy,32,1,32,S107,Chennai Marina Outlet,South,2025-12-03,3,12,4,2025,24,56400,2.0,17,1
+S00904,TX0302,C0007,Rahul Verma,52,Male,Lucknow,P002,Butter,Bakery & Dairy,60,2,120,S105,West Gate Ahmedabad,West,2025-09-10,10,9,3,2025,7,14980,0.58,33,0
+S00905,TX0302,C0030,Akash Chauhan,26,Male,Dehradun,P005,Biscuits,Snacks,30,1,30,S101,Metro Express Mumbai,West,2025-10-16,16,10,4,2025,20,46320,1.67,25,1
+S00906,TX0302,C0001,Aarav Sharma,28,Male,Mumbai,P005,Biscuits,Snacks,30,1,30,S102,Delhi Central Mart,North,2025-07-03,3,7,3,2025,3,5523,0.25,98,0
+S00907,TX0303,C0022,Gaurav Bansal,27,Male,Delhi,P005,Biscuits,Snacks,30,1,30,S104,City Mega Store Kolkata,East,2026-01-02,2,1,1,2026,31,62403,2.58,4,1
+S00908,TX0303,C0031,Sonal Agarwal,35,Female,Agra,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-08-30,30,8,3,2025,10,18250,0.83,89,1
+S00909,TX0303,C0026,Varun Khanna,37,Male,Amritsar,P004,Tea,Beverages,120,1,120,S101,Metro Express Mumbai,West,2025-01-24,24,1,1,2025,32,43136,2.67,25,1
+S00910,TX0304,C0007,Rahul Verma,52,Male,Lucknow,P014,Headphones,Electronics,1500,3,4500,S102,Delhi Central Mart,North,2026-01-08,8,1,1,2026,5,4340,0.42,19,1
+S00911,TX0304,C0005,Vikram Singh,31,Male,Jaipur,P004,Tea,Beverages,120,1,120,S104,City Mega Store Kolkata,East,2026-01-26,26,1,1,2026,36,34020,3.0,22,1
+S00912,TX0304,C0013,Aditya Malhotra,35,Male,Delhi,P004,Tea,Beverages,120,1,120,S102,Delhi Central Mart,North,2025-05-10,10,5,2,2025,24,18048,2.0,20,0
+S00913,TX0305,C0007,Rahul Verma,52,Male,Lucknow,P001,Bread,Bakery & Dairy,40,1,40,S102,Delhi Central Mart,North,2025-01-18,18,1,1,2025,16,28720,1.33,7,1
+S00914,TX0305,C0034,Yashvardhan K,33,Male,Mysuru,P019,Shampoo,Personal Care,280,2,560,S104,City Mega Store Kolkata,East,2025-04-08,8,4,2,2025,34,99722,2.83,19,1
+S00915,TX0305,C0005,Vikram Singh,31,Male,Jaipur,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2025-08-07,7,8,3,2025,15,42945,1.25,19,1
+S00916,TX0306,C0015,Tanvi Bhat,26,Female,Bengaluru,P009,Laptop,Electronics,55000,1,55000,S107,Chennai Marina Outlet,South,2025-05-29,29,5,2,2025,14,14644,1.17,51,0
+S00917,TX0306,C0016,Kunal Mehta,48,Male,Surat,P017,Camera,Electronics,32000,1,32000,S107,Chennai Marina Outlet,South,2025-09-23,23,9,3,2025,19,52953,1.58,17,1
+S00918,TX0306,C0017,Rhea Kapoor,23,Female,Chandigarh,P004,Tea,Beverages,120,1,120,S106,Jaipur Plaza Store,North,2025-01-16,16,1,1,2025,9,30645,0.75,57,1
+S00919,TX0307,C0004,Ananya Iyer,45,Female,Bengaluru,P009,Laptop,Electronics,55000,4,220000,S102,Delhi Central Mart,North,2025-09-10,10,9,3,2025,17,45186,1.42,17,1
+S00920,TX0307,C0018,Nikhil Saxena,36,Male,Bhopal,P005,Biscuits,Snacks,30,1,30,S106,Jaipur Plaza Store,North,2025-01-22,22,1,1,2025,14,18648,1.17,17,1
+S00921,TX0307,C0002,Diya Patel,34,Female,Ahmedabad,P018,Memory Card,Electronics,650,2,1300,S107,Chennai Marina Outlet,South,2026-02-05,5,2,1,2026,11,37642,0.92,17,1
+S00922,TX0308,C0004,Ananya Iyer,45,Female,Bengaluru,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2026-01-28,28,1,1,2026,2,5842,0.17,62,0
+S00923,TX0308,C0022,Gaurav Bansal,27,Male,Delhi,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2025-01-30,30,1,1,2025,14,6454,1.17,25,1
+S00924,TX0308,C0004,Ananya Iyer,45,Female,Bengaluru,P001,Bread,Bakery & Dairy,40,1,40,S101,Metro Express Mumbai,West,2025-01-30,30,1,1,2025,27,43119,2.25,6,1
+S00925,TX0309,C0031,Sonal Agarwal,35,Female,Agra,P001,Bread,Bakery & Dairy,40,1,40,S106,Jaipur Plaza Store,North,2025-03-04,4,3,1,2025,34,44268,2.83,16,1
+S00926,TX0309,C0024,Amit Choudhury,50,Male,Guwahati,P003,Milk,Bakery & Dairy,32,1,32,S107,Chennai Marina Outlet,South,2025-10-10,10,10,4,2025,43,66435,3.58,4,1
+S00927,TX0309,C0009,Kavita Rao,38,Female,Hyderabad,P005,Biscuits,Snacks,30,2,60,S107,Chennai Marina Outlet,South,2025-09-24,24,9,3,2025,14,19068,1.17,24,1
+S00928,TX0310,C0030,Akash Chauhan,26,Male,Dehradun,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2025-01-11,11,1,1,2025,2,1288,0.17,50,0
+S00929,TX0310,C0025,Shweta Mishra,25,Female,Indore,P013,Phone Case,Electronics,350,1,350,S104,City Mega Store Kolkata,East,2025-01-10,10,1,1,2025,4,4968,0.33,63,0
+S00930,TX0310,C0028,Harshvardhan Goel,43,Male,Kanpur,P002,Butter,Bakery & Dairy,60,4,240,S105,West Gate Ahmedabad,West,2025-01-27,27,1,1,2025,33,48675,2.75,20,1
+S00931,TX0311,C0002,Diya Patel,34,Female,Ahmedabad,P014,Headphones,Electronics,1500,3,4500,S103,Tech Hub Bengaluru,South,2026-01-07,7,1,1,2026,15,12705,1.25,19,1
+S00932,TX0311,C0019,Isha Mukherjee,29,Female,Kolkata,P007,Sugar,Grocery,45,1,45,S107,Chennai Marina Outlet,South,2025-10-01,1,10,4,2025,27,25380,2.25,2,1
+S00933,TX0311,C0018,Nikhil Saxena,36,Male,Bhopal,P005,Biscuits,Snacks,30,1,30,S101,Metro Express Mumbai,West,2025-05-08,8,5,2,2025,5,15500,0.42,47,1
+S00934,TX0312,C0001,Aarav Sharma,28,Male,Mumbai,P002,Butter,Bakery & Dairy,60,2,120,S101,Metro Express Mumbai,West,2025-06-07,7,6,2,2025,13,28613,1.08,2,1
+S00935,TX0312,C0023,Ritika Sen,39,Female,Kolkata,P007,Sugar,Grocery,45,1,45,S104,City Mega Store Kolkata,East,2025-11-23,23,11,4,2025,17,26044,1.42,21,1
+S00936,TX0312,C0005,Vikram Singh,31,Male,Jaipur,P005,Biscuits,Snacks,30,1,30,S104,City Mega Store Kolkata,East,2025-04-03,3,4,2,2025,21,61551,1.75,22,0
+S00937,TX0313,C0008,Neha Kulkarni,24,Female,Pune,P003,Milk,Bakery & Dairy,32,1,32,S106,Jaipur Plaza Store,North,2025-01-20,20,1,1,2025,12,17532,1.0,47,0
+S00938,TX0313,C0023,Ritika Sen,39,Female,Kolkata,P001,Bread,Bakery & Dairy,40,1,40,S105,West Gate Ahmedabad,West,2026-01-03,3,1,1,2026,44,31548,3.67,9,1
+S00939,TX0313,C0024,Amit Choudhury,50,Male,Guwahati,P001,Bread,Bakery & Dairy,40,2,80,S107,Chennai Marina Outlet,South,2025-12-15,15,12,4,2025,7,21490,0.58,62,1
+S00940,TX0314,C0019,Isha Mukherjee,29,Female,Kolkata,P001,Bread,Bakery & Dairy,40,3,120,S105,West Gate Ahmedabad,West,2025-01-16,16,1,1,2025,10,12660,0.83,118,1
+S00941,TX0314,C0033,Pallavi Ghosh,29,Female,Ranchi,P004,Tea,Beverages,120,2,240,S107,Chennai Marina Outlet,South,2025-10-25,25,10,4,2025,13,39767,1.08,25,1
+S00942,TX0314,C0015,Tanvi Bhat,26,Female,Bengaluru,P021,Face Wash,Personal Care,190,1,190,S105,West Gate Ahmedabad,West,2025-09-15,15,9,3,2025,19,48659,1.58,3,1
+S00943,TX0315,C0034,Yashvardhan K,33,Male,Mysuru,P002,Butter,Bakery & Dairy,60,3,180,S105,West Gate Ahmedabad,West,2025-08-14,14,8,3,2025,13,24466,1.08,44,1
+S00944,TX0315,C0008,Neha Kulkarni,24,Female,Pune,P003,Milk,Bakery & Dairy,32,3,96,S106,Jaipur Plaza Store,North,2025-05-04,4,5,2,2025,11,26213,0.92,92,1
+S00945,TX0315,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P005,Biscuits,Snacks,30,3,90,S102,Delhi Central Mart,North,2025-10-19,19,10,4,2025,15,31035,1.25,101,1
+S00946,TX0316,C0009,Kavita Rao,38,Female,Hyderabad,P004,Tea,Beverages,120,1,120,S105,West Gate Ahmedabad,West,2025-05-14,14,5,2,2025,21,57939,1.75,17,1
+S00947,TX0316,C0013,Aditya Malhotra,35,,Delhi,P002,Butter,Bakery & Dairy,60,2,120,S102,Delhi Central Mart,North,2025-08-21,21,8,3,2025,42,144564,3.5,5,1
+S00948,TX0316,C0003,Rohan Gupta,22,Male,Delhi,P001,Bread,Bakery & Dairy,40,1,40,S107,Chennai Marina Outlet,South,2025-08-09,9,8,3,2025,14,35952,1.17,64,1
+S00949,TX0317,C0023,Ritika Sen,39,Female,Kolkata,P002,Butter,Bakery & Dairy,60,1,60,S102,Delhi Central Mart,North,2025-07-25,25,7,3,2025,33,93126,2.75,21,1
+S00950,TX0317,C0003,Rohan Gupta,22,Male,Delhi,P015,Running Shoes,Fashion,2400,3,7200,S101,Metro Express Mumbai,West,2026-01-14,14,1,1,2026,11,24662,0.92,109,1
+S00075,TX0025,C0032,Sameer Nanda,40,Male,Vadodara,P005,Biscuits,Snacks,30,2,60,S101,Metro Express Mumbai,West,2025-03-06,6,3,1,2025,10,32370,0.83,65,1
+S00194,TX0065,C0015,Tanvi Bhat,26,Female,Bengaluru,P016,Socks,Fashion,150,1,150,S102,Delhi Central Mart,North,2025-12-21,21,12,4,2025,29,76096,2.42,20,1
+S00123,TX0041,C0031,Sonal Agarwal,35,Female,Agra,P002,Butter,Bakery & Dairy,60,1,60,S104,City Mega Store Kolkata,East,2025-11-12,12,11,4,2025,12,34716,1.0,82,1
+S00180,TX0060,C0025,Shweta Mishra,25,Female,Indore,P005,Biscuits,Snacks,30,1,30,S107,Chennai Marina Outlet,South,2025-09-26,26,9,3,2025,9,21051,0.75,45,1
+S00035,TX0012,C0033,Pallavi Ghosh,29,Female,Ranchi,P007,Sugar,Grocery,45,1,45,S101,Metro Express Mumbai,West,2025-07-17,17,7,3,2025,12,30348,1.0,19,1
+S00188,TX0063,C0035,Swati Hegde,30,Female,Mangaluru,P018,Memory Card,Electronics,650,5,3250,S104,City Mega Store Kolkata,East,2025-04-05,5,4,2,2025,45,24210,3.75,4,1
+S00047,TX0016,C0030,Akash Chauhan,26,Male,Dehradun,P005,Biscuits,Snacks,30,1,30,S103,Tech Hub Bengaluru,South,2025-06-22,22,6,2,2025,1,3468,0.08,84,1
+S00186,TX0062,C0015,Tanvi Bhat,26,Female,Bengaluru,P006,Coffee,Beverages,180,1,180,S106,Jaipur Plaza Store,North,2025-03-16,16,3,1,2025,14,19684,1.17,78,1
+S00197,TX0066,C0004,Ananya Iyer,45,Female,Bengaluru,P002,Butter,Bakery & Dairy,60,4,240,S101,Metro Express Mumbai,West,2025-08-12,12,8,3,2025,11,16709,0.92,115,1
+S00151,TX0051,C0013,Aditya Malhotra,35,Male,Delhi,P002,Butter,Bakery & Dairy,60,2,120,S103,Tech Hub Bengaluru,South,2025-10-11,11,10,4,2025,10,31860,0.83,93,1
+S00131,TX0044,C0024,Amit Choudhury,50,Male,Guwahati,P004,Tea,Beverages,120,1,120,S104,City Mega Store Kolkata,East,2025-07-24,24,7,3,2025,45,67140,3.75,4,1
+S00022,TX0008,C0035,Swati Hegde,30,Female,Mangaluru,P002,Butter,Bakery & Dairy,60,1,60,S101,Metro Express Mumbai,West,2026-01-18,18,1,1,2026,22,13904,1.83,18,0
+S00039,TX0013,C0022,Gaurav Bansal,27,Male,Delhi,P008,Snacks,Snacks,50,2,100,S101,Metro Express Mumbai,West,2026-02-24,24,2,1,2026,4,4012,0.33,18,0
+S00002,TX0001,C0003,Rohan Gupta,22,Male,Delhi,P004,Tea,Beverages,120,2,240,S101,Metro Express Mumbai,West,2025-02-17,17,2,1,2025,12,31584,1.0,68,1
+S00152,TX0051,C0007,Rahul Verma,52,Male,Lucknow,P005,Biscuits,Snacks,30,2,60,S104,City Mega Store Kolkata,East,2025-07-11,11,7,3,2025,9,18396,0.75,79,0
+S00152,TX0051,C0007,Rahul Verma,52,Male,Lucknow,P005,Biscuits,Snacks,30,2,60,S104,City Mega Store Kolkata,East,2025-07-11,11,7,3,2025,9,18396,0.75,79,0
+S00095,TX0032,C0005,Vikram Singh,31,Male,Jaipur,P002,Butter,Bakery & Dairy,60,2,120,S101,Metro Express Mumbai,West,2025-06-14,14,6,2,2025,32,62720,2.67,21,1
+S00173,TX0058,C0027,Deepika Pillai,31,Female,Thiruvananthapuram,P007,Sugar,Grocery,45,1,45,S102,Delhi Central Mart,North,2026-01-29,29,1,1,2026,36,69768,3.0,4,1
+S00167,TX0056,C0016,Kunal Mehta,48,Male,Surat,P001,Bread,Bakery & Dairy,40,1,40,S104,City Mega Store Kolkata,East,2026-01-21,21,1,1,2026,4,2616,0.33,100,0
+S00117,TX0039,C0009,Kavita Rao,38,Female,Hyderabad,P004,Tea,Beverages,120,2,240,S102,Delhi Central Mart,North,2025-02-09,9,2,1,2025,22,73766,1.83,16,0
+S00098,TX0033,C0024,Amit Choudhury,50,Male,Guwahati,P003,Milk,Bakery & Dairy,32,1,32,S107,Chennai Marina Outlet,South,2025-03-08,8,3,1,2025,39,130767,3.25,3,1
+S00083,TX0028,C0015,Tanvi Bhat,26,Female,Bengaluru,P018,Memory Card,Electronics,650,1,650,S106,Jaipur Plaza Store,North,2025-04-08,8,4,2,2025,3,2307,0.25,52,0
+S00113,TX0038,C0006,Pooja Nair,29,Female,Kochi,P002,Butter,Bakery & Dairy,60,5,300,S105,West Gate Ahmedabad,West,2025-11-27,27,11,4,2025,22,41580,1.83,13,1
+S00046,TX0016,C0030,Akash Chauhan,26,Male,Dehradun,P007,Sugar,Grocery,45,1,45,S102,Delhi Central Mart,North,2025-11-15,15,11,4,2025,15,21975,1.25,14,1
+S00131,TX0044,C0024,Amit Choudhury,50,Male,Guwahati,P004,Tea,Beverages,120,1,120,S104,City Mega Store Kolkata,East,2025-07-24,24,7,3,2025,45,67140,3.75,4,1
