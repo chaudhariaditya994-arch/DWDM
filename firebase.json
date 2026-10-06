@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "dwdw-61f36",
+    "public": "ecommerce-data-mining/frontend/dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
